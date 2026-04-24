@@ -105,11 +105,12 @@ export default function ScenarioB() {
               Sound familiar?
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Week six. Sarah's inbox.
+              Meet Sarah.
             </h2>
             <p className="text-white/60 max-w-xl mx-auto">
-              She sent requests to 30 people inside the organisation and 18 suppliers.
-              Half didn't reply. The rest sent the wrong format, last year's data, or a PDF she can't open.
+              Head of Finance at an ASX-listed manufacturer. First year doing AASB S2.
+              No dedicated sustainability team. She knows exactly what data she needs —
+              getting it from 30 colleagues and 18 suppliers is another matter entirely.
             </p>
           </div>
 
