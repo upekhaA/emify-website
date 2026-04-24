@@ -1,40 +1,36 @@
 import { Button } from "@/components/ui/button";
+import { AlertCircle, CheckCircle2 } from "lucide-react";
 
 const timeline = [
   {
     week: "Week 1",
     action: "Download the AASB S2 standard.",
     pain: "It's 550 pages. The Scope 3 section alone is 80.",
-    color: "text-red-700",
-    bg: "bg-red-100",
+    severity: "red",
   },
   {
     week: "Week 2",
-    action: 'Google “Scope 3 emissions.”',
+    action: 'Google "Scope 3 emissions."',
     pain: "Three hours. Fifteen tabs. No closer to a number.",
-    color: "text-red-700",
-    bg: "bg-red-100",
+    severity: "red",
   },
   {
     week: "Week 3",
-    action: 'Email procurement: “what data do we have on suppliers?”',
+    action: 'Email procurement: "what data do we have on suppliers?"',
     pain: "Reply arrives five days later. Two Excel files. No categories.",
-    color: "text-amber-700",
-    bg: "bg-amber-100",
+    severity: "amber",
   },
   {
     week: "Weeks 4–5",
     action: "Chase three procurement managers across two time zones.",
     pain: 'Get a password-protected PDF and a promise to "look into it."',
-    color: "text-amber-700",
-    bg: "bg-amber-100",
+    severity: "amber",
   },
   {
     week: "Weeks 6–8",
     action: "Try to reconcile what you have.",
     pain: "Units don't match. Years don't align. You have fragments. Not a report.",
-    color: "text-red-700",
-    bg: "bg-red-100",
+    severity: "red",
   },
 ];
 
@@ -50,10 +46,13 @@ const dataMap = [
 ];
 
 const statusConfig = {
-  found: { label: "Connected", dot: "bg-primary", text: "text-primary", bar: "bg-primary/10 text-primary" },
-  partial: { label: "Partial", dot: "bg-amber-500", text: "text-amber-700", bar: "bg-amber-100 text-amber-700" },
-  missing: { label: "Missing", dot: "bg-red-500", text: "text-red-700", bar: "bg-red-100 text-red-700" },
+  found:   { label: "Connected", dot: "bg-primary",    pill: "bg-primary/20 text-primary border border-primary/30" },
+  partial: { label: "Partial",   dot: "bg-amber-400",  pill: "bg-amber-400/20 text-amber-300 border border-amber-400/30" },
+  missing: { label: "Missing",   dot: "bg-red-400",    pill: "bg-red-400/20 text-red-300 border border-red-400/30" },
 };
+
+const severityBorder = { red: "border-l-red-500", amber: "border-l-amber-400" };
+const severityText   = { red: "text-red-300",      amber: "text-amber-300" };
 
 export default function ScenarioA() {
   return (
@@ -75,121 +74,131 @@ export default function ScenarioA() {
             emissions — it's what data you even have.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="px-8 text-base"
-              asChild
-              data-track="cta-click"
-              data-variant="A"
-            >
+            <Button size="lg" className="px-8 text-base" asChild data-track="cta-click" data-variant="A">
               <a href="/contact#demo">Book a demo — see your data map in 60 minutes</a>
             </Button>
+            <Button size="lg" variant="outline" className="px-8 text-base" asChild>
+              <a href="/pricing">See pricing</a>
+            </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-4">
+          <p className="text-sm text-muted-foreground mt-6">
             AU data residency · SOC 2 Type II · No lock-in contracts
           </p>
         </div>
       </section>
 
-      {/* Pain point — Sarah's story */}
-      <section id="pain-point-a" data-ab-section className="py-20 sm:py-28 bg-foreground text-background">
+      {/* Pain point */}
+      <section id="pain-point-a" data-ab-section className="py-20 sm:py-28 bg-foreground">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
 
-            {/* Left — Sarah's 8-week journey */}
+          {/* Section intro */}
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/60 mb-4">
+              Sound familiar?
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Sarah's first AASB S2 report.
+            </h2>
+            <p className="text-white/60 max-w-xl mx-auto">
+              Head of Finance. ASX-listed manufacturing company. No dedicated sustainability team.
+              First Group 1 reporter. Eight weeks to deadline.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+            {/* Left — timeline */}
             <div>
-              <div className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/60 mb-6">
-                Sound familiar?
+              <div className="text-xs font-semibold text-white/40 uppercase tracking-widest mb-5">
+                Without emify
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
-                Sarah's first AASB S2 report.
-              </h2>
-              <p className="text-white/60 mb-8">
-                Head of Finance. ASX-listed manufacturing company. No dedicated sustainability team.
-                First Group 1 reporter. Eight weeks to deadline.
-              </p>
-
-              <div className="space-y-4">
-                {timeline.map(({ week, action, pain, bg, color }) => (
-                  <div key={week} className="flex gap-4">
-                    <div className="flex-shrink-0 w-20 text-xs font-semibold text-white/40 pt-1">{week}</div>
-                    <div className={`flex-1 rounded-xl p-4 ${bg}`}>
-                      <div className={`text-sm font-semibold ${color} mb-1`}>{action}</div>
-                      <div className="text-xs text-foreground/70">{pain}</div>
+              <div className="space-y-3">
+                {timeline.map(({ week, action, pain, severity }) => (
+                  <div
+                    key={week}
+                    className={`flex gap-4 rounded-xl bg-white/5 border border-white/10 border-l-4 ${severityBorder[severity as keyof typeof severityBorder]} p-4`}
+                  >
+                    <div className="flex-shrink-0 w-16 text-xs font-semibold text-white/30 pt-0.5 leading-tight">{week}</div>
+                    <div>
+                      <div className="text-sm font-semibold text-white/90 mb-0.5">{action}</div>
+                      <div className={`text-xs ${severityText[severity as keyof typeof severityText]}`}>{pain}</div>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-8 rounded-xl border border-white/10 bg-white/5 p-5">
-                <div className="text-sm font-semibold text-white mb-1">
-                  Eight weeks later. No report. A board presentation in three days.
-                </div>
-                <div className="text-sm text-white/60">
-                  "I can't tell them where half these numbers came from. I don't even know what I'm missing."
-                  <span className="block mt-1 text-white/40 italic">— Sarah, every first AASB S2 reporter</span>
+              <div className="mt-6 rounded-xl border border-white/10 bg-white/5 p-5">
+                <div className="flex items-start gap-3">
+                  <AlertCircle className="h-4 w-4 text-red-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-sm font-semibold text-white mb-1">
+                      Eight weeks later. No report. Board presentation in three days.
+                    </div>
+                    <div className="text-sm text-white/50 italic">
+                      "I can't tell them where half these numbers came from. I don't even know what I'm missing."
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Right — emify's data gap map */}
+            {/* Right — data gap map */}
             <div>
-              <div className="inline-flex items-center rounded-full bg-primary/20 border border-primary/30 px-3 py-1 text-xs font-medium text-primary mb-6">
-                emify connects to your accounting system on day one
+              <div className="text-xs font-semibold text-primary/80 uppercase tracking-widest mb-5">
+                With emify — in under 60 minutes
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">
-                What emify surfaces in under{" "}
-                <span className="text-primary">60 minutes.</span>
-              </h2>
-              <p className="text-white/60 mb-8">
-                Not a guess. Not a spreadsheet. A clear map of exactly what data exists, what's partial,
-                and what's genuinely missing — with the source of every figure.
-              </p>
 
               <div className="rounded-xl border border-white/10 bg-white/5 overflow-hidden">
                 <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-white/60 uppercase tracking-wide">Data Readiness Map</span>
-                  <div className="flex items-center gap-3 text-xs text-white/40">
-                    <span className="flex items-center gap-1"><span className="h-2 w-2 rounded-full bg-primary inline-block" />Connected</span>
-                    <span className="flex items-center gap-1"><span className="h-2 w-2 rounded-full bg-amber-500 inline-block" />Partial</span>
-                    <span className="flex items-center gap-1"><span className="h-2 w-2 rounded-full bg-red-500 inline-block" />Missing</span>
+                  <span className="text-xs font-semibold text-white/70">Data Readiness Map</span>
+                  <div className="flex items-center gap-3">
+                    {(["found", "partial", "missing"] as const).map((s) => (
+                      <span key={s} className="flex items-center gap-1.5 text-xs text-white/40">
+                        <span className={`h-1.5 w-1.5 rounded-full ${statusConfig[s].dot}`} />
+                        {statusConfig[s].label}
+                      </span>
+                    ))}
                   </div>
                 </div>
+
                 <div className="divide-y divide-white/5">
                   {dataMap.map(({ category, scope, status, source }) => {
                     const cfg = statusConfig[status as keyof typeof statusConfig];
                     return (
-                      <div key={category} className="px-4 py-3 flex items-start gap-3">
-                        <div className={`mt-1.5 h-2 w-2 rounded-full flex-shrink-0 ${cfg.dot}`} />
+                      <div key={category} className="px-4 py-3 flex items-center gap-3">
+                        <span className={`h-2 w-2 rounded-full flex-shrink-0 ${cfg.dot}`} />
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span className="text-sm font-medium text-white">{category}</span>
+                          <div className="flex items-baseline gap-2 flex-wrap">
+                            <span className="text-sm text-white/90">{category}</span>
                             <span className="text-xs text-white/30">{scope}</span>
                           </div>
-                          <div className="text-xs text-white/50 mt-0.5">{source}</div>
+                          <div className="text-xs text-white/40 truncate">{source}</div>
                         </div>
-                        <div className={`flex-shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${cfg.bar}`}>
+                        <span className={`flex-shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${cfg.pill}`}>
                           {cfg.label}
-                        </div>
+                        </span>
                       </div>
                     );
                   })}
                 </div>
-                <div className="px-4 py-3 border-t border-white/10 bg-primary/10">
-                  <div className="text-xs text-primary font-medium">
-                    ✓ 3 connected · 3 partial · 2 missing — full action plan generated
-                  </div>
+
+                <div className="px-4 py-3 border-t border-white/10 bg-primary/10 flex items-center gap-2">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-primary flex-shrink-0" />
+                  <span className="text-xs text-primary font-medium">
+                    3 connected · 3 partial · 2 missing — full action plan generated
+                  </span>
                 </div>
               </div>
 
+              <div className="mt-4 rounded-xl border border-primary/20 bg-primary/5 p-4">
+                <p className="text-sm text-white/70 leading-relaxed">
+                  Not a guess. Not a spreadsheet. A clear map of exactly what data exists, what's partial,
+                  and what's genuinely missing — with the source of every figure.
+                </p>
+              </div>
+
               <div className="mt-6">
-                <Button
-                  size="lg"
-                  className="w-full text-base"
-                  asChild
-                  data-track="cta-click"
-                  data-variant="A"
-                >
+                <Button size="lg" className="w-full text-base" asChild data-track="cta-click" data-variant="A">
                   <a href="/contact#demo">Book a demo — see your data map in 60 minutes</a>
                 </Button>
               </div>
