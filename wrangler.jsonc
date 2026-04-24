@@ -7,7 +7,7 @@
       // Run: wrangler kv namespace create EMIFY_AB_EVENTS
       // Then replace this placeholder with the returned ID
       "binding": "EMIFY_AB_EVENTS",
-      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+      "id": "5eab0a72e04f400eadad71f7dd687cb3"
     }
   ]
 }
