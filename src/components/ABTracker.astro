@@ -1,0 +1,62 @@
+---
+interface Props {
+  variant: "A" | "B";
+}
+const { variant } = Astro.props;
+---
+
+<script define:vars={{ variant }}>
+  (function () {
+    const API = "/api/track";
+
+    function getSessionId() {
+      let id = localStorage.getItem("emify_session");
+      if (!id) {
+        id = crypto.randomUUID();
+        localStorage.setItem("emify_session", id);
+      }
+      return id;
+    }
+
+    function track(event) {
+      const sessionId = getSessionId();
+      fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          variant,
+          sessionId,
+          event,
+          path: location.pathname,
+          timestamp: Date.now(),
+        }),
+        keepalive: true,
+      }).catch(() => {});
+    }
+
+    // Page view
+    track("pageview");
+
+    // Scroll depth — 70% of the pain point section
+    const section = document.querySelector("[data-ab-section]");
+    if (section) {
+      let fired = false;
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (!fired && entries[0].isIntersecting) {
+            fired = true;
+            track("scroll_depth");
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.7 }
+      );
+      observer.observe(section);
+    }
+
+    // CTA clicks
+    document.querySelectorAll("[data-track='cta-click']").forEach((el) => {
+      el.addEventListener("click", () => track("cta_click"), { once: true });
+    });
+  })();
+</script>

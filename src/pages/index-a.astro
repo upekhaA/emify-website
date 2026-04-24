@@ -1,0 +1,37 @@
+---
+export const prerender = false;
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import ScenarioA from '../components/ab/ScenarioA';
+import AgentGrid from '../components/home/AgentGrid';
+import HowItWorks from '../components/home/HowItWorks';
+import PlatformCapabilities from '../components/home/PlatformCapabilities';
+import ROIChart from '../components/home/ROIChart';
+import ComplianceTiles from '../components/home/ComplianceTiles';
+import Testimonials from '../components/home/Testimonials';
+import PricingPeek from '../components/home/PricingPeek';
+import FinalCTA from '../components/home/FinalCTA';
+import Footer from '../components/Footer';
+import ABTracker from '../components/ABTracker.astro';
+---
+
+<Layout
+  title="emify — You don't know what you don't have."
+  description="emify connects to your accounting system on day one and maps exactly what data exists, what's partial, and what's missing — in under 60 minutes."
+>
+  <ABTracker variant="A" />
+  <Navbar client:load />
+  <main>
+    <ScenarioA client:load />
+    <AgentGrid client:load />
+    <HowItWorks client:load />
+    <PlatformCapabilities client:load />
+    <ROIChart client:load />
+    <ComplianceTiles client:load />
+    <Testimonials client:load />
+    <PricingPeek client:load />
+    <FinalCTA client:load />
+  </main>
+  <Footer client:load />
+</Layout>

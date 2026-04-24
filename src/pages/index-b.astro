@@ -1,0 +1,37 @@
+---
+export const prerender = false;
+
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import ScenarioB from '../components/ab/ScenarioB';
+import AgentGrid from '../components/home/AgentGrid';
+import HowItWorks from '../components/home/HowItWorks';
+import PlatformCapabilities from '../components/home/PlatformCapabilities';
+import ROIChart from '../components/home/ROIChart';
+import ComplianceTiles from '../components/home/ComplianceTiles';
+import Testimonials from '../components/home/Testimonials';
+import PricingPeek from '../components/home/PricingPeek';
+import FinalCTA from '../components/home/FinalCTA';
+import Footer from '../components/Footer';
+import ABTracker from '../components/ABTracker.astro';
+---
+
+<Layout
+  title="emify — Getting data from real people is exhausting."
+  description="emify handles all supplier outreach, follow-ups and data extraction automatically. You approve. You never chase."
+>
+  <ABTracker variant="B" />
+  <Navbar client:load />
+  <main>
+    <ScenarioB client:load />
+    <AgentGrid client:load />
+    <HowItWorks client:load />
+    <PlatformCapabilities client:load />
+    <ROIChart client:load />
+    <ComplianceTiles client:load />
+    <Testimonials client:load />
+    <PricingPeek client:load />
+    <FinalCTA client:load />
+  </main>
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,13 @@
+{
+  "name": "emify-website",
+  "compatibility_date": "2025-01-01",
+  "pages_build_output_dir": "./dist",
+  "kv_namespaces": [
+    {
+      // Run: wrangler kv namespace create EMIFY_AB_EVENTS
+      // Then replace this placeholder with the returned ID
+      "binding": "EMIFY_AB_EVENTS",
+      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+    }
+  ]
+}
