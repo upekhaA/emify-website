@@ -97,11 +97,11 @@ export default function ProductAgents() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Your eight-agent sustainability team
+            What emify takes off your plate
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Each agent is a specialist. Together, they cover every dimension of Australian and international
-            sustainability reporting — sharing a single data layer and audit trail.
+            emify is a specialist in every dimension of Australian and international sustainability
+            reporting — sharing a single data layer and audit trail across all eight areas.
           </p>
         </div>
 
@@ -119,7 +119,7 @@ export default function ProductAgents() {
                   </div>
                   <div>
                     <div className="text-xs font-semibold text-primary uppercase tracking-wide">
-                      Agent {String(i + 1).padStart(2, "0")}
+                      emify handles
                     </div>
                     <div className="text-lg font-bold text-foreground">{name}</div>
                   </div>

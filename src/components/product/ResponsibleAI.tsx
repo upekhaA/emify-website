@@ -4,7 +4,7 @@ const principles = [
   {
     icon: UserCheck,
     title: "A human always holds the pen",
-    body: "Emify agents draft, flag, calculate and recommend — but every figure that enters a public disclosure is reviewed and approved by a named member of your team. We log who approved what and when. There is no auto-publish.",
+    body: "emify drafts, flags, calculates and recommends — but every figure that enters a public disclosure is reviewed and approved by a named member of your team. We log who approved what and when. There is no auto-publish.",
   },
   {
     icon: FileCheck,
@@ -36,7 +36,7 @@ export default function ResponsibleAI() {
               "A human always holds the pen."
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Emify's agents are powerful — but your sustainability disclosures carry legal liability.
+              emify is powerful — but your sustainability disclosures carry legal liability.
               Every design decision we've made reflects that reality.
             </p>
           </div>

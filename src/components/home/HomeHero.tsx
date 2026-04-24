@@ -10,15 +10,15 @@ export default function HomeHero() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6 text-balance">
-          Your AI sustainability coordinator.{" "}
-          <span className="text-primary">Eight agents. One audit trail.</span>
+          Meet emify — your sustainability teammate.{" "}
+          <span className="text-primary">Eight roles. One audit trail.</span>
         </h1>
 
         <p className="mx-auto max-w-3xl text-lg sm:text-xl text-muted-foreground mb-10 text-balance">
-          Emify is an AI-powered sustainability coordinator purpose-built for Australian reporting
-          obligations. Eight specialised agents collect supplier data, code invoices, draft AASB S2
-          disclosures and keep you audit-ready for NGER, the Modern Slavery Act and the Safeguard
-          Mechanism — at a fraction of the cost of hiring, outsourcing or standing up a team.
+          emify is your always-on sustainability teammate, purpose-built for Australian reporting
+          obligations. emify collects supplier data, codes invoices, drafts AASB S2 disclosures and
+          keeps you audit-ready for NGER, the Modern Slavery Act and the Safeguard Mechanism — at a
+          fraction of the cost of hiring, outsourcing or standing up a team.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">

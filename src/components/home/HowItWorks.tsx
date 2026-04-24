@@ -9,8 +9,8 @@ const steps = [
   {
     step: "02",
     label: "Review",
-    heading: "Your agents get to work — you stay in control",
-    body: "The eight agents begin collecting, processing and validating data across your organisation and supply chain. Every figure surfaced for a disclosure is presented to your team for review before it enters a report. A human always holds the pen.",
+    heading: "emify gets to work — you stay in control",
+    body: "emify begins collecting, processing and validating data across your organisation and supply chain. Every figure surfaced for a disclosure is presented to your team for review before it enters a report. A human always holds the pen.",
     detail: "Role-based review queues · inline data lineage · confidence scoring",
   },
   {

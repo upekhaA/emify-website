@@ -8,13 +8,13 @@ const data = {
   competitor: "Workiva",
   badge: "Emify vs Workiva",
   h1: "Workiva is a GRC platform that added sustainability. Emify is sustainability-native.",
-  sub: "Workiva is a powerful financial and ESG reporting platform — but its sustainability module is built on top of a GRC foundation, not from the ground up. For Australian companies, that means gaps in NGER automation, Safeguard tracking and the agentic data collection that AASB S2 actually demands.",
+  sub: "Workiva is a powerful financial and ESG reporting platform — but its sustainability module is built on top of a GRC foundation, not from the ground up. For Australian companies, that means gaps in NGER automation, Safeguard tracking and the automated data collection that AASB S2 actually demands.",
   rows: [
     { feature: "Australian data residency option", emify: true, competitor: "US-primary" },
     { feature: "AASB S2 disclosure drafting", emify: true, competitor: "Templates only" },
     { feature: "NGER annual report automation", emify: true, competitor: false },
     { feature: "Safeguard Mechanism tracking", emify: true, competitor: false },
-    { feature: "Supplier data collection (agentic)", emify: true, competitor: "Manual import" },
+    { feature: "Supplier data collection (automated)", emify: true, competitor: "Manual import" },
     { feature: "Invoice and document extraction", emify: true, competitor: false },
     { feature: "Audit trail (sustainability-specific)", emify: true, competitor: true },
     { feature: "Financial statement integration", emify: "Via API", competitor: true },
@@ -24,7 +24,7 @@ const data = {
   ],
   emifyAdvantage: [
     "Purpose-built for sustainability — not a GRC module",
-    "Agentic supplier data collection — Workiva requires manual imports",
+    "Automated supplier data collection — Workiva requires manual imports",
     "Invoice and document AI extraction — Workiva has no equivalent",
     "NGER and Safeguard built in — not available in Workiva",
     "Accessible to mid-market — Workiva is typically Enterprise-only",
@@ -36,11 +36,11 @@ const data = {
     "Well-established in ASX 50 for financial and GRC reporting",
     "Broader GRC (governance, risk, compliance) platform",
   ],
-  verdict: "Workiva is the right choice if you need integrated financial and sustainability reporting in a single GRC platform, particularly for ASX 50 companies that already run Workiva for financial statements. For companies that need sustainability reporting done well — agentic data collection, NGER automation, AASB S2 drafting and Safeguard tracking — without the full GRC stack, Emify delivers a purpose-built result at a fraction of the price.",
+  verdict: "Workiva is the right choice if you need integrated financial and sustainability reporting in a single GRC platform, particularly for ASX 50 companies that already run Workiva for financial statements. For companies that need sustainability reporting done well — automated data collection, NGER automation, AASB S2 drafting and Safeguard tracking — without the full GRC stack, emify delivers a purpose-built result at a fraction of the price.",
 };
 ---
 
-<Layout title="Emify vs Workiva — Emify" description="Sustainability-native vs GRC add-on. NGER automation, AASB S2 and agentic data collection.">
+<Layout title="Emify vs Workiva — Emify" description="Sustainability-native vs GRC add-on. NGER automation, AASB S2 and automated data collection.">
   <Navbar client:load />
   <main><ComparisonPage data={data} client:load /></main>
   <Footer client:load />

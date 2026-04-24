@@ -8,8 +8,8 @@ export default function FinalCTA() {
           Don't recruit a sustainability coordinator. Deploy one.
         </h2>
         <p className="text-lg text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-          Emify is ready to join your organisation today. Eight agents, one audit trail, purpose-built for
-          Australia — and available in the time it takes to book a call.
+          emify is ready to join your organisation today. One teammate, eight roles, one audit trail,
+          purpose-built for Australia — and available in the time it takes to book a call.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <Button size="lg" variant="secondary" className="px-8 text-base" asChild>

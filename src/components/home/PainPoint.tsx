@@ -58,7 +58,7 @@ export default function PainPoint() {
             <p className="text-white/70">
               You need deep expertise across GHG accounting, TCFD, Australian Greenwashing Law,
               supply chain traceability and NGER methodology. One coordinator can't hold all of that.
-              Emify's eight specialised agents can.
+              emify can.
             </p>
           </div>
 

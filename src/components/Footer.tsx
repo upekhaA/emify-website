@@ -20,7 +20,7 @@ export default function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-wide mb-3">Product</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="/product" className="hover:text-foreground transition-colors">Platform overview</a></li>
-              <li><a href="/product#agents" className="hover:text-foreground transition-colors">Eight agents</a></li>
+              <li><a href="/product#capabilities" className="hover:text-foreground transition-colors">What emify does</a></li>
               <li><a href="/pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
               <li><a href="/resources" className="hover:text-foreground transition-colors">Resources</a></li>
             </ul>

@@ -86,14 +86,14 @@ const agents = [
 export default function AgentGrid() {
   return (
     <section id="agents" className="py-20 sm:py-28 bg-muted/30">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div id="capabilities" className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Meet your AI sustainability team
+            What emify takes care of
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Eight specialised agents work in parallel — each an expert in its domain, all sharing
-            a single audit trail and reporting layer.
+            emify covers eight critical areas of sustainability work — each handled with deep
+            expertise, all sharing a single audit trail and reporting layer.
           </p>
         </div>
 

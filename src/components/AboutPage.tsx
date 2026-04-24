@@ -7,7 +7,7 @@ const values = [
   },
   {
     name: "Human in the loop",
-    body: "Our agents draft, calculate and flag. Your team approves, signs and owns. We will never design a product that removes accountability from the humans who bear it.",
+    body: "emify drafts, calculates and flags. Your team approves, signs and owns. We will never design a product that removes accountability from the humans who bear it.",
   },
   {
     name: "Sovereign by default",
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 {
                   role: "Co-founder & CTO",
                   bg: "AI/ML engineering, data pipelines, distributed systems",
-                  focus: "Agent architecture, platform security, integration layer",
+                  focus: "Platform architecture, security, integration layer",
                   initials: "CO-F2",
                 },
               ].map(({ role, bg, focus, initials }) => (
