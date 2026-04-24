@@ -1,8 +1,10 @@
 ---
+export const prerender = false;
+
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar';
-import HomeHero from '../components/home/HomeHero';
-import PainPoint from '../components/home/PainPoint';
+import ScenarioA from '../components/ab/ScenarioA';
+import ScenarioB from '../components/ab/ScenarioB';
 import AgentGrid from '../components/home/AgentGrid';
 import HowItWorks from '../components/home/HowItWorks';
 import PlatformCapabilities from '../components/home/PlatformCapabilities';
@@ -12,16 +14,35 @@ import Testimonials from '../components/home/Testimonials';
 import PricingPeek from '../components/home/PricingPeek';
 import FinalCTA from '../components/home/FinalCTA';
 import Footer from '../components/Footer';
+import ABTracker from '../components/ABTracker.astro';
+import { getOrAssignVariant, COOKIE_NAME, COOKIE_MAX_AGE } from '../workers/ab-router';
+
+const cookieHeader = Astro.request.headers.get('cookie');
+const { variant, isNew } = getOrAssignVariant(cookieHeader);
+
+if (isNew) {
+  Astro.cookies.set(COOKIE_NAME, variant, {
+    maxAge: COOKIE_MAX_AGE,
+    path: '/',
+    sameSite: 'lax',
+    secure: true,
+  });
+}
+
+const title = variant === 'A'
+  ? "emify — You don't know what you don't have."
+  : "emify — Getting data from real people is exhausting.";
+
+const description = variant === 'A'
+  ? "emify connects to your accounting system on day one and maps exactly what data exists, what's partial, and what's missing — in under 60 minutes."
+  : "emify handles all supplier outreach, follow-ups and data extraction automatically. You approve. You never chase.";
 ---
 
-<Layout
-  title="emify — Your sustainability teammate. Eight roles. One audit trail."
-  description="emify is your always-on sustainability teammate, purpose-built for Australian reporting obligations. emify handles AASB S2, NGER, Modern Slavery Act and Safeguard Mechanism — at a fraction of the cost of hiring."
->
+<Layout title={title} description={description}>
+  <ABTracker variant={variant} />
   <Navbar client:load />
   <main>
-    <HomeHero client:load />
-    <PainPoint client:load />
+    {variant === 'A' ? <ScenarioA client:load /> : <ScenarioB client:load />}
     <AgentGrid client:load />
     <HowItWorks client:load />
     <PlatformCapabilities client:load />
