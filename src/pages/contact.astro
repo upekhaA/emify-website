@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ContactPage from '../components/ContactPage';
+---
+
+<Layout
+  title="Contact — Emify"
+  description="Book a demo, start your free trial, get support or talk to our team. Sydney and Melbourne offices."
+>
+  <Navbar client:load />
+  <main>
+    <ContactPage client:load />
+  </main>
+  <Footer client:load />
+</Layout>

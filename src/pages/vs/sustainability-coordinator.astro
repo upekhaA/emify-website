@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import ComparisonPage from '../../components/ComparisonPage';
+
+const data = {
+  competitor: "In-house coordinator",
+  badge: "Emify vs In-house hire",
+  h1: "Hiring a sustainability coordinator costs A$322k in Year 1. Emify Growth costs A$74,880.",
+  sub: "A full-time sustainability coordinator brings expertise and commitment — but at a full loaded cost most mid-market companies can't justify. Here's the honest comparison.",
+  costComparison: {
+    emify: "A$74,880",
+    competitor: "A$322,063",
+    note: "Year 1 fully loaded cost",
+  },
+  rows: [
+    { feature: "AASB S2 full disclosure draft", emify: true, competitor: "Depends on experience" },
+    { feature: "NGER annual report", emify: true, competitor: "Depends on experience" },
+    { feature: "Supplier engagement (100+ suppliers)", emify: true, competitor: "Bandwidth-limited" },
+    { feature: "Regulatory change monitoring", emify: "24/7, automated", competitor: "Best effort" },
+    { feature: "Available 24/7", emify: true, competitor: false },
+    { feature: "Scales with reporting obligations", emify: true, competitor: false },
+    { feature: "AU data residency", emify: true, competitor: "N/A" },
+    { feature: "Audit-ready evidence pack", emify: true, competitor: "Manual" },
+    { feature: "Peer benchmarking", emify: true, competitor: "Occasional" },
+    { feature: "Human relationship & judgement", emify: false, competitor: true },
+    { feature: "Represents company externally", emify: false, competitor: true },
+    { feature: "Recruitment timeline", emify: "48 hours", competitor: "3–6 months" },
+  ],
+  emifyAdvantage: [
+    "A$247k cheaper in Year 1 — every dollar stays in the business",
+    "Available in 48 hours, not 3–6 months",
+    "Eight specialists vs one generalist — no single point of knowledge failure",
+    "Scales instantly as reporting obligations expand",
+    "24/7 regulatory watch — no missed ASIC guidance or NGER amendments",
+    "Audit trail built in — no 'where did this number come from' in a crunch",
+  ],
+  competitorAdvantage: [
+    "Human judgment for genuinely ambiguous situations",
+    "External stakeholder relationship management",
+    "Cultural leadership and sustainability culture-building",
+    "Board-level credibility as a named spokesperson",
+  ],
+  verdict: "Emify replaces the data-wrangling, document-processing, supplier-chasing and report-drafting that consumes 80% of a coordinator's time — at a fraction of the cost. Many customers run Emify alongside a part-time sustainability lead or General Counsel, giving them expert human judgment on top of automated execution. The question isn't Emify OR a coordinator. For most companies at this stage, it's Emify INSTEAD of spending A$322k on a hire they couldn't get right anyway.",
+};
+---
+
+<Layout title="Emify vs Sustainability Coordinator — Emify" description="A$322k hire vs A$74,880 Emify Growth. The honest comparison of in-house vs AI sustainability coordination.">
+  <Navbar client:load />
+  <main><ComparisonPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

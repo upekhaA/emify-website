@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import CompliancePage from '../components/CompliancePage';
+
+const data = {
+  badge: "NGER",
+  h1: "NGER reporting, made simple.",
+  sub: "The National Greenhouse and Energy Reporting Act requires facilities over threshold to register and report annually. Emify automates facility boundary mapping, Method 1–4 selection, EERS calculation and produces your Annual Report ready for lodgement — with a complete s22G audit pack.",
+  groups: [
+    { label: "Corporate threshold", when: "Register by 31 Aug", who: "200t CO₂-e or 200 GJ energy annually across all facilities" },
+    { label: "Facility threshold", when: "Report by 31 Oct", who: "25kt CO₂-e or 100 TJ energy at any single facility" },
+    { label: "Safeguard reporters", when: "Ongoing", who: "100kt CO₂-e or above — additional Safeguard obligations apply" },
+  ],
+  capabilities: [
+    "Facility boundary mapping with operational control test",
+    "Automatic Method 1, 2, 3 or 4 selection per activity",
+    "NGER Measurement Determination emission factor library (updated annually)",
+    "EERS (Energy and Emissions Report System) export-ready files",
+    "Variance analysis vs prior year with commentary",
+    "s22G audit-ready evidence pack",
+    "Regulatory Sentinel monitors CER updates and Determination amendments",
+  ],
+  cta: "Download NGER data collection template",
+  ctaHref: "/contact",
+  demoHref: "/contact#demo",
+};
+---
+
+<Layout title="NGER Reporting — Emify" description="Automate NGER facility boundary mapping, Method 1–4, EERS export and s22G audit pack.">
+  <Navbar client:load />
+  <main>
+    <CompliancePage data={data} client:load />
+  </main>
+  <Footer client:load />
+</Layout>

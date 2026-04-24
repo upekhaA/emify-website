@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import ComparisonPage from '../../components/ComparisonPage';
+
+const data = {
+  competitor: "Big 4 / Boutique consultants",
+  badge: "Emify vs Consultants",
+  h1: "Big 4 charge A$120–250k per cycle. And you own nothing.",
+  sub: "Consultants bring credibility and scale — but every engagement starts from scratch, the methodology lives in their heads, and when the project ends, so does your institutional knowledge. Emify builds it in permanently.",
+  costComparison: {
+    emify: "A$60,000/yr",
+    competitor: "A$120–250k",
+    note: "Per reporting cycle, no carry-forward",
+  },
+  rows: [
+    { feature: "AASB S2 disclosure draft", emify: true, competitor: true },
+    { feature: "NGER annual report", emify: true, competitor: true },
+    { feature: "Supplier data collection", emify: true, competitor: "Scoped separately" },
+    { feature: "You own all artefacts permanently", emify: true, competitor: false },
+    { feature: "Audit trail built in", emify: true, competitor: "Delivered as PDF" },
+    { feature: "Real-time regulatory updates", emify: true, competitor: "Not included" },
+    { feature: "Available year-round", emify: true, competitor: "Project basis only" },
+    { feature: "Institutional knowledge retained", emify: true, competitor: false },
+    { feature: "Senior partner involvement", emify: false, competitor: true },
+    { feature: "Litigation support capability", emify: false, competitor: true },
+    { feature: "Brand credibility with ASIC", emify: "Growing", competitor: "Established" },
+  ],
+  emifyAdvantage: [
+    "You own every artefact — methodology, data, calculations, disclosures",
+    "Institutional knowledge builds year on year — no re-explaining your business every cycle",
+    "A$60k/yr vs A$120–250k/cycle — with continuous coverage, not point-in-time",
+    "Supplier data collection included — consultants charge extra for this",
+    "Audit trail is native, not a PDF delivered at project end",
+    "Regulatory watch is continuous — not a quarterly briefing",
+  ],
+  competitorAdvantage: [
+    "Senior partner credibility in ASIC or CER enforcement situations",
+    "Litigation and expert witness capability",
+    "Broader advisory scope (M&A, strategy, policy submissions)",
+    "Established relationships with regulators",
+  ],
+  verdict: "The best outcome for most Australian companies is Emify as the engine and a boutique specialist for strategic and legal advice. Consultants are excellent when you need a named partner in a room with ASIC. They're expensive when what you actually need is someone to extract numbers from 800 invoices and draft the Scope 3 section. Emify handles the latter — permanently, at a fraction of the cost, while ensuring you own every output.",
+};
+---
+
+<Layout title="Emify vs Consultants — Emify" description="Big 4 A$120–250k per cycle vs Emify A$60k/yr — and you own every artefact.">
+  <Navbar client:load />
+  <main><ComparisonPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

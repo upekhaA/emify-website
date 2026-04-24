@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import CompliancePage from '../components/CompliancePage';
+
+const data = {
+  badge: "Scope 3",
+  h1: "The 70% of your footprint you can't put in a spreadsheet.",
+  sub: "For most Australian companies, Scope 3 emissions dwarf Scope 1 and 2 combined — and they're now mandatory under AASB S2. Emify's Supplier Liaison and Invoice Analyst agents work across all 15 GHG Protocol categories, turning spend data and supplier responses into a defensible Scope 3 inventory.",
+  groups: [
+    { label: "Category 1", when: "High priority", who: "Purchased goods & services — typically 40–80% of total footprint" },
+    { label: "Category 11", when: "High priority for extractives", who: "Use of sold products — material for mining, energy, financial services" },
+    { label: "Category 15", when: "Financial services", who: "Financed emissions (PCAF methodology) — mandatory for APRA entities" },
+  ],
+  capabilities: [
+    "All 15 GHG Protocol Scope 3 categories covered",
+    "Spend-based to activity-based data quality ladder — shows where to invest in primary data",
+    "Industry-specific materiality heatmap — focus on what's most relevant to your sector",
+    "Supplier engagement for Category 1 primary data (up to 2,000 suppliers)",
+    "PCAF methodology for financed emissions (Category 15) — Australian-specific factors",
+    "Scope 3 reduction target modelling aligned to SBTi FLAG and sector pathways",
+    "Data quality scoring and assurance-readiness assessment per category",
+  ],
+  cta: "Download the Scope 3 industry heatmap",
+  ctaHref: "/contact",
+  demoHref: "/contact#demo",
+};
+---
+
+<Layout title="Scope 3 Emissions — Emify" description="All 15 GHG Protocol Scope 3 categories. Supplier engagement, PCAF, SBTi. Built for AASB S2.">
+  <Navbar client:load />
+  <main>
+    <CompliancePage data={data} client:load />
+  </main>
+  <Footer client:load />
+</Layout>

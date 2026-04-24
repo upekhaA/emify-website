@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ResourcesPage from '../components/ResourcesPage';
+---
+
+<Layout
+  title="Resources — Emify"
+  description="Guides, templates and regulatory intelligence for Australian sustainability reporting. AASB S2, NGER, Modern Slavery Act and more."
+>
+  <Navbar client:load />
+  <main>
+    <ResourcesPage client:load />
+  </main>
+  <Footer client:load />
+</Layout>

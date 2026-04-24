@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import IndustryPage from '../../components/IndustryPage';
+
+const data = {
+  industry: "Construction",
+  h1: "EPDs, ISC ratings, embodied carbon and AASB S2 — built into your project workflow.",
+  sub: "Construction and infrastructure companies face growing requirements to quantify embodied carbon in materials, achieve ISC sustainability ratings on infrastructure projects, and increasingly report under AASB S2. Emify integrates with project management systems to map Environmental Product Declarations (EPDs) to Bill of Quantities and produce ISC-aligned submissions.",
+  integrations: ["Procore", "Aconex", "Jobpac", "Cheops", "Hammertech", "CostX"],
+  capabilities: [
+    "EPD library integration — map verified environmental declarations to project BOQ line items",
+    "ISC (Infrastructure Sustainability Council) rating data collection and submission preparation",
+    "Embodied carbon quantification by project phase — structure, fitout, services",
+    "Scope 3 Category 1 (materials) and Category 2 (capital goods) from procurement data",
+    "Subcontractor sustainability data collection and verification",
+    "Waste and circular economy tracking across project sites",
+    "AASB S2 physical risk disclosure for project pipeline and asset portfolio",
+  ],
+  frameworks: ["ISC", "GHG Protocol", "AASB S2", "GRI", "Green Star", "TCFD"],
+  highlight: "A Tier 1 Australian contractor used Emify on a major infrastructure project to track embodied carbon across 2,400 BOQ line items in real time — identifying A$3.2m in lower-carbon material substitutions that maintained programme and budget.",
+};
+---
+
+<Layout title="Construction — Emify" description="EPDs, ISC ratings, embodied carbon and AASB S2 for Australian construction and infrastructure.">
+  <Navbar client:load />
+  <main><IndustryPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import CompliancePage from '../components/CompliancePage';
+
+const data = {
+  badge: "AASB S2",
+  h1: "AASB S2, drafted from your data in days — not months.",
+  sub: "Australia's mandatory climate disclosure standard is live for Group 1 reporters from 1 July 2025. Emify reads your data, runs the double materiality assessment, computes your emissions and produces a structured AASB S2 draft — with full audit trail.",
+  groups: [
+    { label: "Group 1", when: "1 Jul 2025", who: "Listed entities with >$500m assets or >$500m revenue" },
+    { label: "Group 2", when: "1 Jul 2026", who: "Listed + unlisted entities (lower thresholds)" },
+    { label: "Group 3", when: "1 Jul 2027", who: "Remaining entities, non-listed large companies" },
+  ],
+  capabilities: [
+    "Double materiality assessment guided by ESRS and Australian guidance",
+    "Scenario analysis under 1.5°C and 3°C pathways (RCP 4.5 / RCP 8.5)",
+    "Scope 1, 2 and 3 emissions computed from source data",
+    "Climate risk and opportunity register (physical & transition)",
+    "AASB S2 / IFRS S2 aligned disclosure draft — every figure sourced",
+    "ASIC-ready audit evidence package",
+    "Continuous monitoring for ASIC guidance and AASB amendments",
+  ],
+  cta: "Download the AASB S2 Readiness Playbook",
+  ctaHref: "/contact",
+  demoHref: "/contact#demo",
+};
+---
+
+<Layout title="AASB S2 Compliance — Emify" description="AASB S2 climate disclosures drafted from your data. Group 1 ready. Full audit trail.">
+  <Navbar client:load />
+  <main>
+    <CompliancePage data={data} client:load />
+  </main>
+  <Footer client:load />
+</Layout>

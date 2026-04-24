@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import PricingPage from '../components/pricing/PricingPage';
+---
+
+<Layout
+  title="Pricing — Emify"
+  description="Transparent AUD pricing for Australian sustainability teams. Starter from A$499/month. Early-adopter discounts available."
+>
+  <Navbar client:load />
+  <main>
+    <PricingPage client:load />
+  </main>
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import ComparisonPage from '../../components/ComparisonPage';
+
+const data = {
+  competitor: "Persefoni",
+  badge: "Emify vs Persefoni",
+  h1: "Persefoni measures your emissions. Emify drafts your disclosures.",
+  sub: "Persefoni is a strong carbon accounting platform with good TCFD alignment. The gap for Australian companies is mandatory AASB S2 disclosure drafting, NGER automation and Safeguard Mechanism tracking — plus AU data residency.",
+  rows: [
+    { feature: "Australian data residency", emify: true, competitor: false },
+    { feature: "AASB S2 disclosure drafting (not just data)", emify: true, competitor: false },
+    { feature: "NGER annual report", emify: true, competitor: false },
+    { feature: "Safeguard Mechanism", emify: true, competitor: false },
+    { feature: "Modern Slavery Act", emify: true, competitor: false },
+    { feature: "TCFD-aligned metrics and targets", emify: true, competitor: true },
+    { feature: "Scope 1, 2 & 3 calculation", emify: true, competitor: true },
+    { feature: "Financed emissions (PCAF)", emify: true, competitor: true },
+    { feature: "Supplier engagement", emify: true, competitor: true },
+    { feature: "Audit trail", emify: true, competitor: true },
+  ],
+  emifyAdvantage: [
+    "AASB S2 structured disclosure draft — Persefoni gives you the data, not the document",
+    "NGER and Safeguard Mechanism native support",
+    "AU data residency for privacy and sovereignty compliance",
+    "Modern Slavery Act statement drafting",
+    "Eight specialised agents vs a unified calculation engine",
+  ],
+  competitorAdvantage: [
+    "Strong carbon accounting depth for complex portfolios",
+    "Well-established in US financial services and private equity",
+    "Mature PCAF financed emissions methodology",
+  ],
+  verdict: "Persefoni's strength is carbon accounting accuracy. Its gap for Australian companies is everything that comes after the number: the disclosure document, the NGER lodgement, the Safeguard headroom calculation and the audit evidence pack. If your primary need is AASB S2 compliance end-to-end, not just a carbon data platform, Emify is purpose-built for that outcome.",
+};
+---
+
+<Layout title="Emify vs Persefoni — Emify" description="AASB S2 disclosure drafting, NGER and Safeguard — what Persefoni doesn't do for Australian companies.">
+  <Navbar client:load />
+  <main><ComparisonPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

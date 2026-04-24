@@ -4,42 +4,48 @@ import { Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Free",
-    price: "$0",
-    description: "Perfect for individuals and small projects.",
-    features: ["Up to 3 projects", "5 team members", "1 GB storage", "Community support"],
-    cta: "Get started",
+    name: "Starter",
+    price: "Contact us",
+    description: "For companies taking their first steps in structured sustainability reporting.",
+    features: [
+      "Scope 1 & 2 emissions tracking",
+      "Basic supplier data collection",
+      "Regulatory update alerts",
+      "Executive summary dashboard",
+      "Email support",
+    ],
+    cta: "Request a quote",
     highlight: false,
   },
   {
-    name: "Pro",
-    price: "$19",
-    period: "/month",
-    description: "For growing teams that need more power.",
+    name: "Growth",
+    price: "Contact us",
+    description: "For companies with CSRD obligations or active ESG programmes.",
     features: [
-      "Unlimited projects",
-      "25 team members",
-      "50 GB storage",
+      "Full Scope 1, 2 & 3 computation",
+      "Supplier engagement & follow-up",
+      "CSRD / ESRS report drafting",
+      "Audit trail & audit facilitation",
+      "Risk & opportunity library",
+      "Peer benchmarking",
       "Priority support",
-      "Advanced analytics",
-      "Custom integrations",
     ],
-    cta: "Start free trial",
+    cta: "Book a demo",
     highlight: true,
   },
   {
     name: "Enterprise",
     price: "Custom",
-    description: "For large organizations with advanced needs.",
+    description: "For large organisations with complex reporting requirements or multiple entities.",
     features: [
-      "Unlimited everything",
-      "SSO & SAML",
-      "Dedicated infrastructure",
+      "Multi-entity & multi-jurisdiction",
+      "Custom workflow integrations",
+      "Dedicated onboarding",
       "SLA guarantee",
-      "Custom contracts",
+      "Custom data connectors",
       "24/7 support",
     ],
-    cta: "Contact sales",
+    cta: "Talk to sales",
     highlight: false,
   },
 ];
@@ -50,10 +56,10 @@ export default function Pricing() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4">
-            Simple, transparent pricing
+            Built for the complexity ahead
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-            Start free. Scale as you grow. No hidden fees.
+            Emify scales with your reporting obligations. Start where you are — grow as regulation demands.
           </p>
         </div>
 
@@ -64,19 +70,21 @@ export default function Pricing() {
               className={`flex flex-col ${plan.highlight ? "border-primary shadow-lg ring-2 ring-primary" : ""}`}
             >
               <CardHeader>
+                {plan.highlight && (
+                  <div className="text-xs font-semibold text-primary mb-1 uppercase tracking-wide">
+                    Most popular
+                  </div>
+                )}
                 <CardTitle className="text-xl">{plan.name}</CardTitle>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold">{plan.price}</span>
-                  {plan.period && <span className="text-muted-foreground">{plan.period}</span>}
-                </div>
+                <div className="text-2xl font-bold">{plan.price}</div>
                 <CardDescription>{plan.description}</CardDescription>
               </CardHeader>
 
               <CardContent className="flex-1">
                 <ul className="space-y-2">
                   {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm">
-                      <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <li key={feature} className="flex items-start gap-2 text-sm">
+                      <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
                       {feature}
                     </li>
                   ))}
@@ -84,16 +92,17 @@ export default function Pricing() {
               </CardContent>
 
               <CardFooter>
-                <Button
-                  className="w-full"
-                  variant={plan.highlight ? "default" : "outline"}
-                >
+                <Button className="w-full" variant={plan.highlight ? "default" : "outline"}>
                   {plan.cta}
                 </Button>
               </CardFooter>
             </Card>
           ))}
         </div>
+
+        <p className="text-center text-sm text-muted-foreground mt-8">
+          All plans include onboarding support. Pricing based on organisation size and reporting scope.
+        </p>
       </div>
     </section>
   );

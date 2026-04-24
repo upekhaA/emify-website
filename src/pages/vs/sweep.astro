@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import ComparisonPage from '../../components/ComparisonPage';
+
+const data = {
+  competitor: "Sweep",
+  badge: "Emify vs Sweep",
+  h1: "Sweep is built for European ESG. Australian compliance needs Australian infrastructure.",
+  sub: "Sweep is a European carbon management platform with strong CSRD alignment. For Australian companies, NGER, Safeguard, AASB S2 and AU data residency are non-negotiable — and Sweep's European focus means these are gaps, not roadmap items.",
+  rows: [
+    { feature: "Australian data residency", emify: true, competitor: false },
+    { feature: "AASB S2 disclosure drafting", emify: true, competitor: false },
+    { feature: "NGER annual report", emify: true, competitor: false },
+    { feature: "Safeguard Mechanism tracking", emify: true, competitor: false },
+    { feature: "Modern Slavery Act (AU)", emify: true, competitor: false },
+    { feature: "CSRD / ESRS alignment", emify: "Partial", competitor: true },
+    { feature: "Scope 1, 2 & 3", emify: true, competitor: true },
+    { feature: "Supplier engagement", emify: true, competitor: true },
+    { feature: "European CBAM", emify: false, competitor: true },
+  ],
+  emifyAdvantage: [
+    "Purpose-built for Australian regulatory obligations — not ported from Europe",
+    "AU data residency and sovereignty from day one",
+    "NGER and Safeguard automation — core product, not a workaround",
+    "AASB S2 disclosure drafting with full audit trail",
+    "Modern Slavery Act support aligned to AU legislation",
+  ],
+  competitorAdvantage: [
+    "Strong European CSRD and ESRS coverage",
+    "CBAM (Carbon Border Adjustment Mechanism) support for EU trade",
+    "European enterprise customer case studies",
+  ],
+  verdict: "If you're a European company or an Australian company with significant EU operations and CSRD obligations, Sweep is worth evaluating. If your primary obligations are Australian — NGER, AASB S2, Safeguard — Emify is the purpose-built answer. Data residency in European infrastructure is also a material concern for Australian companies with data sovereignty requirements.",
+};
+---
+
+<Layout title="Emify vs Sweep — Emify" description="NGER automation, AASB S2 and AU data residency — why Australian companies choose Emify over Sweep.">
+  <Navbar client:load />
+  <main><ComparisonPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

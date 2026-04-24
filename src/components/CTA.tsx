@@ -5,14 +5,15 @@ export default function CTA() {
     <section className="py-20 sm:py-28 bg-primary">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary-foreground mb-4">
-          Ready to transform how you work?
+          Don't recruit a sustainability coordinator. Deploy one.
         </h2>
         <p className="text-lg text-primary-foreground/80 mb-10 max-w-xl mx-auto">
-          Join thousands of teams already using Emify to work smarter. Get started in minutes.
+          Emify is ready to join your organisation — integrating with your workflows, taking on
+          the reporting burden, and keeping management in the picture from day one.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button size="lg" variant="secondary" className="px-8">
-            Start for free
+            Request early access
           </Button>
           <Button
             size="lg"

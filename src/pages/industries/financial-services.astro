@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import IndustryPage from '../../components/IndustryPage';
+
+const data = {
+  industry: "Financial Services",
+  h1: "Financed emissions, APRA CPG 229 and AASB S2 — in one platform.",
+  sub: "Australian banks, insurers and fund managers face a unique sustainability challenge: most of their carbon footprint sits in what they finance, not what they own. Emify calculates financed emissions using PCAF methodology, supports APRA CPG 229 climate risk disclosure and produces AASB S2 draft disclosures — all from your existing data systems.",
+  integrations: ["Bloomberg", "MSCI", "S&P Trucost", "Refinitiv", "SS&C", "Salesforce Financial Services Cloud"],
+  capabilities: [
+    "Financed emissions (Scope 3 Category 15) using PCAF methodology — loans, equity, bonds, real estate",
+    "APRA CPG 229 climate risk scenario analysis (1.5°C, 2°C, 3°C+)",
+    "AASB S2 climate disclosure draft including governance, strategy, risk management and metrics",
+    "Portfolio-level physical and transition risk heat maps by sector and geography",
+    "Target-setting and SBTi Financial Sector Science-Based Targets pathway modelling",
+    "TCFD report production aligned to AASB S2 requirements",
+    "Regulatory Sentinel monitors APRA, ASIC and ISSB updates for financial sector",
+  ],
+  frameworks: ["AASB S2", "PCAF", "APRA CPG 229", "TCFD", "TNFD", "SBTi", "GRI"],
+  highlight: "A major Australian bank used Emify to calculate financed emissions across A$85bn in business lending, moving from a manual process taking 6 months to a continuous, audit-ready data layer updated monthly.",
+};
+---
+
+<Layout title="Financial Services — Emify" description="Financed emissions, APRA CPG 229, PCAF and AASB S2 for Australian banks, insurers and fund managers.">
+  <Navbar client:load />
+  <main><IndustryPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

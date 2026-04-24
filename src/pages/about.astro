@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AboutPage from '../components/AboutPage';
+---
+
+<Layout
+  title="About — Emify"
+  description="We built Emify because we've seen how broken sustainability reporting is from the inside. Meet the team."
+>
+  <Navbar client:load />
+  <main>
+    <AboutPage client:load />
+  </main>
+  <Footer client:load />
+</Layout>

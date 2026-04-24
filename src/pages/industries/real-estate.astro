@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import IndustryPage from '../../components/IndustryPage';
+
+const data = {
+  industry: "Real Estate",
+  h1: "NABERS, GRESB, embodied carbon and AASB S2 — from one platform.",
+  sub: "Australian REITs, property developers and asset managers face multi-layered sustainability obligations: NABERS operational ratings, GRESB benchmarking, embodied carbon from development, and mandatory AASB S2 climate disclosures. Emify connects your property management systems and integrates NABERS data to produce a complete, auditable sustainability picture.",
+  integrations: ["MRI Software", "Yardi", "Buildium", "Procore", "NABERS Online", "GRESB Portal"],
+  capabilities: [
+    "NABERS energy and water rating integration — operational emissions by tenancy and whole-building",
+    "Tenant vs landlord Scope 1/2 boundary treatment and data collection",
+    "GRESB submission data preparation and benchmarking",
+    "Embodied carbon from development projects — EPD integration and Bill of Quantities mapping",
+    "Physical climate risk assessment by asset location (flooding, temperature, storm)",
+    "AASB S2 disclosure including asset-level transition risk under carbon pricing scenarios",
+    "Green lease clause compliance monitoring across tenancy portfolio",
+  ],
+  frameworks: ["NABERS", "GRESB", "AASB S2", "GHG Protocol", "TCFD", "GRI"],
+  highlight: "A diversified A-REIT used Emify to consolidate sustainability data across a 42-asset portfolio, producing their first GRESB submission and AASB S2 readiness assessment in one integrated workflow — saving an estimated A$180,000 in consultant fees.",
+};
+---
+
+<Layout title="Real Estate — Emify" description="NABERS, GRESB, embodied carbon and AASB S2 for Australian REITs, developers and property managers.">
+  <Navbar client:load />
+  <main><IndustryPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import CompliancePage from '../components/CompliancePage';
+
+const data = {
+  badge: "Safeguard Mechanism",
+  h1: "Stay under baseline. Stay out of the news.",
+  sub: "The reformed Safeguard Mechanism requires covered facilities to stay within declining baselines or surrender Australian Carbon Credit Units (ACCUs) and Safeguard Mechanism Credits (SMCs). Emify tracks your trajectory, models headroom and alerts you before you breach.",
+  groups: [
+    { label: "Covered facilities", when: "Ongoing", who: "Facilities emitting 100kt CO₂-e or more in a financial year" },
+    { label: "Trade-exposed", when: "Ongoing", who: "Production-variable baselines — Emify recalculates as output changes" },
+    { label: "Insolvent/dormant facilities", when: "On exit", who: "Surrender obligations on cessation — Emify calculates final position" },
+  ],
+  capabilities: [
+    "Baseline trajectory modelling against 4.9% annual decline schedule",
+    "Real-time headroom monitoring — surplus and deficit forecast",
+    "SMC and ACCU procurement sandbox with cost modelling",
+    "Production-variable baseline recalculation as output data updates",
+    "CER lodgement preparation and audit evidence",
+    "Integration with NGER reporting — no double data entry",
+    "Regulatory Sentinel monitors CER rule changes and baseline updates",
+  ],
+  cta: "Model your Safeguard headroom",
+  ctaHref: "/contact#demo",
+  demoHref: "/contact#demo",
+};
+---
+
+<Layout title="Safeguard Mechanism — Emify" description="Track baseline trajectory, model headroom and manage SMC/ACCU obligations. Stay under baseline.">
+  <Navbar client:load />
+  <main>
+    <CompliancePage data={data} client:load />
+  </main>
+  <Footer client:load />
+</Layout>

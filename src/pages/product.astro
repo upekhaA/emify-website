@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ProductAgents from '../components/product/ProductAgents';
+import ProductPlatform from '../components/product/ProductPlatform';
+import ResponsibleAI from '../components/product/ResponsibleAI';
+---
+
+<Layout
+  title="Product — Emify"
+  description="Eight specialised AI agents, a unified audit trail, and a platform built for Australian sustainability obligations."
+>
+  <Navbar client:load />
+  <main>
+    <!-- Page header -->
+    <section class="py-16 sm:py-20 gradient-hero border-b">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-foreground mb-5">
+          Eight agents. One platform.<br />
+          <span class="text-primary">Built for Australian compliance.</span>
+        </h1>
+        <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Emify isn't a dashboard. It's a team of specialised AI agents working in parallel —
+          each focused on a specific part of your sustainability obligations — unified by a single,
+          auditable data layer that your team controls.
+        </p>
+      </div>
+    </section>
+
+    <ProductAgents client:load />
+    <ProductPlatform client:load />
+    <ResponsibleAI client:load />
+  </main>
+  <Footer client:load />
+</Layout>

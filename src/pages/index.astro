@@ -1,20 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Features from '../components/Features';
-import Pricing from '../components/Pricing';
-import CTA from '../components/CTA';
+import HomeHero from '../components/home/HomeHero';
+import PainPoint from '../components/home/PainPoint';
+import AgentGrid from '../components/home/AgentGrid';
+import HowItWorks from '../components/home/HowItWorks';
+import PlatformCapabilities from '../components/home/PlatformCapabilities';
+import ROIChart from '../components/home/ROIChart';
+import ComplianceTiles from '../components/home/ComplianceTiles';
+import Testimonials from '../components/home/Testimonials';
+import PricingPeek from '../components/home/PricingPeek';
+import FinalCTA from '../components/home/FinalCTA';
 import Footer from '../components/Footer';
 ---
 
-<Layout>
+<Layout
+  title="Emify — Your AI sustainability coordinator. Eight agents. One audit trail."
+  description="Emify is an AI-powered sustainability coordinator purpose-built for Australian reporting obligations. Eight specialised agents handle AASB S2, NGER, Modern Slavery Act and Safeguard Mechanism — at a fraction of the cost of hiring."
+>
   <Navbar client:load />
   <main>
-    <Hero client:load />
-    <Features client:load />
-    <Pricing client:load />
-    <CTA client:load />
+    <HomeHero client:load />
+    <PainPoint client:load />
+    <AgentGrid client:load />
+    <HowItWorks client:load />
+    <PlatformCapabilities client:load />
+    <ROIChart client:load />
+    <ComplianceTiles client:load />
+    <Testimonials client:load />
+    <PricingPeek client:load />
+    <FinalCTA client:load />
   </main>
   <Footer client:load />
 </Layout>

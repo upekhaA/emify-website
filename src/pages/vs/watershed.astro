@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import ComparisonPage from '../../components/ComparisonPage';
+
+const data = {
+  competitor: "Watershed",
+  badge: "Emify vs Watershed",
+  h1: "Watershed is a great US carbon management platform. AASB S2 isn't US GAAP.",
+  sub: "Watershed is a well-funded, well-built emissions platform designed around US regulatory requirements. If you're an Australian company with mandatory AASB S2, NGER and Safeguard obligations, the gaps matter.",
+  rows: [
+    { feature: "Australian data residency", emify: true, competitor: false },
+    { feature: "AASB S2 / IFRS S2 disclosure drafting", emify: true, competitor: "Metrics only" },
+    { feature: "NGER annual report automation", emify: true, competitor: false },
+    { feature: "Safeguard Mechanism tracking", emify: true, competitor: false },
+    { feature: "Modern Slavery Act support", emify: true, competitor: false },
+    { feature: "NGER emission factor library", emify: true, competitor: false },
+    { feature: "Supplier engagement (AU focus)", emify: true, competitor: true },
+    { feature: "Scope 1, 2 & 3 calculation", emify: true, competitor: true },
+    { feature: "US SEC climate disclosure (proposed)", emify: false, competitor: true },
+    { feature: "US state/federal GHG programmes", emify: false, competitor: true },
+  ],
+  emifyAdvantage: [
+    "AU data residency — your data stays in Australia",
+    "AASB S2 disclosure drafting, not just data collection",
+    "NGER and Safeguard Mechanism built in — not an afterthought",
+    "Modern Slavery Act statement drafting",
+    "Built by and for Australian sustainability professionals",
+  ],
+  competitorAdvantage: [
+    "Strong US regulatory coverage (SEC, EPA)",
+    "Large US enterprise customer base and case studies",
+    "More mature product for North American operations",
+  ],
+  verdict: "Watershed is an excellent platform if your primary reporting obligations are US-centric. For Australian companies, the absence of AU data residency, AASB S2 drafting capability, NGER automation and Safeguard tracking means it solves only part of the problem — and the parts it doesn't solve are the ones where Australian companies face legal liability.",
+};
+---
+
+<Layout title="Emify vs Watershed — Emify" description="AU data residency, AASB S2 drafting, NGER and Safeguard — what Watershed doesn't cover.">
+  <Navbar client:load />
+  <main><ComparisonPage data={data} client:load /></main>
+  <Footer client:load />
+</Layout>

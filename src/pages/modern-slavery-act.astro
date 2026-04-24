@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import CompliancePage from '../components/CompliancePage';
+
+const data = {
+  badge: "Modern Slavery Act",
+  h1: "Modern Slavery Statements, drafted from your actual supply chain.",
+  sub: "The Modern Slavery Act 2018 requires Australian entities with A$100m+ annual consolidated revenue to report annually. Emify maps the seven mandatory criteria to your real procurement data, engages suppliers for evidence and produces a compliant statement draft.",
+  groups: [
+    { label: "Reporting entities", when: "Annual", who: "A$100m+ annual consolidated revenue — Australian entities or carrying on business in Australia" },
+    { label: "Voluntary reporters", when: "Annual", who: "Below threshold — encouraged by DFAT and increasingly required by customers and investors" },
+    { label: "Joint statements", when: "Annual", who: "Group structures may report jointly — Emify handles multi-entity consolidation" },
+  ],
+  capabilities: [
+    "Seven mandatory criteria mapped to supplier engagement questionnaires",
+    "Supplier Liaison agent requests and follows up all required evidence",
+    "Risk-ranking of suppliers by country, industry and commodity",
+    "Actions and effectiveness tracking from prior-year statements",
+    "Board sign-off workflow with electronic approval trail",
+    "DFAT Online Register submission preparation",
+    "Comparison to ASX peer statements for benchmarking and gap identification",
+  ],
+  cta: "Download the seven-criteria mapping template",
+  ctaHref: "/contact",
+  demoHref: "/contact#demo",
+};
+---
+
+<Layout title="Modern Slavery Act Compliance — Emify" description="Modern Slavery Statements drafted from your actual supply chain. Seven criteria, supplier engagement, board sign-off.">
+  <Navbar client:load />
+  <main>
+    <CompliancePage data={data} client:load />
+  </main>
+  <Footer client:load />
+</Layout>
