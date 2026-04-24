@@ -1,7 +1,6 @@
 {
   "name": "emify-website",
   "compatibility_date": "2025-01-01",
-  "pages_build_output_dir": "./dist",
   "kv_namespaces": [
     {
       // Run: wrangler kv namespace create EMIFY_AB_EVENTS

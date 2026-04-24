@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node -e \"const fs=require('fs'),p='dist/server/wrangler.json',c=JSON.parse(fs.readFileSync(p));delete c.pages_build_output_dir;fs.writeFileSync(p,JSON.stringify(c,null,2))\"",
+    "deploy": "npm run build && wrangler deploy --config dist/server/wrangler.json",
     "preview": "astro preview",
     "astro": "astro"
   },
