@@ -1,0 +1,36 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar';
+import Footer from '../../../components/Footer';
+import SupplierTypePage from '../../../components/SupplierTypePage';
+import supplierTypes from '../../../../data/supplier-types.json';
+
+export async function getStaticPaths() {
+  return Object.values(supplierTypes).map((supplier: any) => ({
+    params: { supplierType: supplier.slug },
+    props: { supplier },
+  }));
+}
+
+const { supplier } = Astro.props;
+
+const faqSchema = supplier.faqs && supplier.faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: supplier.faqs.map((f: any) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+} : undefined;
+---
+
+<Layout
+  title={`${supplier.name} — Outsourced sustainability reporting from $500/month | Emify`}
+  description={supplier.sub.slice(0, 160)}
+  structuredData={faqSchema}
+>
+  <Navbar client:load />
+  <main><SupplierTypePage data={supplier} client:load /></main>
+  <Footer client:load />
+</Layout>

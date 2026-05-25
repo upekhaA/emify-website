@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import buyers from '../../../data/buyers.json';
+
+const list = Object.values(buyers) as any[];
+const groups = list.reduce((acc: Record<string, any[]>, b: any) => {
+  acc[b.category] = acc[b.category] || [];
+  acc[b.category].push(b);
+  return acc;
+}, {});
+
+const categoryLabels: Record<string, string> = {
+  retail: 'Retail',
+  mining: 'Mining & Resources',
+  construction: 'Construction',
+  'financial-services': 'Financial Services',
+  government: 'Government & Defence',
+  healthcare: 'Healthcare',
+  'real-estate': 'Real Estate',
+};
+---
+
+<Layout
+  title="Major Australian buyers asking for supplier sustainability data | Emify"
+  description="Browse the major Australian buyers — Coles, Woolworths, BHP, Lendlease, NSW Health, Department of Defence and more — whose sustainability data requests we respond to on your behalf."
+>
+  <Navbar client:load />
+  <main>
+    <section class="py-16 sm:py-24 gradient-hero border-b">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6">
+        <div class="inline-flex items-center rounded-full bg-primary/10 border border-primary/20 px-3 py-1 text-xs font-semibold text-primary mb-6">
+          Buyer profiles
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-bold text-foreground mb-6 max-w-3xl text-balance">
+          Which large buyer is asking you for sustainability data?
+        </h1>
+        <p class="text-lg text-muted-foreground max-w-2xl mb-8">
+          Browse the major Australian buyers whose supplier sustainability requirements Emify handles. Pick yours to see what they ask for, where they collect data and how we respond on your behalf.
+        </p>
+      </div>
+    </section>
+
+    {Object.entries(groups).map(([category, items]) => (
+      <section class="py-12 sm:py-16 border-b" data-ab-section>
+        <div class="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 class="text-2xl font-bold text-foreground mb-6">{categoryLabels[category] ?? category}</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {(items as any[]).map((b: any) => (
+              <a
+                href={`/buyers/${b.slug}`}
+                class="group rounded-xl border bg-card p-5 hover:border-primary/40 hover:shadow-sm transition"
+              >
+                <h3 class="text-base font-bold text-foreground mb-2 group-hover:text-primary transition">{b.name}</h3>
+                <p class="text-xs text-muted-foreground line-clamp-2">{b.programmeName}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+  </main>
+  <Footer client:load />
+</Layout>

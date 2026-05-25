@@ -1,0 +1,82 @@
+{
+  "nsw": {
+    "slug": "nsw",
+    "code": "NSW",
+    "name": "New South Wales",
+    "epaName": "NSW Environment Protection Authority (EPA)",
+    "procurementFramework": "NSW Government Resource Efficiency Policy (GREP) and Procurement Board Direction PBD-2022-04 (Sustainable Procurement)",
+    "industryMix": "Largest state economy with broad industry mix: financial services, professional services, retail, agriculture (Riverina, Murray, New England), construction, manufacturing, tourism. Hunter Valley coal and wine; Western Sydney logistics and light manufacturing.",
+    "keyRegulators": ["NSW EPA", "Resilience NSW", "NSW Department of Planning, Industry and Environment"],
+    "supplierContext": "NSW Government procurement now embeds sustainability outcomes in all contracts over A$7.5m, with the Premier's Sustainability Procurement Strategy requiring disclosure of emissions, modern slavery and circular economy data."
+  },
+  "vic": {
+    "slug": "vic",
+    "code": "VIC",
+    "name": "Victoria",
+    "epaName": "Victorian Environment Protection Authority (EPA Victoria)",
+    "procurementFramework": "Victorian Government Purchasing Board policies including the Social Procurement Framework and Climate Change Act 2017 disclosure obligations",
+    "industryMix": "Manufacturing centre (especially food processing, automotive supply chain, advanced manufacturing); agriculture in Goulburn Valley, Mallee and Gippsland; financial services in Melbourne; tourism and education.",
+    "keyRegulators": ["EPA Victoria", "Department of Energy, Environment and Climate Action (DEECA)", "Sustainability Victoria"],
+    "supplierContext": "Victoria's Climate Change Act 2017 creates statutory emissions reduction targets that flow through into government procurement requirements. Local councils increasingly require Modern Slavery and emissions data in tenders."
+  },
+  "qld": {
+    "slug": "qld",
+    "code": "QLD",
+    "name": "Queensland",
+    "epaName": "Queensland Department of Environment, Science and Innovation (DESI)",
+    "procurementFramework": "Queensland Procurement Policy with ethical supplier mandate and the Queensland Climate Action Plan 2030",
+    "industryMix": "Resources (coal in Bowen Basin, LNG, bauxite); agriculture (cane, beef, grains, horticulture in Darling Downs and Wide Bay); tourism (SEQ, Whitsundays, Cairns); construction; defence (Townsville, Toowoomba).",
+    "keyRegulators": ["Queensland DESI", "Queensland Treasury (procurement)", "Queensland Reconstruction Authority"],
+    "supplierContext": "Queensland's Climate Action Plan 2030 commits the state government to net-zero by 2050 with embedded supplier requirements. Coal-region supply chains face cascading Scope 3 requests from majors like BHP and Glencore."
+  },
+  "wa": {
+    "slug": "wa",
+    "code": "WA",
+    "name": "Western Australia",
+    "epaName": "Western Australian Environmental Protection Authority (EPA WA)",
+    "procurementFramework": "WA Procurement Reform with Aboriginal Procurement Policy and growing sustainability reporting expectations",
+    "industryMix": "Resources dominate: iron ore (Pilbara), gold (Kalgoorlie-Goldfields), LNG, lithium, alumina, nickel. Agriculture in Wheatbelt and South West. Construction servicing resource projects.",
+    "keyRegulators": ["EPA WA", "Department of Water and Environmental Regulation (DWER)", "Department of Mines, Industry Regulation and Safety"],
+    "supplierContext": "WA's major resource companies (BHP, Rio Tinto, Fortescue, Woodside) drive the most intense Scope 3 supplier data requests of any state — equipment, fuel, logistics and professional service suppliers face routine sustainability audits."
+  },
+  "sa": {
+    "slug": "sa",
+    "code": "SA",
+    "name": "South Australia",
+    "epaName": "Environment Protection Authority South Australia (EPA SA)",
+    "procurementFramework": "South Australian Industry Participation Policy with sustainable procurement guidelines",
+    "industryMix": "Wine (Barossa, McLaren Vale, Clare, Coonawarra); food processing; defence manufacturing (shipbuilding, advanced manufacturing); agriculture (cereals, livestock); renewable energy generation.",
+    "keyRegulators": ["EPA SA", "Department for Environment and Water", "Green Industries SA"],
+    "supplierContext": "SA's renewable energy leadership and defence procurement programmes drive supplier data requirements. Wine and food exporters face EU-side requests linked to CBAM and Farm-to-Fork strategy."
+  },
+  "tas": {
+    "slug": "tas",
+    "code": "TAS",
+    "name": "Tasmania",
+    "epaName": "Environment Protection Authority Tasmania (EPA Tasmania)",
+    "procurementFramework": "Tasmanian Government Buy Local Policy with growing environmental disclosure requirements",
+    "industryMix": "Aquaculture (salmon especially); cool-climate horticulture and dairy; wine; forestry; tourism; renewable hydropower-based industry.",
+    "keyRegulators": ["EPA Tasmania", "Department of Natural Resources and Environment", "Sustainable Timber Tasmania"],
+    "supplierContext": "Tasmania's renewable energy base and clean-product positioning create export market demand for credible emissions data — particularly for seafood, dairy and wine destined for Asia and Europe."
+  },
+  "nt": {
+    "slug": "nt",
+    "code": "NT",
+    "name": "Northern Territory",
+    "epaName": "Northern Territory Environment Protection Authority (NT EPA)",
+    "procurementFramework": "Northern Territory Procurement Rules with Aboriginal Procurement Policy and emerging sustainability requirements",
+    "industryMix": "Mining (manganese, bauxite); gas (Bayu-Undan, Ichthys); cattle pastoral; horticulture (mangoes, melons); fishing; defence and government services.",
+    "keyRegulators": ["NT EPA", "Department of Environment, Parks and Water Security", "Department of Industry, Tourism and Trade"],
+    "supplierContext": "NT pastoral and aquaculture exports increasingly require buyer-side emissions data. Major resource projects (Ichthys, Mount Isa-Cloncurry) cascade Scope 3 data requests to NT-based logistics, accommodation and equipment suppliers."
+  },
+  "act": {
+    "slug": "act",
+    "code": "ACT",
+    "name": "Australian Capital Territory",
+    "epaName": "ACT Environment Protection Authority",
+    "procurementFramework": "ACT Government Procurement Policy and ACT Climate Strategy 2019–2025 supplier requirements",
+    "industryMix": "Predominantly federal government and services; growing professional services, IT and university sector. ACT operates on 100% renewable electricity.",
+    "keyRegulators": ["ACT Environment Protection Authority", "ACT Government Procurement", "Environment, Planning and Sustainable Development Directorate"],
+    "supplierContext": "Federal government procurement (concentrated in Canberra) embeds Modern Slavery and increasingly emissions requirements across all categories. Service providers to ACT and federal agencies face the most procurement-driven sustainability scrutiny in the country."
+  }
+}

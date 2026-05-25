@@ -1,0 +1,78 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Navbar from '../../../../components/Navbar';
+import Footer from '../../../../components/Footer';
+import LocationPage from '../../../../components/LocationPage';
+import states from '../../../../../data/australian-states.json';
+import regions from '../../../../../data/australian-regions.json';
+import suburbs from '../../../../../data/australian-suburbs.json';
+import supplierTypes from '../../../../../data/supplier-types.json';
+import combos from '../../../../../data/supplier-region-combos.json';
+
+export async function getStaticPaths() {
+  const titleCase = (slug: string) =>
+    slug.split('-').map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+
+  return Object.entries(suburbs).map(([suburbSlug, info]: [string, any]) => {
+    const stateSlug = info.state.toLowerCase();
+    const state = (states as any)[stateSlug];
+    const region = (regions as any[]).find(
+      (r) => r.state === stateSlug && r.name === info.region
+    );
+    if (!state || !region) return null;
+
+    const siblingSuburbs = Object.entries(suburbs)
+      .filter(([_, i]: [string, any]) => i.state.toLowerCase() === stateSlug && i.region === info.region)
+      .map(([slug, _]: [string, any]) => ({
+        slug,
+        name: titleCase(slug),
+      }));
+
+    const matchingCombos = (combos as any[])
+      .filter((c) => c.regionState === stateSlug && c.regionSlug === region.slug)
+      .map((c) => {
+        const sup = (supplierTypes as any)[c.supplierType];
+        return sup ? {
+          supplierType: c.supplierType,
+          supplierTypeName: sup.name,
+          href: `/for-suppliers/${c.supplierType}/${c.regionSlug}`,
+        } : null;
+      })
+      .filter(Boolean);
+
+    return {
+      params: { state: stateSlug, region: region.slug, suburb: suburbSlug },
+      props: {
+        state,
+        region,
+        suburbSlug,
+        suburbName: titleCase(suburbSlug),
+        siblingSuburbs,
+        matchingCombos,
+      },
+    };
+  }).filter(Boolean) as any;
+}
+
+const { state, region, suburbSlug, suburbName, siblingSuburbs, matchingCombos } = Astro.props;
+---
+
+<Layout
+  title={`Sustainability reporting in ${suburbName}, ${state.code} — Emify`}
+  description={`Outsourced sustainability reporting for businesses in ${suburbName}, ${region.name}, ${state.name}. ${region.industryNote.slice(0, 100)}`}
+>
+  <Navbar client:load />
+  <main>
+    <LocationPage
+      level="suburb"
+      state={state}
+      region={region}
+      suburbSlug={suburbSlug}
+      suburbName={suburbName}
+      siblingSuburbs={siblingSuburbs}
+      matchingCombos={matchingCombos}
+      client:load
+    />
+  </main>
+  <Footer client:load />
+</Layout>

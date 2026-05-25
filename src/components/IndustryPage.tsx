@@ -1,25 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import FAQSection, { type Faq } from "@/components/FAQSection";
 
 interface IndustryData {
-  industry: string;
+  slug?: string;
+  name: string;
   h1: string;
   sub: string;
   integrations: string[];
   capabilities: string[];
   frameworks: string[];
   highlight: string;
+  largeBuyers?: string[];
+  supplierPressure?: string;
+  faqs?: Faq[];
 }
 
 export default function IndustryPage({ data }: { data: IndustryData }) {
-  const { industry, h1, sub, integrations, capabilities, frameworks, highlight } = data;
+  const { name, h1, sub, integrations, capabilities, frameworks, highlight, largeBuyers, supplierPressure, faqs } = data;
 
   return (
     <div>
       <section className="py-16 sm:py-24 gradient-hero border-b">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="inline-flex items-center rounded-full bg-primary/10 border border-primary/20 px-3 py-1 text-xs font-semibold text-primary mb-6">
-            {industry}
+            {name}
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 max-w-3xl">{h1}</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mb-8">{sub}</p>
@@ -34,7 +39,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2 space-y-10">
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-5">What Emify does for {industry}</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-5">What Emify does for {name}</h2>
               <ul className="space-y-3">
                 {capabilities.map((cap) => (
                   <li key={cap} className="flex items-start gap-3">
@@ -74,7 +79,7 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
             <div className="rounded-xl border bg-card p-5">
               <div className="text-sm font-semibold text-foreground mb-2">Talk to an industry specialist</div>
               <p className="text-xs text-muted-foreground mb-3">
-                Our team includes sustainability professionals with direct experience in {industry.toLowerCase()}.
+                Our team includes sustainability professionals with direct experience in {name.toLowerCase()}.
               </p>
               <Button size="sm" className="w-full" asChild>
                 <a href="/contact#demo">Book a call</a>
@@ -83,6 +88,46 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
           </div>
         </div>
       </section>
+
+      {(supplierPressure || (largeBuyers && largeBuyers.length > 0)) && (
+        <section className="py-16 sm:py-24 border-t bg-muted/30">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <h2 className="text-2xl font-bold text-foreground mb-3">Supply this sector?</h2>
+            <p className="text-base text-muted-foreground mb-8 max-w-2xl">
+              If your business supplies products or services to {name.toLowerCase()} buyers in Australia, you may have already been asked for sustainability data.
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {supplierPressure && (
+                <div className="rounded-xl border bg-card p-6">
+                  <h3 className="text-base font-bold text-foreground mb-3">What's happening in the supply chain</h3>
+                  <p className="text-sm text-foreground">{supplierPressure}</p>
+                </div>
+              )}
+              {largeBuyers && largeBuyers.length > 0 && (
+                <div className="rounded-xl border bg-card p-6">
+                  <h3 className="text-base font-bold text-foreground mb-3">Major buyers in this sector</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {largeBuyers.map((b) => (
+                      <span key={b} className="rounded-full border bg-background px-3 py-1 text-xs font-medium text-foreground">
+                        {b}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="mt-8">
+              <Button size="lg" asChild>
+                <a href="/for-suppliers">See how Emify helps suppliers</a>
+              </Button>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {faqs && faqs.length > 0 && (
+        <FAQSection title={`${name} sustainability reporting — common questions`} faqs={faqs} />
+      )}
     </div>
   );
 }

@@ -21,6 +21,24 @@ const navGroups = [
       { label: "Agriculture", href: "/industries/agriculture", desc: "NGER Ag, MLA, ACCUs" },
       { label: "Real Estate", href: "/industries/real-estate", desc: "NABERS, GRESB" },
       { label: "Construction", href: "/industries/construction", desc: "EPDs, ISC ratings" },
+      { label: "Retail", href: "/industries/retail", desc: "Scope 3 across thousands of suppliers" },
+      { label: "Manufacturing", href: "/industries/manufacturing", desc: "Product carbon, CBAM" },
+      { label: "Healthcare", href: "/industries/healthcare", desc: "Hospital & aged care" },
+      { label: "Government & Public Sector", href: "/industries/government", desc: "Procurement-driven reporting" },
+    ],
+  },
+  {
+    label: "For Suppliers",
+    items: [
+      { label: "Browse all supplier types", href: "/for-suppliers", desc: "Pick your situation" },
+      { label: "Browse by buyer", href: "/buyers", desc: "Coles, BHP, Lendlease, NSW Health…" },
+      { label: "Farmers & Primary Producers", href: "/for-suppliers/farmer", desc: "Cattle, grain, dairy, horticulture" },
+      { label: "Food & Beverage Producers", href: "/for-suppliers/food-producer", desc: "Retailer Scope 3 responses" },
+      { label: "Logistics & Transport", href: "/for-suppliers/logistics-provider", desc: "Per-shipment emissions" },
+      { label: "Cleaning & Facility Services", href: "/for-suppliers/cleaning-services", desc: "Property contracts" },
+      { label: "IT Services & Software", href: "/for-suppliers/it-services", desc: "Vendor questionnaires" },
+      { label: "Construction Subcontractors", href: "/for-suppliers/construction-subcontractor", desc: "EPDs & ISC data" },
+      { label: "Get started — fixed monthly fee", href: "/for-suppliers/signup", desc: "Sign up in 2 minutes" },
     ],
   },
   {
@@ -84,9 +102,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">e</span>
-          </div>
+          <img src="/emify-mark.png" alt="Emify" className="h-9 w-9" width="36" height="36" />
           <span className="text-xl font-bold tracking-tight">emify</span>
         </a>
 
@@ -134,6 +150,8 @@ export default function Navbar() {
         <div className="lg:hidden border-t bg-background px-4 py-4 space-y-1">
           {[
             { label: "Product", href: "/product" },
+            { label: "For Suppliers", href: "/for-suppliers" },
+            { label: "Locations", href: "/locations" },
             { label: "Pricing", href: "/pricing" },
             { label: "About", href: "/about" },
             { label: "Resources", href: "/resources" },

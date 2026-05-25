@@ -1,0 +1,33 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar';
+import Footer from '../../../components/Footer';
+import LocationPage from '../../../components/LocationPage';
+import states from '../../../../data/australian-states.json';
+import regions from '../../../../data/australian-regions.json';
+
+export async function getStaticPaths() {
+  return Object.values(states).map((state: any) => {
+    const stateRegions = (regions as any[])
+      .filter((r) => r.state === state.slug)
+      .map((r) => ({ slug: r.slug, name: r.name }));
+    return {
+      params: { state: state.slug },
+      props: { state, siblingRegions: stateRegions },
+    };
+  });
+}
+
+const { state, siblingRegions } = Astro.props;
+---
+
+<Layout
+  title={`Sustainability reporting in ${state.name} — Emify`}
+  description={`Outsourced sustainability reporting for businesses in ${state.name}. Local regulatory context (${state.epaName}) and procurement framework.`}
+>
+  <Navbar client:load />
+  <main>
+    <LocationPage level="state" state={state} siblingRegions={siblingRegions} client:load />
+  </main>
+  <Footer client:load />
+</Layout>

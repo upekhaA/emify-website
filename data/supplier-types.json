@@ -1,0 +1,469 @@
+{
+  "farmer": {
+    "slug": "farmer",
+    "name": "Farmers & Primary Producers",
+    "h1": "Your buyers are asking for emissions data. We handle the whole response.",
+    "sub": "If you supply cattle, sheep, grain, dairy, horticulture or any primary produce to a major processor, retailer or exporter, you've probably had a request for Scope 3 emissions data. Some are short questionnaires; some are detailed audits. Either way, you don't need to learn AASB S2, NGER methods or MLA factors to respond well. We take the request, gather what's needed from your farm records and reply on your behalf — every time it's asked.",
+    "typicalBuyers": ["Retail (Coles, Woolworths, IGA)", "Meat processors (JBS, Teys, Fletcher)", "Dairy processors (Fonterra, Saputo, Bega)", "Grain handlers (GrainCorp, CBH, Cargill)", "Exporters and aggregators"],
+    "dataAsked": [
+      "Enteric methane emissions per head (cattle, sheep, dairy)",
+      "Fuel and fertiliser use across the operation",
+      "Land use and land-use change (clearing, plantings, regeneration)",
+      "Soil carbon and vegetation sequestration claims (ACCU eligibility)",
+      "Pasture and feed inputs by type and source",
+      "Energy use (grid, on-farm solar, diesel generators)"
+    ],
+    "emifyServices": [
+      "We receive your buyer's questionnaire directly — you forward the email",
+      "We pull data from your existing farm management system (AgriWebb, Agworld, Figured, Xero)",
+      "We apply MLA-approved emission factors and NGER agricultural methods",
+      "We complete the response, route it to you for approval, then submit",
+      "We keep an evidence pack ready for any audit your buyer requests",
+      "We surface any ACCU revenue opportunities we spot in your data"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Do I have to do sustainability reporting if I'm just a farmer?", "answer": "Not yourself, no — but your large buyers (processors, retailers, exporters) increasingly require it as a condition of supply. We respond to their requests for you so you stay on their supplier list without learning AASB S2, NGER methods or MLA factor science." },
+      { "question": "What if my buyer asks for data I don't currently have?", "answer": "We work with you on a one-page data-capture plan that adds tiny adjustments to your existing record-keeping (often in your farm management software). Most farms only need to track 3 or 4 additional data points once a year." },
+      { "question": "Will I have to give Emify access to my financial systems?", "answer": "We need read-only access to whatever farm management or accounting system holds your fuel, fertiliser, livestock and land data. We never push changes. Connections are revocable at any time." },
+      { "question": "How quickly do you respond to a buyer questionnaire?", "answer": "Five business days for the first response, two business days for routine repeat questionnaires. Urgent buyer deadlines (under 5 days) are handled the same day at no extra cost." },
+      { "question": "What if I'm too small to be ASX-listed — do I still need this?", "answer": "Probably not for your own AASB S2 obligations until at least FY27. But your large buyers already have AASB S2 obligations, and they need supplier data to populate their Scope 3 disclosures. That pressure is now, not in 2027." }
+    ]
+  },
+  "food-producer": {
+    "slug": "food-producer",
+    "name": "Food & Beverage Producers",
+    "h1": "Retailers want product-level emissions. We produce the data and the reply.",
+    "sub": "If you supply branded or private-label food and beverage to Coles, Woolworths, IGA, Aldi or a major foodservice distributor, you're being asked for product carbon footprints, packaging recycled content and end-of-life data. Most small and mid-sized producers don't have an in-house sustainability team. We do the modelling, populate the supplier portal and respond to the buyer.",
+    "typicalBuyers": ["Coles, Woolworths, IGA, Aldi", "Bunnings, Kmart, Target (for grocery and household)", "Hospitality groups (Accor, Marriott, Crown)", "Distributors (PFD, Bidfood, Countrywide)", "Export buyers (especially EU markets under CBAM)"],
+    "dataAsked": [
+      "Product-level cradle-to-gate carbon footprint (kg CO2e per unit)",
+      "Packaging composition, recycled content and APCO targets compliance",
+      "Ingredient origin and Scope 3 from upstream suppliers",
+      "Energy and water use at production facilities",
+      "Refrigerant types and leak rates",
+      "Distribution emissions (Scope 3 Category 4)"
+    ],
+    "emifyServices": [
+      "We receive the buyer's data request and decode what's needed",
+      "We integrate with your ERP or accounting system to pull production data",
+      "We apply ISO 14067-aligned product carbon footprint methodology",
+      "We respond through Coles' Sustainability Programme, Woolworths' Supplier Portal, Aldi's CR Programme or whatever portal your buyer uses",
+      "We maintain an audit-ready evidence trail for retailer verification",
+      "We flag risks (e.g. categories at risk of delisting) before they bite"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Coles, Woolworths and Aldi all ask different things. Do you handle all of them?", "answer": "Yes. We maintain templates for the major retailer sustainability programmes (Coles' Together to Zero, Woolworths' Responsible Sourcing Programme, Aldi's CR Supplier Programme, Metcash's Supplier Code, Bunnings' Responsible Sourcing) and respond per-buyer using the right format every time." },
+      { "question": "What if a buyer asks for a product carbon footprint I've never calculated?", "answer": "We do the calculation. We connect to your production and procurement data, apply ISO 14067 cradle-to-gate methodology, and produce a defensible product-level emissions figure with traceable evidence." },
+      { "question": "Does $500/month include all the supplier portals my buyers use?", "answer": "Yes. We answer through Coles Supplier Portal, Woolworths SAP Ariba, Sedex SMETA, EcoVadis, CDP and any custom portals your buyers use. No per-portal charges." },
+      { "question": "What happens if I get delisted because of a sustainability gap?", "answer": "Our first job is preventing that — most delistings happen because of non-response, not bad data. We respond to every questionnaire, every audit, every time. If a buyer flags a substantive gap, we work with you to close it." },
+      { "question": "Do I need to redo this every time a retailer changes their programme?", "answer": "No — that's our job. We track programme changes (e.g. Coles' move toward more granular Scope 3) and update your responses accordingly. You don't have to read retailer ESG strategy documents to stay compliant." }
+    ]
+  },
+  "packaging-supplier": {
+    "slug": "packaging-supplier",
+    "name": "Packaging Suppliers",
+    "h1": "APCO targets, recycled content and Scope 3 packaging emissions — handled.",
+    "sub": "Australia's Packaging Covenant Organisation (APCO) 2025 targets — and the cascading retailer and brand-owner demands — have made packaging suppliers the focus of growing data requests. Whether you supply paper, plastic, glass, metal or composite packaging, your customers need emissions, recycled content and recyclability data. We respond on your behalf.",
+    "typicalBuyers": ["Food and beverage manufacturers", "Retailers (private-label packaging)", "Pharmaceutical and consumer goods companies", "Logistics providers (transit packaging)", "Hospitality and foodservice groups"],
+    "dataAsked": [
+      "Recycled content percentage by material and SKU",
+      "Embodied carbon per unit of packaging produced",
+      "Recyclability classification under APCO PREP tool",
+      "Substrate origin and certifications (FSC, PEFC, AS 5810)",
+      "End-of-life recovery rates and post-consumer pathways",
+      "Substitution roadmap toward 2025 APCO targets"
+    ],
+    "emifyServices": [
+      "We respond to APCO Annual Reporting and Action Plan submissions",
+      "We populate customer-specific packaging data portals",
+      "We model embodied carbon for each SKU using ISO 14067 methodology",
+      "We track recycled content claims with chain-of-custody evidence",
+      "We coordinate PREP tool assessments for new product specs",
+      "We monitor regulatory changes (e.g. plastic bans, CDS rollouts)"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "What's the difference between an APCO report and a customer-specific packaging report?", "answer": "APCO is your annual obligation as a packaging signatory — recycled content, recyclability, action plan progress. Customer-specific reports (Coles, Woolworths) want product-level packaging emissions and substitution roadmaps that ladder up to their own targets. We do both from the same data." },
+      { "question": "Can you handle PREP tool assessments for new product specs?", "answer": "Yes. We coordinate PREP assessments with the APCO PREP team for every new SKU spec, maintain the evidence and report the classification to your retail customers." },
+      { "question": "How do you verify my recycled content claims?", "answer": "We collect chain-of-custody evidence from your substrate suppliers (FSC, PEFC for paper; ISCC Plus for chemical recycling; mass-balance certificates for recycled plastics) and keep an audit-ready trail. Claims are only made when evidence supports them." },
+      { "question": "I'm exporting to the EU — do I need different data for CBAM?", "answer": "If you supply packaging that contains CBAM-listed materials (steel, aluminium, cement, fertiliser-derived) into the EU, then yes. We handle the EU CBAM declaration alongside your domestic obligations." }
+    ]
+  },
+  "logistics-provider": {
+    "slug": "logistics-provider",
+    "name": "Logistics & Transport Providers",
+    "h1": "Per-shipment emissions for every customer. Without standing up a new system.",
+    "sub": "Major retailers, manufacturers and miners now request Scope 3 Category 4 (upstream transportation) data from their carriers as a condition of contract. If you're a road freight operator, owner-driver, 3PL, or rail/coastal-sea carrier, your customers want kg CO2e per shipment, per pallet or per tonne-km. We connect to your TMS or telematics and produce the reports.",
+    "typicalBuyers": ["Major retailers and consumer brands", "Manufacturers (Scope 3 Category 4 reporting)", "Mining and resources companies", "Government agencies (Defence, Australia Post)", "Aggregators (Toll, Linfox subcontracting)"],
+    "dataAsked": [
+      "Carbon per shipment, per pallet, per tonne-km",
+      "Fuel type breakdown (diesel, biodiesel, electric, LNG)",
+      "Empty running and load factor by route",
+      "Modal mix (road vs rail vs sea) for multi-modal shipments",
+      "Customer-specific monthly or quarterly emissions reports",
+      "Fleet age and EV/low-emission vehicle transition plan"
+    ],
+    "emifyServices": [
+      "We integrate with your TMS (Microlise, MercuryGate, Manhattan) or telematics (Geotab, Teletrac, MTData)",
+      "We apply the GLEC Framework and ISO 14083 — the standards your customers use",
+      "We produce monthly per-customer emissions reports automatically",
+      "We respond to customer-specific portals and questionnaires",
+      "We track NGER threshold exposure if your fleet is approaching it",
+      "We help you tell a credible electrification story for tender responses"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "What's the GLEC Framework and do I have to use it?", "answer": "The GLEC Framework is the global standard for freight emissions accounting. Major shippers (retailers, manufacturers, miners) increasingly require GLEC- or ISO 14083-aligned data because that's what their own auditors accept. We produce it from your TMS or telematics." },
+      { "question": "Can you produce per-customer monthly emissions reports automatically?", "answer": "Yes — that's the core service. We connect to your TMS, telematics or fuel card system, calculate per-shipment emissions, and produce monthly per-customer reports (kg CO2e per shipment, per pallet, per tonne-km). Reports go directly to your customer's portal or as a PDF." },
+      { "question": "I'm a subcontractor to Toll/Linfox — do they need this too?", "answer": "Yes — increasingly. Large 3PLs cascade their own Scope 3 obligations to subcontracted carriers. If you can't provide per-shipment data, you risk being squeezed out of the load board." },
+      { "question": "Do I need this if my fleet is under the NGER threshold?", "answer": "Probably not for your own NGER obligations. But your customers' Scope 3 reporting needs the data regardless of whether you trigger NGER yourself. Most carriers we work with are well under the NGER threshold." }
+    ]
+  },
+  "cleaning-services": {
+    "slug": "cleaning-services",
+    "name": "Cleaning & Facility Services",
+    "h1": "Sustainability data for every property contract. Without a sustainability team.",
+    "sub": "Commercial cleaning contractors supplying offices, hospitals, schools, hotels, retail centres and government buildings now face routine sustainability data requests as part of contract onboarding and renewal. Chemical composition, waste streams, water use, scope 1/2 from cleaning equipment — your customers need the data. We handle every request, every contract.",
+    "typicalBuyers": ["REITs and property managers (Lendlease, GPT, Mirvac, Dexus)", "Hospitals and aged care providers", "Universities, TAFEs and large school groups", "Government agencies and councils", "Hotel groups and shopping centres"],
+    "dataAsked": [
+      "Chemical use by SKU including environmental ratings (GECA, Good Environmental Choice)",
+      "Water use intensity by site",
+      "Waste stream segregation rates by site",
+      "Scope 1/2 emissions from equipment and vehicles",
+      "Microfibre, hot-water-only and chemical-free service options",
+      "Worker conditions and modern slavery declarations"
+    ],
+    "emifyServices": [
+      "We respond to property manager and government tender sustainability schedules",
+      "We track GECA, Good Environmental Choice and equivalent product certifications",
+      "We coordinate Modern Slavery Act statement preparation",
+      "We provide per-contract monthly emissions and waste reports",
+      "We integrate with your scheduling and chemical procurement systems",
+      "We keep an audit trail ready for property certification (NABERS, Green Star)"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Property managers ask for NABERS supplier data. What's that?", "answer": "NABERS (National Australian Built Environment Rating System) ratings for buildings need supplier evidence on utility consumption, chemical use, waste streams and water. We coordinate the data flow so your customer's NABERS rating is supported." },
+      { "question": "Do I need GECA-certified chemicals to win these contracts?", "answer": "Increasingly yes for healthcare, government and REIT contracts. We help you map your current chemicals to GECA, Good Environmental Choice and equivalent recognised schemes, and flag substitution paths for non-certified items." },
+      { "question": "Each property manager asks different questions. Do you handle all of them?", "answer": "Yes — Lendlease, Mirvac, Dexus, GPT, Stockland, Charter Hall, Goodman all have slightly different supplier sustainability requirements. We maintain templates for each and respond using the correct format every time." },
+      { "question": "What about Modern Slavery Act statements?", "answer": "If your turnover is above A$100m you're required to produce an annual statement. We prepare it for you using your supplier and workforce data, and submit through the federal register." }
+    ]
+  },
+  "it-services": {
+    "slug": "it-services",
+    "name": "IT Services & Software Suppliers",
+    "h1": "Vendor sustainability questionnaires, every time, answered cleanly.",
+    "sub": "If you sell software, managed IT services, hardware, telco or cloud to government, banks, large enterprises or universities, you're now answering 5–20 detailed sustainability questionnaires per quarter. Each is slightly different. Each takes hours. We answer them — accurately, consistently and on time.",
+    "typicalBuyers": ["Federal and state government (AusTender, VendorPanel)", "Major banks and financial services", "Universities and large school systems", "Healthcare networks", "ASX-listed companies of all sizes"],
+    "dataAsked": [
+      "Scope 1/2/3 emissions inventory",
+      "Cloud and data centre energy mix and PUE",
+      "Hardware lifecycle and end-of-life e-waste handling",
+      "Modern Slavery Act statement (if turnover > A$100m)",
+      "Diversity, gender pay gap, Indigenous procurement",
+      "Information security and data sovereignty for sustainability data"
+    ],
+    "emifyServices": [
+      "We respond to AusTender, VendorPanel and state government portals",
+      "We maintain a structured emissions inventory updated quarterly",
+      "We prepare Modern Slavery Act statements if you qualify",
+      "We pull cloud emissions data from AWS, Azure, GCP carbon footprint tools",
+      "We track e-waste compliance via your asset management system",
+      "We answer customer-specific questionnaires (CDP, EcoVadis, NQC, supplier portals)"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Government tenders ask for emissions data. How do I get it?", "answer": "For federal tenders (AusTender) and state portals (VendorPanel, eTendering NSW, QTenders), the answer needs to be a structured Scope 1/2/3 inventory plus a Modern Slavery declaration. We produce both annually and maintain them for every tender response." },
+      { "question": "I sell cloud services. How do I report cloud emissions?", "answer": "AWS, Microsoft Azure and Google Cloud all publish customer-specific carbon footprint tools. We pull your account's data quarterly, allocate by customer where applicable, and roll it into your Scope 3 inventory." },
+      { "question": "Do my e-waste recycling certificates count toward my customers' Scope 3?", "answer": "Yes — your hardware disposal practices and e-waste recovery rates directly affect your customer's Scope 3 Category 5 (waste). We track this via your asset management system and report it to customers." },
+      { "question": "EcoVadis, CDP, NQC — do you handle all of them?", "answer": "Yes. We maintain a master sustainability data set and map it to the question structure of each of these platforms, so each annual cycle is hours of your time, not weeks." }
+    ]
+  },
+  "professional-services": {
+    "slug": "professional-services",
+    "name": "Professional Services (Legal, Accounting, Consulting)",
+    "h1": "Client procurement sustainability questions, handled in the background.",
+    "sub": "Law firms, accounting practices, consultants and advisers are increasingly asked by large corporate and government clients for sustainability data as part of panel appointments and matter-by-matter procurement. The questions are usually short — but they're frequent, consistent, and the firms with structured answers win the work.",
+    "typicalBuyers": ["Major banks and insurers (legal/audit panels)", "Government legal panels", "ASX-listed corporate clients", "Universities and research institutions", "Large not-for-profit and union clients"],
+    "dataAsked": [
+      "Scope 1/2 emissions from office operations",
+      "Scope 3 from business travel, IT and supply chain",
+      "Modern Slavery Act statement if applicable",
+      "Diversity reporting (gender, Indigenous, disability)",
+      "Net-zero target year and pathway",
+      "Sustainability commitments embedded in client work (legal pro bono, etc.)"
+    ],
+    "emifyServices": [
+      "We produce your firm's Scope 1/2/3 inventory annually",
+      "We respond to legal/audit panel sustainability questionnaires",
+      "We prepare Modern Slavery Act statements",
+      "We coordinate diversity and gender pay gap reporting",
+      "We track your business travel emissions (Concur, Egencia integration)",
+      "We provide partner-ready client response packs"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Law firms and accountants are being asked for emissions data — really?", "answer": "Yes — particularly by bank, insurer and government clients running formal panel sustainability reviews. The data set is small (your office Scope 1/2, business travel Scope 3, IT supply chain) but the questions are frequent and clients increasingly score on it." },
+      { "question": "What's the simplest emissions inventory for a professional services firm?", "answer": "Office energy (Scope 1/2 from utility bills), business travel (Scope 3 from Concur/Egencia/Travelport), IT supply chain (Scope 3 from your IT contracts and asset register). For most mid-sized firms, this can be quantified annually in 1-2 weeks of structured data work — which we do for you." },
+      { "question": "Do we need a Modern Slavery Act statement?", "answer": "If your annual revenue is above A$100m, yes — it's a mandatory annual statement published on the federal register. Below the threshold, clients may still request a Code of Conduct attestation." },
+      { "question": "Pro bono hours and ESG client commitments — do those count?", "answer": "Yes — clients increasingly ask about your firm's sustainability commitments, including client/matter-level commitments (pro bono on climate, refusal to act on certain matters, etc.). We help structure this disclosure for client responses." }
+    ]
+  },
+  "construction-subcontractor": {
+    "slug": "construction-subcontractor",
+    "name": "Construction Subcontractors",
+    "h1": "Tier 1 builders ask for carbon data on every project. We deliver it.",
+    "sub": "Concrete, steel, mechanical, electrical, HVAC, hydraulic, fitout and façade subcontractors supplying Lendlease, John Holland, Multiplex, CIMIC, ABCO and major government infrastructure programs now face EPD requests, ISC submission inputs and embodied carbon data requests on every project. We respond per-project.",
+    "typicalBuyers": ["Tier 1 contractors (Lendlease, John Holland, Multiplex, CPB, BMD, Watpac)", "Government infrastructure programmes (Transport for NSW, Major Road Projects Victoria)", "Property developers (REITs, university capital works)", "Defence and Department of Defence projects"],
+    "dataAsked": [
+      "EPDs for major materials supplied to the project",
+      "Embodied carbon per unit of work (concrete m³, steel tonne, etc.)",
+      "ISC (Infrastructure Sustainability Council) rating data inputs",
+      "Recycled content of materials used",
+      "Waste diversion rate from site",
+      "Modern Slavery Act statement if applicable"
+    ],
+    "emifyServices": [
+      "We respond to per-project sustainability data requests via builder portals (Procore, Aconex, Hammertech)",
+      "We coordinate EPD acquisition from your material suppliers",
+      "We populate ISC rating tools (IS v2.1) with your contribution",
+      "We produce embodied carbon submissions aligned to Green Star, NABERS and ISC",
+      "We maintain a project library so repeat customers see a consistent story",
+      "We prepare Modern Slavery Act statements where you qualify"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Lendlease and John Holland both ask for EPDs. What's that?", "answer": "An Environmental Product Declaration (EPD) is a verified document showing a material's environmental impact, particularly embodied carbon. Tier 1 builders need EPDs to claim Green Star, NABERS or ISC credits on projects. We coordinate EPD acquisition from your suppliers." },
+      { "question": "Do I need ISC data on every project, or just the big ones?", "answer": "ISC (Infrastructure Sustainability Council) ratings apply to infrastructure projects above defined thresholds — most major road, rail and water programmes. If your project has an ISC rating goal, every subcontractor's contribution feeds into it. We supply the data." },
+      { "question": "What if my upstream material suppliers don't have EPDs?", "answer": "We use generic industry-average EPD data as a starting point and progressively work with your supply base to source product-specific EPDs. Most Tier 1 builders accept industry-average where product-specific isn't available, provided the data source is documented." },
+      { "question": "Each project has different sustainability portals. Do you handle them all?", "answer": "Yes. Procore, Aconex, Hammertech, Builder-specific portals — we maintain templates and respond per-project. You stay focused on delivery, we handle the sustainability paperwork." }
+    ]
+  },
+  "equipment-supplier": {
+    "slug": "equipment-supplier",
+    "name": "Equipment & Machinery Suppliers",
+    "h1": "Mining, manufacturing and ag buyers want Scope 3 from equipment. We produce it.",
+    "sub": "If you sell capital equipment — heavy machinery, processing plant, farm equipment, mining gear, medical devices — your buyers need Scope 3 Category 1 (capital goods) and Category 11 (use of sold products) data to complete their own reporting. They're asking for embodied emissions and in-use energy profiles. We respond.",
+    "typicalBuyers": ["Mining companies (BHP, Rio Tinto, Fortescue) for capital fleet", "Manufacturers (BlueScope, Orica, Visy) for plant equipment", "Agriculture aggregators and large farming operations", "Health networks for medical equipment", "Construction Tier 1s for plant hire"],
+    "dataAsked": [
+      "Cradle-to-gate embodied emissions per unit of equipment",
+      "In-use energy efficiency under standard operating conditions",
+      "Refrigerant or fluid leakage rates over equipment life",
+      "End-of-life handling and recyclability",
+      "Spare parts and consumable Scope 3 contributions",
+      "Modern Slavery declarations for upstream sourcing"
+    ],
+    "emifyServices": [
+      "We produce ISO 14067-aligned product carbon footprints per equipment model",
+      "We respond to mining and manufacturing supplier portals",
+      "We coordinate upstream supplier data collection for embodied emissions",
+      "We model use-phase emissions under your customer's operating conditions",
+      "We track spare parts and consumable trail for full lifecycle disclosure",
+      "We monitor any CBAM exposure if you export to the EU"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "BHP and Rio Tinto want lifecycle data on every piece of equipment. How?", "answer": "We produce ISO 14067-aligned product carbon footprints per equipment model using your BOM and your suppliers' material data. Use-phase emissions are modelled under the customer's operating profile (fuel type, duty cycle, runtime)." },
+      { "question": "What about spare parts and consumables — do those count?", "answer": "Yes — they're part of the customer's Scope 3 Category 1 (purchased goods) over the life of the equipment. We track spare parts and consumable flows so the lifecycle disclosure is complete." },
+      { "question": "We export equipment to the EU. Do we need CBAM data?", "answer": "If your equipment contains CBAM-listed embedded materials (steel, aluminium, cement, fertiliser-derived, hydrogen) above the de minimis threshold, yes. We handle the EU CBAM declaration alongside your domestic obligations." },
+      { "question": "Mining customers expect ongoing audits. How do you stay current?", "answer": "We update your data set quarterly and respond to audit-style data requests within 5 business days. Major customers' annual audit cycles are pre-scheduled." }
+    ]
+  },
+  "waste-services": {
+    "slug": "waste-services",
+    "name": "Waste & Recycling Services",
+    "h1": "Diversion rates, recovery data and customer reports — automated.",
+    "sub": "Waste contractors supplying councils, REITs, healthcare networks, retail centres and large workplaces now provide monthly diversion-rate reporting, recovery data and Scope 3 contributions to their customers' sustainability reports. We integrate with your weighbridge and ticketing systems to produce customer-ready reports automatically.",
+    "typicalBuyers": ["Local councils across all states", "REITs and property managers", "Hospitals and aged care providers", "Shopping centres and retail landlords", "Hotel groups", "Universities and large school groups"],
+    "dataAsked": [
+      "Diversion rate by customer site (recycled, recovered, landfilled)",
+      "Material recovery breakdown (paper, plastic, glass, metal, organic, e-waste)",
+      "Scope 3 contribution to the customer's reported footprint",
+      "Container Deposit Scheme returns where applicable",
+      "Hazardous and clinical waste handling chain-of-custody",
+      "Fleet emissions for collection routes"
+    ],
+    "emifyServices": [
+      "We integrate with your weighbridge, ticketing and fleet systems",
+      "We produce monthly per-customer diversion and emissions reports",
+      "We respond to REIT, council and health network reporting portals",
+      "We maintain NABERS Waste compliance evidence for property customer claims",
+      "We track CDS reconciliation across state schemes",
+      "We coordinate clinical and hazardous waste compliance documentation"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Property managers want diversion rates by building. Do you produce that?", "answer": "Yes — we integrate with your weighbridge and ticketing systems to produce per-site monthly diversion reports (recycled vs recovered vs landfill) by material stream. Output goes directly to your customer's portal or as a PDF." },
+      { "question": "How do customers use my data for NABERS Waste?", "answer": "NABERS Waste ratings need per-site diversion data, contamination rates and material recovery breakdowns. We produce all of this in the format NABERS auditors expect." },
+      { "question": "Clinical waste has different requirements. Do you handle it?", "answer": "Yes — clinical and hazardous waste needs chain-of-custody documentation from collection through to authorised disposal. We coordinate that documentation for healthcare customers and audit-ready evidence packs." },
+      { "question": "Do you reconcile Container Deposit Scheme returns?", "answer": "Yes — across NSW, VIC, QLD, WA, SA, NT, ACT and TAS schemes (each with slightly different rules). Important for customers tracking CDS-eligible material flows." }
+    ]
+  },
+  "catering-services": {
+    "slug": "catering-services",
+    "name": "Catering & Food Service Contractors",
+    "h1": "Healthcare, education and corporate caterers — your customers want food-mile data.",
+    "sub": "If you cater hospitals, aged care homes, schools, universities, defence bases, mining camps or corporate cafeterias, your customers increasingly want food origin, waste, water and packaging data per site. The procurement tender questions are getting longer. We answer them.",
+    "typicalBuyers": ["Healthcare networks (NSW Health, private hospital groups)", "Universities and major school groups", "Aged care providers (Bupa, Regis, McKenzie)", "Mining and resource camp operators", "Government and Defence contracts"],
+    "dataAsked": [
+      "Local and seasonal sourcing percentages",
+      "Food waste rates per site and recovery handling",
+      "Packaging volumes, recyclability and reuse programmes",
+      "Animal welfare and certification of meat, dairy and seafood",
+      "Energy and water use per meal produced",
+      "Modern Slavery declarations for upstream food supply"
+    ],
+    "emifyServices": [
+      "We coordinate supplier data collection from your food suppliers",
+      "We integrate with your menu management and POS systems",
+      "We produce per-site customer reports monthly",
+      "We respond to healthcare, education and Defence procurement portals",
+      "We track certifications (MSC, RSPCA, Fair Trade, organic)",
+      "We prepare Modern Slavery Act statements where applicable"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Hospitals want food origin and waste data. How do you collect that?", "answer": "We coordinate menu management and POS integration to track ingredient sourcing, supplier provenance, food waste rates and packaging volumes per site. Reports tie back to procurement portal sustainability fields." },
+      { "question": "What sustainability questions do education tenders typically ask?", "answer": "Local sourcing percentages, animal welfare certifications, packaging volumes, food waste handling, Modern Slavery declaration. Increasingly: per-meal carbon footprint where the customer has its own carbon target." },
+      { "question": "Mining camp catering is different. Can you handle remote operations?", "answer": "Yes — remote camp catering has its own data set (camp utilities, waste back-haul, supplier logistics, fly-in food provisioning). We pull it from your existing camp management systems." },
+      { "question": "What about RSPCA, MSC and Fair Trade certifications?", "answer": "We track which menu items carry which certifications and report the proportion to your customer. Important for hospital, defence and education contracts with formal animal welfare or ethical sourcing requirements." }
+    ]
+  },
+  "linen-laundry-services": {
+    "slug": "linen-laundry-services",
+    "name": "Linen & Laundry Services",
+    "h1": "Hospitals and hotels ask for water, chemical and emissions data. We deliver it.",
+    "sub": "Industrial laundries supplying hospitals, hotels, aged care and uniform services answer routine sustainability questions on water, chemical use, energy and Scope 3 for their customers. Tender wins increasingly depend on showing credible data. We make sure you can.",
+    "typicalBuyers": ["Hospitals and health networks", "Aged care providers", "Hotel groups and resorts", "Mining and resources (camp linen)", "Restaurants and venue operators", "Sports and event venues"],
+    "dataAsked": [
+      "Litres of water per kg of linen processed",
+      "Chemical use by type and environmental rating",
+      "Energy use and emissions per kg processed",
+      "Linen lifecycle and end-of-life handling",
+      "Microplastic and effluent management practices",
+      "Modern Slavery declarations for upstream linen sourcing"
+    ],
+    "emifyServices": [
+      "We integrate with your weight tracking and production systems",
+      "We produce per-site customer monthly reports",
+      "We track chemical certifications and substitution programmes",
+      "We coordinate water recycling and effluent treatment evidence",
+      "We respond to healthcare and hotel procurement portals",
+      "We prepare Modern Slavery Act statements where applicable"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Industrial laundries use a lot of water. How do you report that?", "answer": "We track water per kg processed, with breakdowns for primary use, recycling rates and effluent treatment. Per-customer reports show your water performance against any contract KPIs." },
+      { "question": "What chemicals data do hospitals ask for?", "answer": "Hospitals want chemical SDS, environmental ratings (Good Environmental Choice, GECA), and substitution programmes for any restricted-use chemicals. We track this per chemical SKU and report against your customer's chemical exclusion lists." },
+      { "question": "Do hotels and hospitals ask for different data?", "answer": "Same broad categories (water, chemicals, energy, modern slavery) but different granularity. Hospitals want per-bed-day reporting; hotels want per-room or per-occupied-room. We produce both formats." },
+      { "question": "What about microplastic effluent reporting?", "answer": "Emerging requirement — particularly for facilities discharging into sensitive water catchments or hospital networks with formal water stewardship plans. We coordinate this where required." }
+    ]
+  },
+  "security-services": {
+    "slug": "security-services",
+    "name": "Security Services",
+    "h1": "Sustainability questions on every security tender. Without changing your operations.",
+    "sub": "Manned guarding, mobile patrol, electronic monitoring and event security providers supplying government, healthcare, retail, real estate and education sectors now answer fleet, energy and modern slavery questions as part of tenders and panel reviews. We respond per-tender.",
+    "typicalBuyers": ["Government agencies and councils", "Hospitals and health networks", "Universities and schools", "Shopping centres and REITs", "Major events and sports venues", "Banks and corporate offices"],
+    "dataAsked": [
+      "Fleet Scope 1 emissions and EV transition plan",
+      "Officer training, mental health support and modern slavery declarations",
+      "Diversity reporting and Indigenous workforce participation",
+      "Subcontractor oversight and chain-of-control",
+      "Energy use at any monitored sites or control rooms",
+      "Equipment lifecycle (radios, vehicles, surveillance gear)"
+    ],
+    "emifyServices": [
+      "We respond to government and corporate panel sustainability schedules",
+      "We track fleet emissions via your fuel card or telematics",
+      "We coordinate Modern Slavery Act statements",
+      "We prepare diversity and Indigenous procurement data",
+      "We maintain an audit-ready evidence pack for tender questions",
+      "We respond on your behalf as new tenders come in"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Government tenders ask for fleet emissions. How do you produce it?", "answer": "We integrate with your fuel card or telematics to produce per-vehicle and per-contract Scope 1 emissions, plus an EV transition plan if your customer asks. Tender responses get the data in the format they expect." },
+      { "question": "What modern slavery declarations do security firms face?", "answer": "Standard Modern Slavery Act statement above the A$100m threshold. Customers also ask about subcontractor oversight (chain-of-control), worker conditions for officers, and any mental health support programmes." },
+      { "question": "Do major events have different requirements?", "answer": "Yes — events like the AO, AFL Grand Final and NRL Grand Final increasingly want per-event sustainability reporting from security providers (emissions, waste, modern slavery). We produce per-event reports on top of your standard contract reporting." },
+      { "question": "Government Indigenous procurement asks about workforce diversity. What's needed?", "answer": "Indigenous workforce participation, training programmes, Indigenous-owned subcontracting. We track and report this for federal and state tenders aligned to IPP (Indigenous Procurement Policy)." }
+    ]
+  },
+  "maintenance-services": {
+    "slug": "maintenance-services",
+    "name": "Facility Maintenance & Trade Services",
+    "h1": "Property managers ask for emissions on every contract. We respond.",
+    "sub": "HVAC, electrical, plumbing, fire safety, lift, security systems and general maintenance contractors supplying REITs, government, healthcare and education face increasing tender and contract-renewal sustainability data requests. We respond per-customer, per-renewal.",
+    "typicalBuyers": ["REITs and property managers (NABERS, Green Star reporting)", "Government agencies and councils", "Hospitals and aged care providers", "Universities and schools", "Hotel and retail centre operators"],
+    "dataAsked": [
+      "Fleet Scope 1 emissions and EV transition",
+      "Refrigerant handling and leak rates (HVAC contractors)",
+      "Materials used and embodied carbon for replacement parts",
+      "Site-level energy and water savings delivered to customers",
+      "Worker conditions and modern slavery declarations",
+      "Trade certification and apprenticeship participation"
+    ],
+    "emifyServices": [
+      "We respond to property manager and tender sustainability schedules",
+      "We track refrigerant inventory and leak reporting per AS/NZS standards",
+      "We integrate with your job management system (simPRO, ServiceM8, AroFlo)",
+      "We produce per-customer monthly emissions and savings reports",
+      "We support NABERS and Green Star supplier evidence requirements",
+      "We coordinate Modern Slavery Act statements where applicable"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "HVAC contractors track refrigerant. Do you handle leak reporting?", "answer": "Yes — refrigerant inventory and leak rates per AS/NZS standards. Particularly important under the Synthetic Greenhouse Gas (SGG) levy regime and for any customer pursuing NABERS or Green Star credits." },
+      { "question": "Property managers want savings reports from maintenance work. How?", "answer": "We track energy and water savings delivered by maintenance work (LED retrofits, BMS tuning, leak fixes) and report it back to property managers monthly. Important for NABERS supplier credit." },
+      { "question": "What about embodied carbon for replacement parts?", "answer": "For major replacements (HVAC units, lift motors, switchgear), we provide embodied carbon estimates from manufacturer EPDs or industry-average data. Increasingly part of property manager sustainability scorecards." },
+      { "question": "Do you integrate with simPRO and ServiceM8?", "answer": "Yes — we pull job records from simPRO, ServiceM8, AroFlo and similar trade management systems to build per-customer reporting." }
+    ]
+  },
+  "printing-services": {
+    "slug": "printing-services",
+    "name": "Printing & Print Management",
+    "h1": "Government and corporate buyers want paper, ink and lifecycle data. We supply it.",
+    "sub": "Commercial printers, packaging printers, signage and print management providers supplying government, banks, retailers, universities and large corporates face procurement sustainability questions on every contract. Paper origin, ink composition, energy and waste — we answer it for you.",
+    "typicalBuyers": ["Government agencies (federal, state, local)", "Banks and insurers", "Universities and schools", "Retailers and consumer brands", "ASX-listed corporates"],
+    "dataAsked": [
+      "Paper origin certifications (FSC, PEFC) and recycled content",
+      "Ink and chemical composition (vegetable, low-VOC, soy-based)",
+      "Energy use per print job category",
+      "Waste paper, trim and ink waste handling",
+      "Carbon-neutral printing claims and offset registry verification",
+      "Modern Slavery declarations for upstream paper supply"
+    ],
+    "emifyServices": [
+      "We respond to government and corporate procurement sustainability schedules",
+      "We track FSC, PEFC and recycled content chain-of-custody",
+      "We model per-job carbon footprints and customer-specific reports",
+      "We verify any carbon-neutral claims against ACCU or Verra registries",
+      "We coordinate Modern Slavery Act statements where applicable",
+      "We support APCO compliance for packaging printing"
+    ],
+    "fixedPriceFrom": "from $500/month",
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "What FSC and PEFC certifications do customers ask for?", "answer": "FSC (Forest Stewardship Council) and PEFC (Programme for the Endorsement of Forest Certification) are the two major paper chain-of-custody standards. Government, retail and banking customers increasingly require evidence on paper sourcing for printed material." },
+      { "question": "Do you handle carbon-neutral printing claims?", "answer": "Yes — we verify any carbon-neutral claims against ACCU or Verra offset registries and report the offset retirement evidence. Important if your customers reference your sustainability marketing in their own claims." },
+      { "question": "What about packaging printing under APCO?", "answer": "Packaging printing is covered under APCO (Australian Packaging Covenant Organisation). We handle APCO Annual Reporting and Action Plan submissions for printers supplying packaging customers." },
+      { "question": "Do government tenders specify low-VOC inks?", "answer": "Yes — Commonwealth Procurement Rules and some state agencies specify low-VOC, vegetable-based or soy-based inks. We track ink composition by job and report compliance for tender responses." }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Navbar from '../../../../components/Navbar';
+import Footer from '../../../../components/Footer';
+import LocationPage from '../../../../components/LocationPage';
+import states from '../../../../../data/australian-states.json';
+import regions from '../../../../../data/australian-regions.json';
+import suburbs from '../../../../../data/australian-suburbs.json';
+import supplierTypes from '../../../../../data/supplier-types.json';
+import combos from '../../../../../data/supplier-region-combos.json';
+
+export async function getStaticPaths() {
+  return (regions as any[]).map((region) => {
+    const state = (states as any)[region.state];
+    if (!state) return null;
+
+    const siblingSuburbs = Object.entries(suburbs)
+      .filter(([_, info]: [string, any]) => info.state.toLowerCase() === region.state && info.region === region.name)
+      .map(([slug, info]: [string, any]) => ({
+        slug,
+        name: slug.split('-').map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join(' '),
+      }));
+
+    const matchingCombos = (combos as any[])
+      .filter((c) => c.regionState === region.state && c.regionSlug === region.slug)
+      .map((c) => {
+        const sup = (supplierTypes as any)[c.supplierType];
+        return sup ? {
+          supplierType: c.supplierType,
+          supplierTypeName: sup.name,
+          href: `/for-suppliers/${c.supplierType}/${c.regionSlug}`,
+        } : null;
+      })
+      .filter(Boolean);
+
+    return {
+      params: { state: region.state, region: region.slug },
+      props: { state, region, siblingSuburbs, matchingCombos },
+    };
+  }).filter(Boolean) as any;
+}
+
+const { state, region, siblingSuburbs, matchingCombos } = Astro.props;
+---
+
+<Layout
+  title={`Sustainability reporting in the ${region.name}, ${state.code} — Emify`}
+  description={`Outsourced sustainability reporting for businesses in the ${region.name} region of ${state.name}. ${region.industryNote.slice(0, 100)}`}
+>
+  <Navbar client:load />
+  <main>
+    <LocationPage
+      level="region"
+      state={state}
+      region={region}
+      siblingSuburbs={siblingSuburbs}
+      matchingCombos={matchingCombos}
+      client:load
+    />
+  </main>
+  <Footer client:load />
+</Layout>
