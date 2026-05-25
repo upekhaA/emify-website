@@ -1,0 +1,243 @@
+{
+  "agriculture": {
+    "slug": "agriculture",
+    "name": "Agriculture",
+    "h1": "NGER agricultural methods, MLA emission factors and ACCU opportunities — automated.",
+    "sub": "Australian agribusinesses face a growing sustainability reporting burden: NGER agricultural method selection, livestock emission calculations using MLA-approved factors, Scope 3 from downstream processing, and now AASB S2 for larger operators. Emify brings together farm management system data with verified emission factors to produce compliant, auditable reports.",
+    "integrations": ["AgriWebb", "Agworld", "FarmLogs", "Xero", "MYOB", "Figured"],
+    "capabilities": [
+      "NGER agricultural method selection (livestock, cropping, horticulture) with automatic factor updates",
+      "MLA-approved emission factors for cattle, sheep and pigs — updated with latest research",
+      "Soil carbon and vegetation sequestration modelling for ACCU opportunity identification",
+      "Scope 3 Category 1 (purchased goods) and Category 11 (processing of sold products)",
+      "Fertiliser and fuel consumption emissions from farm management system integration",
+      "ACCU overlap analysis — identify eligible methodologies across your land portfolio",
+      "AASB S2 physical risk assessment for drought, flood and heat stress by property"
+    ],
+    "frameworks": ["NGER", "AASB S2", "GHG Protocol", "GRI", "ACCU"],
+    "highlight": "A diversified agricultural group used Emify across 120,000 hectares of mixed enterprise farming to identify A$1.4m in potential ACCU revenue from eligible vegetation and soil carbon activities — previously invisible in their reporting data.",
+    "largeBuyers": ["Coles", "Woolworths", "JBS Australia", "Teys Australia", "Fonterra Australia", "Murray Goulburn", "GrainCorp"],
+    "supplierPressure": "Major processors and retailers now request Scope 3 emissions data from primary producers as part of supplier sustainability questionnaires."
+  },
+  "construction": {
+    "slug": "construction",
+    "name": "Construction",
+    "h1": "EPDs, ISC ratings, embodied carbon and AASB S2 — built into your project workflow.",
+    "sub": "Construction and infrastructure companies face growing requirements to quantify embodied carbon in materials, achieve ISC sustainability ratings on infrastructure projects, and increasingly report under AASB S2. Emify integrates with project management systems to map Environmental Product Declarations (EPDs) to Bill of Quantities and produce ISC-aligned submissions.",
+    "integrations": ["Procore", "Aconex", "Jobpac", "Cheops", "Hammertech", "CostX"],
+    "capabilities": [
+      "EPD library integration — map verified environmental declarations to project BOQ line items",
+      "ISC (Infrastructure Sustainability Council) rating data collection and submission preparation",
+      "Embodied carbon quantification by project phase — structure, fitout, services",
+      "Scope 3 Category 1 (materials) and Category 2 (capital goods) from procurement data",
+      "Subcontractor sustainability data collection and verification",
+      "Waste and circular economy tracking across project sites",
+      "AASB S2 physical risk disclosure for project pipeline and asset portfolio"
+    ],
+    "frameworks": ["ISC", "GHG Protocol", "AASB S2", "GRI", "Green Star", "TCFD"],
+    "highlight": "A Tier 1 Australian contractor used Emify on a major infrastructure project to track embodied carbon across 2,400 BOQ line items in real time — identifying A$3.2m in lower-carbon material substitutions that maintained programme and budget.",
+    "largeBuyers": ["Transport for NSW", "Major Road Projects Victoria", "Lendlease", "Multiplex", "John Holland", "CIMIC"],
+    "supplierPressure": "Tier 1 contractors require subcontractors to provide carbon and ISC data as a condition of tender — increasingly enforced through contract clauses."
+  },
+  "financial-services": {
+    "slug": "financial-services",
+    "name": "Financial Services",
+    "h1": "Financed emissions, APRA CPG 229 and AASB S2 — in one platform.",
+    "sub": "Australian banks, insurers and fund managers face a unique sustainability challenge: most of their carbon footprint sits in what they finance, not what they own. Emify calculates financed emissions using PCAF methodology, supports APRA CPG 229 climate risk disclosure and produces AASB S2 draft disclosures — all from your existing data systems.",
+    "integrations": ["Bloomberg", "MSCI", "S&P Trucost", "Refinitiv", "SS&C", "Salesforce Financial Services Cloud"],
+    "capabilities": [
+      "Financed emissions (Scope 3 Category 15) using PCAF methodology — loans, equity, bonds, real estate",
+      "APRA CPG 229 climate risk scenario analysis (1.5°C, 2°C, 3°C+)",
+      "AASB S2 climate disclosure draft including governance, strategy, risk management and metrics",
+      "Portfolio-level physical and transition risk heat maps by sector and geography",
+      "Target-setting and SBTi Financial Sector Science-Based Targets pathway modelling",
+      "TCFD report production aligned to AASB S2 requirements",
+      "Regulatory Sentinel monitors APRA, ASIC and ISSB updates for financial sector"
+    ],
+    "frameworks": ["AASB S2", "PCAF", "APRA CPG 229", "TCFD", "TNFD", "SBTi", "GRI"],
+    "highlight": "A major Australian bank used Emify to calculate financed emissions across A$85bn in business lending, moving from a manual process taking 6 months to a continuous, audit-ready data layer updated monthly.",
+    "largeBuyers": ["CBA", "Westpac", "NAB", "ANZ", "Macquarie", "AustralianSuper", "AMP"],
+    "supplierPressure": "Major financial institutions request emissions data from professional service providers, IT vendors and property suppliers as part of vendor onboarding."
+  },
+  "mining": {
+    "slug": "mining",
+    "name": "Mining & Resources",
+    "h1": "NGER, Safeguard and Scope 3 for Australian mining — automated.",
+    "sub": "Mining companies face the most complex sustainability reporting stack in Australia: NGER facility reporting, Safeguard Mechanism baseline management, downstream Scope 3 from commodity sales, and increasingly, AASB S2 climate disclosures. Emify handles all of it from your existing operational systems.",
+    "integrations": ["SAP S/4HANA", "Pronto Xi", "Maximo", "Wenco", "XERO", "Mining2"],
+    "capabilities": [
+      "NGER facility boundary mapping and Method 1–4 selection per activity type",
+      "Safeguard baseline tracking with production-variable recalculation and SMC/ACCU modelling",
+      "Scope 3 Category 11 (use of sold products) for coal, iron ore and lithium — downstream emissions",
+      "Site-level emissions heatmap across multi-site operations",
+      "Tailings storage facility (TSF) emissions quantification",
+      "Methane monitoring and fugitive emissions from underground and open-cut operations",
+      "AASB S2 climate risk disclosures — physical risk (flooding, temperature) and transition risk (carbon price)",
+      "Assurance-ready evidence pack for CER and ASIC scrutiny"
+    ],
+    "frameworks": ["NGER", "Safeguard", "AASB S2", "GHG Protocol", "ICMM", "GRI"],
+    "highlight": "One ASX-listed mining company used Emify to consolidate NGER reporting across 11 facilities, cutting their annual reporting workload from 14 weeks to 3 — and surfacing A$2.3m in previously unidentified Safeguard headroom.",
+    "largeBuyers": ["BHP", "Rio Tinto", "Fortescue", "Glencore", "Anglo American", "Newcrest", "South32"],
+    "supplierPressure": "Major miners cascade Scope 3 disclosure requirements to fuel suppliers, equipment providers, contractors and logistics partners — typically as a precondition for contract renewal."
+  },
+  "real-estate": {
+    "slug": "real-estate",
+    "name": "Real Estate",
+    "h1": "NABERS, GRESB, embodied carbon and AASB S2 — from one platform.",
+    "sub": "Australian REITs, property developers and asset managers face multi-layered sustainability obligations: NABERS operational ratings, GRESB benchmarking, embodied carbon from development, and mandatory AASB S2 climate disclosures. Emify connects your property management systems and integrates NABERS data to produce a complete, auditable sustainability picture.",
+    "integrations": ["MRI Software", "Yardi", "Buildium", "Procore", "NABERS Online", "GRESB Portal"],
+    "capabilities": [
+      "NABERS energy and water rating integration — operational emissions by tenancy and whole-building",
+      "Tenant vs landlord Scope 1/2 boundary treatment and data collection",
+      "GRESB submission data preparation and benchmarking",
+      "Embodied carbon from development projects — EPD integration and Bill of Quantities mapping",
+      "Physical climate risk assessment by asset location (flooding, temperature, storm)",
+      "AASB S2 disclosure including asset-level transition risk under carbon pricing scenarios",
+      "Green lease clause compliance monitoring across tenancy portfolio"
+    ],
+    "frameworks": ["NABERS", "GRESB", "AASB S2", "GHG Protocol", "TCFD", "GRI"],
+    "highlight": "A diversified A-REIT used Emify to consolidate sustainability data across a 42-asset portfolio, producing their first GRESB submission and AASB S2 readiness assessment in one integrated workflow — saving an estimated A$180,000 in consultant fees.",
+    "largeBuyers": ["Lendlease", "GPT Group", "Mirvac", "Dexus", "Stockland", "Charter Hall", "Goodman Group"],
+    "supplierPressure": "REITs and property managers ask cleaning contractors, facilities suppliers, fit-out subcontractors and waste services for emissions data to support NABERS and GRESB submissions."
+  },
+  "retail": {
+    "slug": "retail",
+    "name": "Retail",
+    "h1": "Scope 3 across thousands of suppliers — collected, verified and reported.",
+    "sub": "Australian retailers face the most diffuse Scope 3 challenge of any sector. Coles, Woolworths, IGA and major specialty chains have thousands of suppliers across food, beverage, household goods and apparel — each contributing to the retailer's value-chain footprint. Emify automates supplier outreach, validates submitted data and produces AASB S2-aligned Scope 3 disclosures.",
+    "integrations": ["SAP Retail", "Oracle Retail", "Manhattan Associates", "JDA", "Salesforce Commerce Cloud", "NetSuite"],
+    "capabilities": [
+      "Automated supplier sustainability questionnaire distribution and follow-up",
+      "Scope 3 Category 1 (purchased goods) modelling for thousands of SKUs",
+      "Product-level emissions data ingestion via EPDs and supplier-provided LCAs",
+      "Downstream Scope 3 — transportation, distribution, use-phase, end-of-life",
+      "Private-label vs branded supplier coverage tracking",
+      "Packaging emissions and recycled-content compliance with APCO targets",
+      "AASB S2 climate-related risk disclosure including supply-chain disruption scenarios"
+    ],
+    "frameworks": ["AASB S2", "GHG Protocol", "APCO", "GRI", "SBTi"],
+    "highlight": "A national retailer used Emify to onboard 1,800 suppliers into a structured Scope 3 data collection programme over 12 weeks — replacing a 6-person sustainability team's manual outreach with automated workflows.",
+    "largeBuyers": ["Coles", "Woolworths", "IGA / Metcash", "Aldi Australia", "Bunnings", "Kmart", "Target", "Big W", "Costco Australia"],
+    "supplierPressure": "Major Australian retailers now embed sustainability questionnaires in supplier onboarding and renewal — non-response increasingly disqualifies products from category review."
+  },
+  "hospitality": {
+    "slug": "hospitality",
+    "name": "Hospitality & Food Service",
+    "h1": "Sustainability reporting for hotels, restaurants and food service — without adding headcount.",
+    "sub": "Hospitality groups face dual pressure: their own franchisor or owner reporting requirements, and increasingly granular asks from corporate clients holding meetings and events. Emify connects to POS, procurement and energy systems to produce property-level and group-level sustainability reports aligned to AASB S2, GRI and the Sustainable Hospitality Alliance.",
+    "integrations": ["Opera PMS", "Micros POS", "Hilton OnQ", "Marriott Mars", "Oracle Hospitality", "Xero", "Foodbuy"],
+    "capabilities": [
+      "Property-level Scope 1 and 2 from utility integration and on-site generation",
+      "Food waste tracking integrated with POS and procurement data",
+      "Scope 3 from purchased food and beverage suppliers — automated supplier outreach",
+      "Energy and water intensity benchmarking (kWh/room-night, L/cover)",
+      "Event-level carbon reporting for corporate MICE clients",
+      "Sustainable Hospitality Alliance reporting and HCMI water reporting alignment",
+      "AASB S2 disclosure for hospitality groups with ASX or large-corporate ownership"
+    ],
+    "frameworks": ["AASB S2", "GHG Protocol", "GRI", "Sustainable Hospitality Alliance", "HCMI"],
+    "highlight": "A 14-property Australian hotel group consolidated property utility and procurement data through Emify to produce its first GRI report — replacing what had been 30+ separate spreadsheets and an annual consultant engagement.",
+    "largeBuyers": ["Accor Pacific", "Marriott International", "Hilton Australasia", "InterContinental Hotels Group", "Crown Resorts", "TFE Hotels"],
+    "supplierPressure": "Hotel groups and restaurant chains request emissions and waste data from food suppliers, linen services, cleaning contractors and beverage distributors to populate their own sustainability reports."
+  },
+  "manufacturing": {
+    "slug": "manufacturing",
+    "name": "Manufacturing",
+    "h1": "Product carbon footprints, NGER and AASB S2 — connected to your shop-floor data.",
+    "sub": "Australian manufacturers — from food processing to advanced materials — need to report under NGER if they exceed thresholds, manage Safeguard exposure for energy-intensive facilities, and produce product-level carbon footprints for export markets demanding EU CBAM-style data. Emify ties shop-floor MES and ERP data to verified emission factors.",
+    "integrations": ["SAP S/4HANA", "Oracle Cloud ERP", "Microsoft Dynamics 365", "MYOB Advanced", "Plex MES", "Wonderware"],
+    "capabilities": [
+      "Product-level cradle-to-gate carbon footprint generation from BOM and routing data",
+      "NGER facility reporting with Method 1–3 selection per energy stream",
+      "Safeguard Mechanism baseline tracking for energy-intensive facilities",
+      "EU CBAM-aligned embedded emissions reporting for steel, aluminium, cement, fertiliser and hydrogen exports",
+      "Scope 3 Category 1 (raw materials) and Category 4 (upstream transport) from procurement data",
+      "Customer-specific Scope 3 disclosure response automation",
+      "AASB S2 physical and transition risk disclosure including stranded asset exposure"
+    ],
+    "frameworks": ["NGER", "Safeguard", "AASB S2", "EU CBAM", "ISO 14067", "GHG Protocol", "GRI"],
+    "highlight": "A Victorian food processor used Emify to produce product-level carbon footprints for 240 SKUs in 8 weeks — meeting the data request of a major European retail customer without hiring a sustainability consultant.",
+    "largeBuyers": ["BlueScope", "Orica", "CSL", "Visy", "Amcor", "Brickworks", "Boral", "Asahi Beverages"],
+    "supplierPressure": "Manufacturers cascade Scope 3 requirements to raw material suppliers, component manufacturers, packaging providers and logistics — particularly where EU CBAM applies to downstream exports."
+  },
+  "transport-logistics": {
+    "slug": "transport-logistics",
+    "name": "Transport & Logistics",
+    "h1": "Fleet emissions, Scope 3 transport categories and AASB S2 — from your TMS.",
+    "sub": "Australian transport and logistics providers operate on tight margins under increasing customer pressure to provide carbon-per-shipment data. Major retailers, manufacturers and exporters need accurate Scope 3 Category 4 and 9 data; logistics providers need the systems to give it to them. Emify connects to TMS and telematics to produce shipment-level and customer-level emissions reporting.",
+    "integrations": ["Microlise", "MTData", "Teletrac Navman", "MercuryGate TMS", "Manhattan TMS", "SAP TM", "Geotab"],
+    "capabilities": [
+      "Shipment-level carbon footprint by mode (road, rail, sea, air) using GLEC framework",
+      "Fleet Scope 1 from fuel cards and telematics — diesel, biodiesel, electric",
+      "Customer-specific emissions reporting (kg CO2e per delivery, per pallet, per km)",
+      "NGER facility reporting for fuel-burning operations exceeding threshold",
+      "Scope 3 Category 1 (fleet capital goods) and Category 11 (use-phase by customers)",
+      "Modal shift modelling — emissions savings from road-to-rail decisions",
+      "AASB S2 transition risk disclosure including fleet electrification capex planning"
+    ],
+    "frameworks": ["GLEC Framework", "ISO 14083", "AASB S2", "NGER", "GHG Protocol", "GRI", "SmartWay"],
+    "highlight": "A national LTL carrier deployed Emify across its 600-truck fleet to produce per-shipment emissions data for its top 50 customers — closing two major retail contracts that required Scope 3 reporting capability as a condition of award.",
+    "largeBuyers": ["Toll Group", "Linfox", "Australia Post / StarTrack", "DHL Australia", "Aurizon", "Pacific National", "Patrick Terminals"],
+    "supplierPressure": "Large logistics providers are themselves required to report emissions by their customers (retailers, manufacturers, miners) — they cascade that requirement to subcontracted carriers, owner-drivers and equipment lessors."
+  },
+  "government": {
+    "slug": "government",
+    "name": "Government & Public Sector",
+    "h1": "Procurement-driven sustainability data — for federal, state and local government suppliers.",
+    "sub": "Australian government at every level — federal departments, state agencies, councils — has embedded sustainability requirements into procurement. The Commonwealth Procurement Rules now reference environmental outcomes; states like NSW (GREP), Victoria (CCA) and Queensland have mandatory frameworks. Government buyers ask suppliers for emissions and modern slavery data as a condition of tender. Emify produces the structured responses required.",
+    "integrations": ["TechnologyOne", "SAP S/4HANA Public Sector", "Civica", "OpenWindows", "VendorPanel", "TenderLink"],
+    "capabilities": [
+      "Government tender sustainability schedule response automation",
+      "Modern Slavery Act statement preparation for suppliers exceeding A$100m threshold",
+      "NGER reporting for government corporations and trading enterprises",
+      "Scope 1/2/3 emissions inventory ready for AusTender, VendorPanel and state portals",
+      "Procurement-rule-aligned environmental questionnaire responses",
+      "Indigenous Procurement Policy interaction with sustainability commitments",
+      "AASB S2 disclosure for government-owned corporations and PNFCs"
+    ],
+    "frameworks": ["Commonwealth Procurement Rules", "NSW GREP", "Victorian Climate Change Act", "Modern Slavery Act", "AASB S2", "NGER"],
+    "highlight": "A national IT services firm used Emify to respond to 18 government tenders in a quarter — each with detailed sustainability schedules — without adding sustainability headcount. Two of the three largest contracts were won on sustainability scoring tiebreaks.",
+    "largeBuyers": ["Department of Defence", "Services Australia", "Department of Home Affairs", "NSW Government", "Victorian Government", "Queensland Government", "City of Sydney", "City of Melbourne"],
+    "supplierPressure": "Federal and state procurement increasingly mandates emissions disclosure and modern slavery statements as part of tender evaluation. Without structured data, suppliers are excluded at the prequalification stage."
+  },
+  "education": {
+    "slug": "education",
+    "name": "Education",
+    "h1": "Sustainability reporting for universities, TAFEs and schools — and their suppliers.",
+    "sub": "Australian universities increasingly report against Times Higher Education Impact Rankings, QS Sustainability and the Australasian Campuses Towards Sustainability (ACTS) framework. Larger universities also report under NGER and AASB S2. TAFEs and large school groups face procurement-driven supplier asks. Emify integrates campus building management, transport and procurement data into one reporting layer.",
+    "integrations": ["TechnologyOne Education", "Ellucian", "Workday Student", "Schoolbox", "Compass", "Trapeze BMS"],
+    "capabilities": [
+      "Campus Scope 1/2 from building management systems and utility integration",
+      "Student and staff commuter emissions modelling (Scope 3 Category 7)",
+      "Procured catering, IT and facility services emissions tracking (Scope 3 Category 1)",
+      "Times Higher Education Impact Rankings data preparation",
+      "ACTS Higher Education Sustainability Assessment Tool (HESAT) submission",
+      "Research grant carbon disclosure for international funders (Horizon Europe, NIH)",
+      "AASB S2 climate disclosure for universities meeting the size threshold"
+    ],
+    "frameworks": ["AASB S2", "ACTS HESAT", "Times Higher Education Impact", "QS Sustainability", "GRI", "NGER"],
+    "highlight": "A Go8 university consolidated emissions data across 11 campus precincts via Emify, producing its first Scope 3 commuter inventory in under 6 weeks and replacing two separate consultant engagements with an in-house workflow.",
+    "largeBuyers": ["University of Melbourne", "University of Sydney", "Monash University", "UNSW", "University of Queensland", "TAFE NSW", "TAFE Queensland", "Catholic Education", "Independent Schools Australia"],
+    "supplierPressure": "Universities, TAFEs and large school groups request emissions and ethical-sourcing data from catering, cleaning, IT, equipment and uniform suppliers as part of standard procurement."
+  },
+  "healthcare": {
+    "slug": "healthcare",
+    "name": "Healthcare",
+    "h1": "Hospital and aged care sustainability reporting — and the suppliers behind it.",
+    "sub": "Australian health services account for ~7% of the country's carbon footprint. State health departments are setting net-zero targets; major hospitals report under NGER, and aged care providers face increasing scrutiny from the Aged Care Quality and Safety Commission on environmental performance. Suppliers across medical consumables, food service, cleaning, linen and waste are asked for emissions data. Emify connects clinical, facilities and procurement systems.",
+    "integrations": ["Epic", "Cerner", "iPM", "TrendCare", "Oracle Health", "TechnologyOne Health", "Mediware"],
+    "capabilities": [
+      "Hospital-level Scope 1/2 from utility integration and on-site generation",
+      "Anaesthetic gas inventory and N2O leakage emissions tracking",
+      "Medical consumable Scope 3 modelling (purchased products and end-of-life waste)",
+      "Aged care residential energy and water reporting per facility",
+      "Scope 3 supplier outreach for catering, cleaning, linen and clinical waste",
+      "NHS Sustainability Reporting Framework alignment for health service comparison",
+      "AASB S2 disclosure for health service providers meeting the size threshold"
+    ],
+    "frameworks": ["AASB S2", "NGER", "GHG Protocol", "NHS Sustainability Reporting", "GRI"],
+    "highlight": "A multi-hospital private health provider used Emify to consolidate Scope 1/2 reporting across 23 facilities and onboard 140 medical consumable suppliers for Scope 3 data — meeting a state health procurement framework requirement six months ahead of deadline.",
+    "largeBuyers": ["NSW Health", "Queensland Health", "Western Health (VIC)", "Ramsay Health Care", "Healthscope", "St Vincent's Health", "Bupa Aged Care", "Regis Aged Care"],
+    "supplierPressure": "State health departments and major private health groups request supplier sustainability data covering carbon, water, waste and clinical-grade ethical sourcing — increasingly as a procurement prerequisite."
+  }
+}

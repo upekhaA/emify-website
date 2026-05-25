@@ -1,0 +1,44 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar';
+import Footer from '../../../components/Footer';
+import SupplierTypePage from '../../../components/SupplierTypePage';
+import supplierTypes from '../../../../data/supplier-types.json';
+import regions from '../../../../data/australian-regions.json';
+import states from '../../../../data/australian-states.json';
+import combos from '../../../../data/supplier-region-combos.json';
+
+export async function getStaticPaths() {
+  return combos.map((combo: any) => {
+    const supplier = (supplierTypes as any)[combo.supplierType];
+    const region = (regions as any[]).find(
+      (r) => r.state === combo.regionState && r.slug === combo.regionSlug
+    );
+    const state = (states as any)[combo.regionState];
+    if (!supplier || !region || !state) return null;
+    return {
+      params: { supplierType: combo.supplierType, region: combo.regionSlug },
+      props: {
+        supplier,
+        region: {
+          regionName: region.name,
+          stateCode: state.code,
+          stateName: state.name,
+          industryNote: region.industryNote,
+        },
+      },
+    };
+  }).filter(Boolean) as any;
+}
+
+const { supplier, region } = Astro.props;
+---
+
+<Layout
+  title={`${supplier.name} in the ${region.regionName}, ${region.stateCode} — Emify`}
+  description={`Outsourced sustainability reporting for ${supplier.name.toLowerCase()} operating in the ${region.regionName} region of ${region.stateName}. Fixed monthly fee.`}
+>
+  <Navbar client:load />
+  <main><SupplierTypePage data={supplier} region={region} client:load /></main>
+  <Footer client:load />
+</Layout>

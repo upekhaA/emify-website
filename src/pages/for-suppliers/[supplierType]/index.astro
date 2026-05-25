@@ -1,0 +1,25 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar';
+import Footer from '../../../components/Footer';
+import SupplierTypePage from '../../../components/SupplierTypePage';
+import supplierTypes from '../../../../data/supplier-types.json';
+
+export async function getStaticPaths() {
+  return Object.values(supplierTypes).map((supplier: any) => ({
+    params: { supplierType: supplier.slug },
+    props: { supplier },
+  }));
+}
+
+const { supplier } = Astro.props;
+---
+
+<Layout
+  title={`${supplier.name} — Outsourced sustainability reporting | Emify`}
+  description={supplier.sub.slice(0, 160)}
+>
+  <Navbar client:load />
+  <main><SupplierTypePage data={supplier} client:load /></main>
+  <Footer client:load />
+</Layout>

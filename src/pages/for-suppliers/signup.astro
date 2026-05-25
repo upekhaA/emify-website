@@ -1,0 +1,88 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+---
+
+<Layout
+  title="Get started — Emify for Suppliers"
+  description="Sign up for Emify's fully outsourced sustainability reporting service. Fixed monthly fee. We handle every data request from your large customers."
+>
+  <Navbar client:load />
+  <main>
+    <section class="py-16 sm:py-24 gradient-hero border-b">
+      <div class="mx-auto max-w-2xl px-4 sm:px-6">
+        <div class="inline-flex items-center rounded-full bg-primary/10 border border-primary/20 px-3 py-1 text-xs font-semibold text-primary mb-6">
+          For Suppliers — Get started
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
+          Hand it over. We'll take it from here.
+        </h1>
+        <p class="text-base text-muted-foreground">
+          Tell us a bit about your business and who your large customers are. We'll respond within one business day with a fixed monthly fee and onboarding plan.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24">
+      <div class="mx-auto max-w-2xl px-4 sm:px-6">
+        <form
+          method="POST"
+          action="mailto:signup@emify.com.au"
+          enctype="text/plain"
+          class="space-y-6 rounded-2xl border bg-card p-8"
+        >
+          <div>
+            <label for="businessName" class="block text-sm font-medium text-foreground mb-2">Business name</label>
+            <input id="businessName" name="businessName" type="text" required class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+          </div>
+          <div>
+            <label for="abn" class="block text-sm font-medium text-foreground mb-2">ABN</label>
+            <input id="abn" name="abn" type="text" class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+          </div>
+          <div>
+            <label for="contactName" class="block text-sm font-medium text-foreground mb-2">Your name</label>
+            <input id="contactName" name="contactName" type="text" required class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-foreground mb-2">Email</label>
+            <input id="email" name="email" type="email" required class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-foreground mb-2">Phone</label>
+            <input id="phone" name="phone" type="tel" class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+          </div>
+          <div>
+            <label for="supplies" class="block text-sm font-medium text-foreground mb-2">What do you supply?</label>
+            <textarea id="supplies" name="supplies" rows="3" required class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none" placeholder="e.g. Beef cattle to JBS and Teys, plus direct retail through Coles"></textarea>
+          </div>
+          <div>
+            <label for="bigCustomers" class="block text-sm font-medium text-foreground mb-2">Who are your major customers?</label>
+            <textarea id="bigCustomers" name="bigCustomers" rows="3" required class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none" placeholder="List the large organisations asking you for sustainability data."></textarea>
+          </div>
+          <div>
+            <label for="state" class="block text-sm font-medium text-foreground mb-2">Where are you based?</label>
+            <select id="state" name="state" required class="w-full rounded-lg border bg-background px-4 py-2.5 text-sm focus:border-primary focus:outline-none">
+              <option value="">Select your state</option>
+              <option value="NSW">New South Wales</option>
+              <option value="VIC">Victoria</option>
+              <option value="QLD">Queensland</option>
+              <option value="WA">Western Australia</option>
+              <option value="SA">South Australia</option>
+              <option value="TAS">Tasmania</option>
+              <option value="NT">Northern Territory</option>
+              <option value="ACT">Australian Capital Territory</option>
+            </select>
+          </div>
+          <button type="submit" data-track="cta-click" class="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 inline-flex items-center justify-center text-sm font-medium">
+            Send to Emify
+          </button>
+          <p class="text-xs text-muted-foreground text-center">
+            We respond within one business day. No spam — your details go straight to our onboarding team.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <Footer client:load />
+</Layout>

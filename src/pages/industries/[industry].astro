@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import IndustryPage from '../../components/IndustryPage';
+import sectors from '../../../data/sectors.json';
+
+export async function getStaticPaths() {
+  return Object.values(sectors).map((sector: any) => ({
+    params: { industry: sector.slug },
+    props: { sector },
+  }));
+}
+
+const { sector } = Astro.props;
+---
+
+<Layout
+  title={`${sector.name} — Emify`}
+  description={sector.sub.slice(0, 160)}
+>
+  <Navbar client:load />
+  <main><IndustryPage data={sector} client:load /></main>
+  <Footer client:load />
+</Layout>
