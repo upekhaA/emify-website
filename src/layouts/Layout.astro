@@ -1,25 +1,122 @@
 ---
 import '../styles/global.css';
 
+interface Breadcrumb {
+  name: string;
+  href: string;
+}
+
 interface Props {
   title?: string;
   description?: string;
+  canonicalPath?: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  breadcrumbs?: Breadcrumb[];
+  structuredData?: object | object[];
 }
 
 const {
-  title = 'Emify — Simplify your workflow',
-  description = 'Emify helps teams work smarter, ship faster, and focus on what matters.',
+  title = 'Emify — Australian sustainability reporting, outsourced',
+  description = 'Outsourced AASB S2, NGER, Modern Slavery Act and supplier sustainability reporting for Australian businesses. Fixed monthly fee for small suppliers; enterprise platform for large reporters.',
+  canonicalPath,
+  ogImage = '/og-default.png',
+  ogType = 'website',
+  noindex = false,
+  breadcrumbs,
+  structuredData,
 } = Astro.props;
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://emify.com.au';
+const path = canonicalPath ?? Astro.url.pathname;
+const canonical = `${siteUrl}${path}`;
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+
+const organizationLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Emify',
+  url: siteUrl,
+  logo: `${siteUrl}/favicon.svg`,
+  email: 'hello@emify.com.au',
+  telephone: '+61 1300 364 391',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Sydney',
+    addressRegion: 'NSW',
+    postalCode: '2000',
+    addressCountry: 'AU',
+  },
+  areaServed: { '@type': 'Country', name: 'Australia' },
+  sameAs: [],
+};
+
+function deriveBreadcrumbs(pathname: string): Breadcrumb[] {
+  const segments = pathname.split('/').filter(Boolean);
+  if (segments.length === 0) return [];
+  const crumbs: Breadcrumb[] = [{ name: 'Home', href: '/' }];
+  let acc = '';
+  for (const seg of segments) {
+    acc += `/${seg}`;
+    const name = seg
+      .split('-')
+      .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
+      .join(' ');
+    crumbs.push({ name, href: acc });
+  }
+  return crumbs;
+}
+
+const finalBreadcrumbs = breadcrumbs ?? deriveBreadcrumbs(path);
+
+const breadcrumbLd = finalBreadcrumbs.length > 1 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: finalBreadcrumbs.map((b, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: b.name,
+    item: `${siteUrl}${b.href}`,
+  })),
+} : null;
+
+const extraStructured = structuredData
+  ? Array.isArray(structuredData)
+    ? structuredData
+    : [structuredData]
+  : [];
+
+const allStructured = [organizationLd, ...(breadcrumbLd ? [breadcrumbLd] : []), ...extraStructured];
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content="Emify" />
+    <meta property="og:locale" content="en_AU" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    {allStructured.map((data) => (
+      <script type="application/ld+json" set:html={JSON.stringify(data)} />
+    ))}
   </head>
   <body>
     <slot />

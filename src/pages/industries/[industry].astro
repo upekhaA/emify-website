@@ -13,11 +13,22 @@ export async function getStaticPaths() {
 }
 
 const { sector } = Astro.props;
+
+const faqSchema = sector.faqs && sector.faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: sector.faqs.map((f: any) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+} : undefined;
 ---
 
 <Layout
-  title={`${sector.name} — Emify`}
+  title={`${sector.name} sustainability reporting — AASB S2, NGER & supplier data | Emify`}
   description={sector.sub.slice(0, 160)}
+  structuredData={faqSchema}
 >
   <Navbar client:load />
   <main><IndustryPage data={sector} client:load /></main>

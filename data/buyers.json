@@ -1,0 +1,559 @@
+{
+  "coles": {
+    "slug": "coles",
+    "name": "Coles",
+    "shortName": "Coles",
+    "category": "retail",
+    "url": "https://www.colesgroup.com.au",
+    "programmeName": "Coles Together to Zero & Together to Zero Hunger sustainability programmes",
+    "portalName": "Coles Supplier Portal and Sedex / SAQ",
+    "intro": "Coles Group requires its food, grocery, packaging, logistics and services suppliers to provide structured sustainability data covering emissions, packaging recycled content, modern slavery and food waste. Coles publicly committed to net zero by 2050 with intermediate scope 3 targets — that flows through to every supplier.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions data covering products supplied to Coles",
+      "Packaging composition, recycled content and APCO targets compliance",
+      "Modern Slavery Act statement (or supplier self-assessment if below threshold)",
+      "Sedex SMETA audit or equivalent ethical sourcing evidence",
+      "Food waste rates, donation programmes and origin certifications (where applicable)",
+      "Sustainability commitments and targets (net-zero pathway, water, packaging)"
+    ],
+    "supplierTypes": ["farmer", "food-producer", "packaging-supplier", "logistics-provider", "cleaning-services", "maintenance-services"],
+    "fearPoint": "Coles category reviews now embed sustainability scoring — suppliers without structured data risk delisting at next review.",
+    "emifyResponse": "We respond to every Coles supplier sustainability request that lands in your inbox. We connect to your accounting and production systems, populate Coles' portal or questionnaire, and keep your audit-ready evidence on file for any verification.",
+    "faqs": [
+      { "question": "What is the Coles Together to Zero supplier programme?", "answer": "Together to Zero is Coles' net-zero plan — covering carbon (Zero Emissions), packaging (Zero Waste) and food waste (Zero Hunger). Suppliers contribute by providing product-level emissions, packaging composition and waste data through Coles' supplier portal and questionnaires." },
+      { "question": "What data does Coles ask suppliers for?", "answer": "Scope 1, 2 and 3 emissions for supplied products; packaging recycled content and APCO compliance; Modern Slavery Act statement; Sedex SMETA audit or equivalent ethical sourcing evidence; sustainability targets and pathway. Specific asks vary by category." },
+      { "question": "How does Coles enforce sustainability at category review?", "answer": "Coles category reviews now embed sustainability scoring into ranging decisions. Suppliers with weak or missing structured data are scored down and at risk of delisting at the next review cycle." },
+      { "question": "Can Emify respond to Coles questionnaires for me?", "answer": "Yes — for a flat monthly fee from $500/month, we respond to every Coles sustainability request, populate the Coles supplier portal, complete Sedex SMETA submissions and keep your evidence audit-ready." }
+    ]
+  },
+  "woolworths": {
+    "slug": "woolworths",
+    "name": "Woolworths Group",
+    "shortName": "Woolworths",
+    "category": "retail",
+    "url": "https://www.woolworthsgroup.com.au",
+    "programmeName": "Woolworths Group Sustainability Plan 2025 and Responsible Sourcing Programme",
+    "portalName": "Woolworths Supplier Portal (SAP Ariba) and Responsible Sourcing Programme questionnaires",
+    "intro": "Woolworths Group — covering Woolworths Supermarkets, BIG W and Metro — operates one of Australia's most detailed supplier sustainability programmes. Suppliers across food, beverage, household goods, packaging and services are routinely asked for emissions, ethical sourcing, packaging and modern slavery data.",
+    "whatTheyAsk": [
+      "Cradle-to-gate carbon footprint for products supplied to Woolworths",
+      "Packaging recycled content and APCO-aligned recyclability data",
+      "Sedex SMETA audit and SAQ responses for ethical sourcing",
+      "Modern Slavery Act statement for suppliers above the threshold",
+      "Water use and stewardship for high-water-impact suppliers",
+      "Net-zero target year and credible reduction pathway"
+    ],
+    "supplierTypes": ["farmer", "food-producer", "packaging-supplier", "logistics-provider", "cleaning-services", "maintenance-services"],
+    "fearPoint": "Woolworths' Responsible Sourcing Programme is non-negotiable — non-response disqualifies your products from category lines.",
+    "emifyResponse": "We respond to Woolworths Responsible Sourcing requests, SAP Ariba portal items and ad-hoc category-team questionnaires. You stay focused on running your business; we keep Woolworths satisfied.",
+    "faqs": [
+      { "question": "What is the Woolworths Responsible Sourcing Programme?", "answer": "Woolworths' Responsible Sourcing Programme covers ethical sourcing, human rights, environment and worker wellbeing for suppliers of Woolworths Group brands (Woolworths Supermarkets, BIG W, Metro). It requires Sedex SMETA audits and SAQs for high-risk supply chains." },
+      { "question": "What data does Woolworths ask suppliers for?", "answer": "Cradle-to-gate product carbon footprints; packaging recycled content and APCO recyclability; Sedex SMETA audits; Modern Slavery Act statements; water use for high-impact suppliers; net-zero target year and credible pathway." },
+      { "question": "Does Woolworths use SAP Ariba?", "answer": "Yes — Woolworths' supplier portal runs on SAP Ariba. Sustainability data flows through both Ariba and dedicated Responsible Sourcing Programme channels (Sedex, supplier questionnaires)." },
+      { "question": "What happens if I don't respond to a Woolworths sustainability questionnaire?", "answer": "Non-response disqualifies your products from category lines. Woolworths' Responsible Sourcing Programme is non-negotiable for continued supply, particularly for private-label products and high-risk categories." }
+    ]
+  },
+  "iga-metcash": {
+    "slug": "iga-metcash",
+    "name": "IGA / Metcash",
+    "shortName": "IGA",
+    "category": "retail",
+    "url": "https://www.metcash.com",
+    "programmeName": "Metcash Sustainability Strategy and Supplier Code of Conduct",
+    "portalName": "Metcash Supplier Portal and Sustainability Questionnaires",
+    "intro": "Metcash supplies IGA, Foodland, Mitre 10, Total Tools and independent hardware and liquor retailers. The group has expanded its sustainability supplier requirements significantly, particularly around packaging, emissions and modern slavery.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions data for products supplied",
+      "Packaging recycled content, recyclability and APCO compliance",
+      "Modern Slavery Act statement and Supplier Code of Conduct attestation",
+      "Ethical sourcing audits where applicable",
+      "Sustainability commitments and progress against them"
+    ],
+    "supplierTypes": ["farmer", "food-producer", "packaging-supplier", "logistics-provider"],
+    "fearPoint": "Metcash supplier reviews increasingly weight sustainability data — particularly for private-label suppliers to IGA and Foodland.",
+    "emifyResponse": "We respond to Metcash sustainability requests across IGA, Foodland and Mitre 10 supply relationships, keeping your category position safe."
+  },
+  "aldi": {
+    "slug": "aldi",
+    "name": "ALDI Australia",
+    "shortName": "ALDI",
+    "category": "retail",
+    "url": "https://www.aldi.com.au",
+    "programmeName": "ALDI Corporate Responsibility Programme",
+    "portalName": "ALDI CR Supplier Programme and direct buyer questionnaires",
+    "intro": "ALDI Australia runs one of the most rigorous supplier compliance programmes in Australian retail. ALDI suppliers face structured sustainability, ethical sourcing and packaging audits as a condition of continued supply.",
+    "whatTheyAsk": [
+      "Carbon footprint per product line",
+      "Packaging composition, recycled content and substitution roadmap",
+      "Ethical sourcing audits (BSCI, SMETA or equivalent)",
+      "Animal welfare certifications for meat, dairy, eggs and seafood",
+      "Modern Slavery Act statement and ALDI Code of Conduct attestation"
+    ],
+    "supplierTypes": ["farmer", "food-producer", "packaging-supplier"],
+    "fearPoint": "ALDI's supplier compliance is a binary gate — non-compliance suspends supply.",
+    "emifyResponse": "We manage the ALDI CR Supplier Programme submissions and follow-up audits so you stay continuously qualified."
+  },
+  "bunnings": {
+    "slug": "bunnings",
+    "name": "Bunnings",
+    "shortName": "Bunnings",
+    "category": "retail",
+    "url": "https://www.bunnings.com.au",
+    "programmeName": "Bunnings Responsible Sourcing Programme",
+    "portalName": "Bunnings Supplier Portal and Sedex",
+    "intro": "Bunnings Warehouse — Australia's largest home improvement retailer — requires suppliers across hardware, building materials, garden and consumables to provide structured ethical sourcing, modern slavery, timber legality and sustainability data.",
+    "whatTheyAsk": [
+      "Sedex SMETA audit and SAQ responses",
+      "Timber legality and certification (FSC, PEFC) chain-of-custody",
+      "Modern Slavery Act statement",
+      "Product-level emissions data for major SKUs",
+      "Packaging recycled content and APCO compliance"
+    ],
+    "supplierTypes": ["food-producer", "packaging-supplier", "logistics-provider", "equipment-supplier"],
+    "fearPoint": "Bunnings has actively delisted suppliers who fail Sedex audits or fall short of timber legality.",
+    "emifyResponse": "We respond to Bunnings supplier sustainability and ethical sourcing requirements so you maintain ranging without diverting your team."
+  },
+  "bhp": {
+    "slug": "bhp",
+    "name": "BHP",
+    "shortName": "BHP",
+    "category": "mining",
+    "url": "https://www.bhp.com",
+    "programmeName": "BHP Local Buying Programme and Supplier Sustainability Requirements",
+    "portalName": "BHP Supplier Portal (Ariba) and Local Buying Foundation",
+    "intro": "BHP — operating major iron ore, coal and copper assets in WA, QLD and SA — has one of Australia's most demanding supplier sustainability programmes. Equipment suppliers, contractors, logistics providers and professional services suppliers face routine emissions, modern slavery and safety audits.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions inventory updated annually",
+      "Modern Slavery Act statement and BHP Minimum Requirements attestation",
+      "Diversity reporting including Indigenous participation in the Pilbara",
+      "Safety incident history and BHP Charter compliance",
+      "EV transition plan for fleet-based suppliers",
+      "Subcontractor governance and chain-of-control"
+    ],
+    "supplierTypes": ["equipment-supplier", "logistics-provider", "construction-subcontractor", "maintenance-services", "catering-services", "cleaning-services", "it-services", "professional-services"],
+    "fearPoint": "BHP prequalification is non-trivial and ongoing — slipping on sustainability metrics drops you off the panel.",
+    "emifyResponse": "We respond to BHP supplier sustainability requirements across Pilbara, Mount Arthur and Olympic Dam operations — maintaining your prequalification status.",
+    "faqs": [
+      { "question": "What does BHP ask its suppliers for?", "answer": "Scope 1, 2 and 3 emissions inventory updated annually; Modern Slavery Act statement and BHP Minimum Requirements attestation; diversity reporting including Indigenous participation in Pilbara operations; safety incident history; EV transition plans for fleet-based suppliers; subcontractor governance." },
+      { "question": "What is the BHP Local Buying Programme?", "answer": "BHP's Local Buying Programme connects local Australian businesses to BHP's procurement — including in the Pilbara, Hunter Valley, Bowen Basin and Olympic Dam regions. Suppliers in the programme face structured sustainability and Indigenous participation requirements." },
+      { "question": "How does BHP enforce supplier sustainability requirements?", "answer": "BHP prequalification reviews are non-trivial and ongoing. Suppliers failing to maintain sustainability evidence can be dropped from the panel; slipping on Indigenous procurement participation similarly affects standing." },
+      { "question": "Does Emify handle the BHP Ariba supplier portal?", "answer": "Yes — we maintain a master sustainability data set and respond to BHP supplier sustainability requests through Ariba, the Local Buying Foundation channels and direct procurement questionnaires." }
+    ]
+  },
+  "rio-tinto": {
+    "slug": "rio-tinto",
+    "name": "Rio Tinto",
+    "shortName": "Rio Tinto",
+    "category": "mining",
+    "url": "https://www.riotinto.com",
+    "programmeName": "Rio Tinto Suppliers Code of Conduct and Sustainability Reporting Standards",
+    "portalName": "Rio Tinto Supplier Portal (Ariba) and Sustainability Data Requests",
+    "intro": "Rio Tinto — operating iron ore (Pilbara), aluminium (Gladstone QAL, Yarwun) and minerals operations across Australia — embeds sustainability requirements into supplier prequalification, contract award and ongoing oversight.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions inventory",
+      "Modern Slavery Act statement and Suppliers Code of Conduct attestation",
+      "Indigenous participation plan, particularly for Pilbara and Gladstone operations",
+      "Safety performance and Rio Tinto Charter alignment",
+      "EV transition plan and low-emissions vehicle commitments",
+      "Water stewardship for water-intensive suppliers"
+    ],
+    "supplierTypes": ["equipment-supplier", "logistics-provider", "construction-subcontractor", "maintenance-services", "catering-services", "cleaning-services", "professional-services"],
+    "fearPoint": "Rio Tinto's contractor oversight has tightened materially since 2020 — sustainability and ethics gaps drive de-panelling.",
+    "emifyResponse": "We respond to Rio Tinto supplier requirements across Pilbara iron ore, Gladstone alumina and Bell Bay aluminium operations."
+  },
+  "fortescue": {
+    "slug": "fortescue",
+    "name": "Fortescue",
+    "shortName": "Fortescue",
+    "category": "mining",
+    "url": "https://www.fortescue.com",
+    "programmeName": "Fortescue Real Zero Strategy and Supplier Sustainability Requirements",
+    "portalName": "Fortescue Supplier Portal (Ariba) and direct sustainability data requests",
+    "intro": "Fortescue's Real Zero strategy — committing to eliminate fossil fuel use from operations by 2030 — has the most aggressive supplier decarbonisation requirements of any Australian miner. Suppliers across equipment, fuel, services and logistics are being asked to commit to or model fossil-free transitions.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions and Real Zero pathway commitment",
+      "Equipment electrification roadmap for capital suppliers",
+      "Green hydrogen supply readiness for fuel-related suppliers",
+      "Modern Slavery Act statement and Code of Conduct attestation",
+      "Indigenous participation in Pilbara operations",
+      "Real Zero-aligned capability statement"
+    ],
+    "supplierTypes": ["equipment-supplier", "logistics-provider", "construction-subcontractor", "maintenance-services", "catering-services", "professional-services"],
+    "fearPoint": "Fortescue actively prioritises suppliers who can credibly support Real Zero — those who can't lose work to those who can.",
+    "emifyResponse": "We respond to Fortescue supplier requirements including Real Zero pathway data, so you stay credible and on-panel as the strategy ratchets."
+  },
+  "glencore": {
+    "slug": "glencore",
+    "name": "Glencore Australia",
+    "shortName": "Glencore",
+    "category": "mining",
+    "url": "https://www.glencore.com.au",
+    "programmeName": "Glencore Code of Conduct and Supplier Sustainability Standards",
+    "portalName": "Glencore Supplier Portal and Sustainability Data Requests",
+    "intro": "Glencore operates coal (Hunter Valley, Bowen Basin), copper (Mount Isa) and zinc operations across Australia. Suppliers face annual sustainability data requests covering emissions, modern slavery and Indigenous engagement.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions data",
+      "Modern Slavery Act statement and Code of Conduct attestation",
+      "Indigenous participation",
+      "Safety performance",
+      "Decarbonisation commitments"
+    ],
+    "supplierTypes": ["equipment-supplier", "logistics-provider", "construction-subcontractor", "maintenance-services", "catering-services"],
+    "fearPoint": "Glencore's supplier oversight has increased materially with the just-transition focus for thermal coal.",
+    "emifyResponse": "We respond to Glencore supplier sustainability requirements across Hunter Valley, Mount Isa and Bowen Basin operations."
+  },
+  "lendlease": {
+    "slug": "lendlease",
+    "name": "Lendlease",
+    "shortName": "Lendlease",
+    "category": "construction",
+    "url": "https://www.lendlease.com",
+    "programmeName": "Lendlease Mission Zero (net zero scope 1 & 2 by 2025, absolute zero by 2040)",
+    "portalName": "Procore, Aconex and Lendlease Subcontractor Portal",
+    "intro": "Lendlease's Mission Zero is one of the most ambitious construction sector decarbonisation programmes globally. Every subcontractor on a Lendlease project — from concrete and steel to electrical, hydraulic, fitout and façade — provides per-project carbon, modern slavery and Indigenous procurement data.",
+    "whatTheyAsk": [
+      "EPDs (Environmental Product Declarations) for all major materials",
+      "Embodied carbon per unit of work supplied",
+      "Modern Slavery Act statement",
+      "Indigenous participation plan",
+      "Per-project waste diversion data",
+      "ISC and Green Star rating data inputs",
+      "Mission Zero alignment commitment"
+    ],
+    "supplierTypes": ["construction-subcontractor", "packaging-supplier", "equipment-supplier", "logistics-provider", "professional-services"],
+    "fearPoint": "Lendlease subcontractor selection now heavily weights carbon credentials — generic subbies lose to those who can document.",
+    "emifyResponse": "We respond to Lendlease subcontractor sustainability requirements project-by-project, keeping your work pipeline secure.",
+    "faqs": [
+      { "question": "What is Lendlease Mission Zero?", "answer": "Mission Zero is Lendlease's commitment to net zero Scope 1 and 2 emissions by 2025 and absolute zero across all scopes (including Scope 3 embodied carbon) by 2040. It's one of the most ambitious construction sector net-zero targets globally." },
+      { "question": "What data does Lendlease ask subcontractors for?", "answer": "Per-project EPDs for materials supplied; embodied carbon per unit of work; Modern Slavery Act statement; Indigenous participation plans; per-project waste diversion; ISC and Green Star rating data inputs; Mission Zero alignment commitment." },
+      { "question": "Will I lose work with Lendlease if I can't provide carbon data?", "answer": "Increasingly yes — Lendlease subcontractor selection now heavily weights carbon credentials. Generic subbies lose to those who can document EPDs and embodied carbon. Mission Zero ratchets each year, so the bar rises." },
+      { "question": "Does Emify integrate with Procore and Aconex for Lendlease projects?", "answer": "Yes — Lendlease subcontractor portals run on Procore and Aconex. We respond to project sustainability data requests through both platforms." }
+    ]
+  },
+  "john-holland": {
+    "slug": "john-holland",
+    "name": "John Holland",
+    "shortName": "John Holland",
+    "category": "construction",
+    "url": "https://www.johnholland.com.au",
+    "programmeName": "John Holland Sustainability Strategy and Subcontractor Sustainability Requirements",
+    "portalName": "John Holland Subcontractor Portal, Procore and Aconex",
+    "intro": "John Holland — a major Tier 1 infrastructure and building contractor — requires subcontractors to provide per-project ISC, embodied carbon, modern slavery and Indigenous procurement data.",
+    "whatTheyAsk": [
+      "EPDs for major materials",
+      "ISC rating tool inputs (Design and As-Built ratings)",
+      "Embodied carbon per unit of work",
+      "Modern Slavery Act statement",
+      "Indigenous participation commitments",
+      "Per-project waste and water data"
+    ],
+    "supplierTypes": ["construction-subcontractor", "equipment-supplier", "packaging-supplier", "logistics-provider", "professional-services"],
+    "fearPoint": "John Holland subcontractor reviews routinely weight sustainability scoring — generic tenders lose.",
+    "emifyResponse": "We respond to John Holland subcontractor sustainability requirements across major infrastructure and building programmes."
+  },
+  "multiplex": {
+    "slug": "multiplex",
+    "name": "Multiplex",
+    "shortName": "Multiplex",
+    "category": "construction",
+    "url": "https://www.multiplex.global",
+    "programmeName": "Multiplex Sustainability Strategy and Net Zero Roadmap",
+    "portalName": "Multiplex Subcontractor Portal, Procore and Aconex",
+    "intro": "Multiplex — Tier 1 commercial and residential builder — embeds sustainability data requirements into subcontractor prequalification and per-project reporting, including for Green Star and NABERS-rated developments.",
+    "whatTheyAsk": [
+      "EPDs for materials supplied to projects",
+      "Embodied carbon per work package",
+      "Modern Slavery Act statement",
+      "Indigenous participation and social procurement",
+      "Per-project waste diversion data",
+      "Green Star rating inputs"
+    ],
+    "supplierTypes": ["construction-subcontractor", "equipment-supplier", "packaging-supplier", "logistics-provider", "professional-services"],
+    "fearPoint": "Multiplex pre-qualification and tender selection actively reward sustainability data quality.",
+    "emifyResponse": "We respond to Multiplex subcontractor sustainability data requests project-by-project."
+  },
+  "cimic": {
+    "slug": "cimic",
+    "name": "CIMIC Group (CPB Contractors)",
+    "shortName": "CIMIC",
+    "category": "construction",
+    "url": "https://www.cimic.com.au",
+    "programmeName": "CIMIC Group Sustainability Standards (CPB, Leighton Asia, UGL, Pacific Partnerships)",
+    "portalName": "CIMIC Supplier Portal and Project Management Systems",
+    "intro": "CIMIC Group — including CPB Contractors, UGL, Pacific Partnerships and Leighton Asia — is one of Australia's largest contractors. Subcontractors and equipment suppliers face structured sustainability and modern slavery data requests on every major project.",
+    "whatTheyAsk": [
+      "EPDs and embodied carbon for major materials",
+      "ISC rating data inputs",
+      "Modern Slavery Act statement",
+      "Indigenous participation plans",
+      "Per-project waste, water and emissions data"
+    ],
+    "supplierTypes": ["construction-subcontractor", "equipment-supplier", "logistics-provider", "professional-services"],
+    "fearPoint": "CIMIC subcontractor selection weights sustainability data alongside price and capability.",
+    "emifyResponse": "We respond to CIMIC, CPB and UGL subcontractor sustainability requirements across major infrastructure and building projects."
+  },
+  "cba": {
+    "slug": "cba",
+    "name": "Commonwealth Bank (CBA)",
+    "shortName": "CBA",
+    "category": "financial-services",
+    "url": "https://www.commbank.com.au",
+    "programmeName": "CBA Group Sustainability Strategy and Supplier Code of Conduct",
+    "portalName": "CBA Supplier Portal (Coupa) and Sustainability Data Requests",
+    "intro": "CBA — Australia's largest bank — sources from thousands of professional services, IT, real estate and facilities suppliers. The bank's sustainability strategy includes structured supplier data requirements covering emissions, modern slavery and diversity.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions inventory",
+      "Modern Slavery Act statement and Supplier Code of Conduct attestation",
+      "Diversity reporting including gender, Indigenous participation",
+      "Information security and data sovereignty for IT suppliers",
+      "Net-zero target year and pathway"
+    ],
+    "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services", "printing-services"],
+    "fearPoint": "CBA panel reviews routinely weight sustainability data — without structured responses, panel reappointment is at risk.",
+    "emifyResponse": "We respond to CBA supplier sustainability and modern slavery requirements across IT, professional services and facilities supply.",
+    "faqs": [
+      { "question": "What data does CBA ask suppliers for?", "answer": "Scope 1, 2 and 3 emissions inventory; Modern Slavery Act statement and Supplier Code of Conduct attestation; diversity reporting including gender and Indigenous participation; information security and data sovereignty for IT suppliers; net-zero target year and pathway." },
+      { "question": "Does CBA use Coupa?", "answer": "Yes — CBA's supplier portal runs on Coupa. Sustainability data flows through Coupa alongside dedicated sustainability questionnaires for major panel reviews." },
+      { "question": "How often does CBA review supplier sustainability?", "answer": "Annual panel reviews are standard, with quarterly check-ins for major suppliers. Sustainability data quality affects panel reappointment, particularly for IT and professional services." },
+      { "question": "I'm a small IT supplier to CBA. Do I really need this?", "answer": "Yes — even small panel suppliers face the sustainability data requirements as part of panel terms. Without structured responses, panel reappointment is at risk." }
+    ]
+  },
+  "westpac": {
+    "slug": "westpac",
+    "name": "Westpac",
+    "shortName": "Westpac",
+    "category": "financial-services",
+    "url": "https://www.westpac.com.au",
+    "programmeName": "Westpac Sustainability Strategy and Supplier Code of Conduct",
+    "portalName": "Westpac Supplier Portal and Sustainability Data Requests",
+    "intro": "Westpac sources from a deep panel of professional services, IT, real estate and facilities suppliers across Australia. The group's sustainability strategy embeds structured supplier sustainability and modern slavery requirements.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions inventory",
+      "Modern Slavery Act statement",
+      "Diversity reporting",
+      "Information security and data sovereignty",
+      "Net-zero pathway and decarbonisation commitments"
+    ],
+    "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services", "printing-services"],
+    "fearPoint": "Westpac panel reviews increasingly weight sustainability — structured data is now a tender baseline.",
+    "emifyResponse": "We respond to Westpac supplier sustainability requirements across professional services, IT and facilities supply."
+  },
+  "nab": {
+    "slug": "nab",
+    "name": "National Australia Bank (NAB)",
+    "shortName": "NAB",
+    "category": "financial-services",
+    "url": "https://www.nab.com.au",
+    "programmeName": "NAB Sustainability Strategy and Supplier Sustainability Programme",
+    "portalName": "NAB Supplier Portal and Sustainability Questionnaires",
+    "intro": "NAB has one of Australia's most structured supplier sustainability programmes, including formal supplier sustainability questionnaires and annual reviews for major suppliers.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions data",
+      "Modern Slavery Act statement",
+      "Diversity reporting",
+      "Information security for IT suppliers",
+      "Net-zero target year and pathway",
+      "Living wage and labour rights commitments"
+    ],
+    "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services"],
+    "fearPoint": "NAB's annual supplier sustainability reviews actively rank panel suppliers — bottom-quartile suppliers are at risk.",
+    "emifyResponse": "We respond to NAB supplier sustainability questionnaires and annual reviews across IT, professional services and facilities."
+  },
+  "anz": {
+    "slug": "anz",
+    "name": "ANZ",
+    "shortName": "ANZ",
+    "category": "financial-services",
+    "url": "https://www.anz.com.au",
+    "programmeName": "ANZ Sustainability Approach and Supplier Code of Practice",
+    "portalName": "ANZ Supplier Portal and Sustainability Data Requests",
+    "intro": "ANZ sources from a panel of IT, professional services, real estate and facilities suppliers. The group's sustainability approach embeds supplier sustainability and modern slavery requirements at prequalification and panel review.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions inventory",
+      "Modern Slavery Act statement and Supplier Code of Practice attestation",
+      "Diversity reporting",
+      "Information security and data sovereignty",
+      "Net-zero pathway"
+    ],
+    "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services"],
+    "fearPoint": "ANZ panel reviews weight sustainability data alongside price and capability.",
+    "emifyResponse": "We respond to ANZ supplier sustainability and modern slavery data requests."
+  },
+  "department-of-defence": {
+    "slug": "department-of-defence",
+    "name": "Department of Defence",
+    "shortName": "Defence",
+    "category": "government",
+    "url": "https://www.defence.gov.au",
+    "programmeName": "Defence Industrial Capability Programme with sustainability and modern slavery requirements",
+    "portalName": "AusTender, Defence Industry Portal and Sovereign Industrial Capability questionnaires",
+    "intro": "The Department of Defence — Australia's largest procurer — embeds sustainability, modern slavery and ethical sourcing requirements across construction, IT, professional services, catering, security, maintenance and equipment supply. Sustainability data is a tender prerequisite.",
+    "whatTheyAsk": [
+      "Modern Slavery Act statement (mandatory above the threshold)",
+      "Scope 1, 2 and 3 emissions data",
+      "Diversity, including Indigenous Procurement Policy participation",
+      "Sovereign Industrial Capability alignment",
+      "Australian Industry Capability plans for major contracts",
+      "Information security clearances for IT and data-handling suppliers"
+    ],
+    "supplierTypes": ["it-services", "professional-services", "construction-subcontractor", "catering-services", "security-services", "maintenance-services", "equipment-supplier", "logistics-provider"],
+    "fearPoint": "Defence tender evaluation embeds sustainability and modern slavery — generic responses are scored down at prequalification.",
+    "emifyResponse": "We respond to Defence tender sustainability schedules, AusTender questionnaires and Defence Industry Portal requests.",
+    "faqs": [
+      { "question": "What data does the Department of Defence ask suppliers for?", "answer": "Modern Slavery Act statement (mandatory above the threshold); Scope 1, 2 and 3 emissions data; diversity including Indigenous Procurement Policy participation; Sovereign Industrial Capability alignment; Australian Industry Capability plans for major contracts; security clearances for data-handling suppliers." },
+      { "question": "What is AusTender and how do I respond to sustainability questions on it?", "answer": "AusTender is the central Australian Government procurement portal. Sustainability schedules are embedded into the standard tender documents. Suppliers respond with structured Scope 1/2/3 data, modern slavery declarations and diversity reporting. We respond on your behalf." },
+      { "question": "What is the Indigenous Procurement Policy (IPP)?", "answer": "The IPP sets targets for federal departments to award contracts to Indigenous businesses. Non-Indigenous suppliers report on their Indigenous subcontracting and engagement. Defence has the largest IPP commitment of any federal portfolio." },
+      { "question": "What is Sovereign Industrial Capability?", "answer": "Defence's SIC framework identifies industrial capabilities essential to defence operations. Suppliers in SIC categories face additional reporting on Australian ownership, supply chain and capability." }
+    ]
+  },
+  "services-australia": {
+    "slug": "services-australia",
+    "name": "Services Australia",
+    "shortName": "Services Australia",
+    "category": "government",
+    "url": "https://www.servicesaustralia.gov.au",
+    "programmeName": "Services Australia Procurement Framework with sustainability and modern slavery requirements",
+    "portalName": "AusTender and Services Australia Supplier Portals",
+    "intro": "Services Australia — operating Centrelink, Medicare and Child Support services — is a major procurer of IT, professional services, contact centre and facilities suppliers. Sustainability and modern slavery data are tender prerequisites.",
+    "whatTheyAsk": [
+      "Modern Slavery Act statement",
+      "Scope 1, 2 and 3 emissions data",
+      "Diversity reporting including Indigenous Procurement Policy",
+      "Information security and ISM compliance for IT suppliers",
+      "Net-zero target year and pathway"
+    ],
+    "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services", "printing-services"],
+    "fearPoint": "Services Australia panel reviews weight sustainability scoring — structured data is now table stakes.",
+    "emifyResponse": "We respond to Services Australia tender and panel sustainability requirements."
+  },
+  "nsw-health": {
+    "slug": "nsw-health",
+    "name": "NSW Health",
+    "shortName": "NSW Health",
+    "category": "healthcare",
+    "url": "https://www.health.nsw.gov.au",
+    "programmeName": "NSW Health Net Zero Strategy and HealthShare NSW Procurement Sustainability",
+    "portalName": "HealthShare NSW Supplier Portal and eTendering NSW",
+    "intro": "NSW Health — encompassing local health districts, HealthShare NSW and major hospitals — procures from suppliers across medical consumables, catering, cleaning, linen, IT, professional services and construction. The NSW Health Net Zero Strategy embeds emissions and ethical sourcing requirements across the supply chain.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions data for products and services supplied",
+      "Modern Slavery Act statement",
+      "Ethical sourcing for medical consumables and uniforms",
+      "Waste handling chain-of-custody for clinical-waste-adjacent suppliers",
+      "Diversity reporting",
+      "Net-zero pathway and product-level emissions reduction commitments"
+    ],
+    "supplierTypes": ["food-producer", "catering-services", "cleaning-services", "linen-laundry-services", "it-services", "maintenance-services", "professional-services", "security-services", "construction-subcontractor"],
+    "fearPoint": "HealthShare NSW tender evaluation weights sustainability — non-responses fall out of contention at prequalification.",
+    "emifyResponse": "We respond to NSW Health and HealthShare NSW supplier sustainability requirements across catering, cleaning, linen, IT and clinical-consumable supply.",
+    "faqs": [
+      { "question": "What is the NSW Health Net Zero Strategy?", "answer": "NSW Health's Net Zero Strategy commits the system to net zero emissions across owned operations and increasingly cascades supplier emissions requirements through HealthShare NSW procurement. Local Health Districts and major hospitals contribute to delivery." },
+      { "question": "What is HealthShare NSW?", "answer": "HealthShare NSW is the shared services and procurement entity for the NSW Health system. It runs supplier prequalification, manages major category contracts and embeds sustainability and modern slavery requirements into tender evaluation." },
+      { "question": "What sustainability data does NSW Health ask suppliers for?", "answer": "Scope 1, 2 and 3 emissions for products and services supplied; Modern Slavery Act statement; ethical sourcing for medical consumables and uniforms; clinical-waste chain-of-custody; diversity reporting; net-zero pathway and product-level emissions reduction commitments." },
+      { "question": "Is HealthShare NSW tender selection competitive on sustainability?", "answer": "Yes — sustainability and modern slavery scoring is now weighted in HealthShare NSW tender evaluation, alongside price, capability and risk. Suppliers without structured responses fall out of contention at prequalification." }
+    ]
+  },
+  "queensland-health": {
+    "slug": "queensland-health",
+    "name": "Queensland Health",
+    "shortName": "Queensland Health",
+    "category": "healthcare",
+    "url": "https://www.health.qld.gov.au",
+    "programmeName": "Queensland Health Sustainable Healthcare Programme and procurement sustainability requirements",
+    "portalName": "Queensland Health Supplier Portal and QTenders",
+    "intro": "Queensland Health — covering hospitals and health services across the state — embeds sustainability and ethical sourcing requirements into supplier prequalification and contract award.",
+    "whatTheyAsk": [
+      "Scope 1, 2 and 3 emissions data",
+      "Modern Slavery Act statement",
+      "Indigenous participation plans",
+      "Ethical sourcing for medical and clinical consumables",
+      "Net-zero pathway"
+    ],
+    "supplierTypes": ["food-producer", "catering-services", "cleaning-services", "linen-laundry-services", "it-services", "maintenance-services", "professional-services"],
+    "fearPoint": "Queensland Health tender prequalification rejects suppliers without basic sustainability and modern slavery responses.",
+    "emifyResponse": "We respond to Queensland Health and QTenders sustainability requirements."
+  },
+  "mirvac": {
+    "slug": "mirvac",
+    "name": "Mirvac",
+    "shortName": "Mirvac",
+    "category": "real-estate",
+    "url": "https://www.mirvac.com",
+    "programmeName": "Mirvac Planet Positive (net positive carbon by 2030)",
+    "portalName": "Mirvac Supplier Portal and Sustainability Data Requests",
+    "intro": "Mirvac's Planet Positive ambition — net positive carbon by 2030 — requires every facilities, cleaning, maintenance, waste and construction supplier to provide structured emissions and ethical sourcing data.",
+    "whatTheyAsk": [
+      "Per-site Scope 1, 2 and 3 emissions data",
+      "NABERS supplier data inputs",
+      "Modern Slavery Act statement",
+      "Embodied carbon and EPDs for construction suppliers",
+      "Diversity and Indigenous procurement",
+      "Net-zero pathway"
+    ],
+    "supplierTypes": ["cleaning-services", "maintenance-services", "waste-services", "construction-subcontractor", "security-services", "linen-laundry-services", "catering-services"],
+    "fearPoint": "Mirvac tender selection actively prioritises suppliers who support Planet Positive — generic providers lose work.",
+    "emifyResponse": "We respond to Mirvac supplier sustainability requirements across cleaning, maintenance, waste, security and construction supply."
+  },
+  "dexus": {
+    "slug": "dexus",
+    "name": "Dexus",
+    "shortName": "Dexus",
+    "category": "real-estate",
+    "url": "https://www.dexus.com",
+    "programmeName": "Dexus Net Zero by 2030 strategy and Supplier Sustainability Standards",
+    "portalName": "Dexus Supplier Portal and Sustainability Data Requests",
+    "intro": "Dexus — major office, industrial and healthcare REIT — embeds sustainability and modern slavery requirements into supplier prequalification and contract award across cleaning, maintenance, waste, security and construction supply.",
+    "whatTheyAsk": [
+      "Per-site Scope 1, 2 and 3 emissions data",
+      "NABERS supplier data inputs",
+      "Modern Slavery Act statement",
+      "Diversity reporting",
+      "Net-zero pathway"
+    ],
+    "supplierTypes": ["cleaning-services", "maintenance-services", "waste-services", "construction-subcontractor", "security-services"],
+    "fearPoint": "Dexus tender selection weights sustainability — suppliers without structured data are screened out.",
+    "emifyResponse": "We respond to Dexus supplier sustainability requirements across cleaning, maintenance, waste and construction supply."
+  },
+  "transport-for-nsw": {
+    "slug": "transport-for-nsw",
+    "name": "Transport for NSW",
+    "shortName": "Transport for NSW",
+    "category": "government",
+    "url": "https://www.transport.nsw.gov.au",
+    "programmeName": "Transport for NSW Sustainable Procurement Framework and ISC submission requirements",
+    "portalName": "eTendering NSW and Transport for NSW Supplier Portal",
+    "intro": "Transport for NSW — Australia's largest state government transport agency — embeds ISC (Infrastructure Sustainability Council) ratings, embodied carbon, modern slavery and Indigenous procurement requirements into every major infrastructure tender and contract.",
+    "whatTheyAsk": [
+      "ISC rating tool inputs (Design, As Built, Operational)",
+      "EPDs and embodied carbon for materials supplied to projects",
+      "Modern Slavery Act statement",
+      "Indigenous participation plans",
+      "Per-project waste, water and emissions data",
+      "Aboriginal Participation in Construction (APIC) reporting"
+    ],
+    "supplierTypes": ["construction-subcontractor", "equipment-supplier", "logistics-provider", "professional-services"],
+    "fearPoint": "Transport for NSW infrastructure tenders are won and lost on sustainability scoring as much as price.",
+    "emifyResponse": "We respond to Transport for NSW supplier sustainability requirements and ISC submission inputs across major infrastructure programmes."
+  },
+  "major-road-projects-victoria": {
+    "slug": "major-road-projects-victoria",
+    "name": "Major Road Projects Victoria",
+    "shortName": "MRPV",
+    "category": "government",
+    "url": "https://bigbuild.vic.gov.au",
+    "programmeName": "Victoria's Big Build sustainability and Local Jobs First requirements",
+    "portalName": "Victorian Government Tenders and Big Build supplier portals",
+    "intro": "Major Road Projects Victoria — delivering the state's largest road infrastructure programmes — embeds sustainability, Local Jobs First, modern slavery and Aboriginal procurement requirements into every contract.",
+    "whatTheyAsk": [
+      "ISC rating tool inputs",
+      "EPDs and embodied carbon for materials",
+      "Modern Slavery Act statement",
+      "Local Jobs First commitments",
+      "Aboriginal participation in construction",
+      "Per-project waste and emissions data"
+    ],
+    "supplierTypes": ["construction-subcontractor", "equipment-supplier", "logistics-provider", "professional-services"],
+    "fearPoint": "Victorian Big Build tenders are scored on sustainability and social procurement alongside price.",
+    "emifyResponse": "We respond to Major Road Projects Victoria and Big Build sustainability requirements."
+  }
+}

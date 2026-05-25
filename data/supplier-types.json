@@ -22,7 +22,14 @@
       "We surface any ACCU revenue opportunities we spot in your data"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Do I have to do sustainability reporting if I'm just a farmer?", "answer": "Not yourself, no — but your large buyers (processors, retailers, exporters) increasingly require it as a condition of supply. We respond to their requests for you so you stay on their supplier list without learning AASB S2, NGER methods or MLA factor science." },
+      { "question": "What if my buyer asks for data I don't currently have?", "answer": "We work with you on a one-page data-capture plan that adds tiny adjustments to your existing record-keeping (often in your farm management software). Most farms only need to track 3 or 4 additional data points once a year." },
+      { "question": "Will I have to give Emify access to my financial systems?", "answer": "We need read-only access to whatever farm management or accounting system holds your fuel, fertiliser, livestock and land data. We never push changes. Connections are revocable at any time." },
+      { "question": "How quickly do you respond to a buyer questionnaire?", "answer": "Five business days for the first response, two business days for routine repeat questionnaires. Urgent buyer deadlines (under 5 days) are handled the same day at no extra cost." },
+      { "question": "What if I'm too small to be ASX-listed — do I still need this?", "answer": "Probably not for your own AASB S2 obligations until at least FY27. But your large buyers already have AASB S2 obligations, and they need supplier data to populate their Scope 3 disclosures. That pressure is now, not in 2027." }
+    ]
   },
   "food-producer": {
     "slug": "food-producer",
@@ -47,7 +54,14 @@
       "We flag risks (e.g. categories at risk of delisting) before they bite"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Coles, Woolworths and Aldi all ask different things. Do you handle all of them?", "answer": "Yes. We maintain templates for the major retailer sustainability programmes (Coles' Together to Zero, Woolworths' Responsible Sourcing Programme, Aldi's CR Supplier Programme, Metcash's Supplier Code, Bunnings' Responsible Sourcing) and respond per-buyer using the right format every time." },
+      { "question": "What if a buyer asks for a product carbon footprint I've never calculated?", "answer": "We do the calculation. We connect to your production and procurement data, apply ISO 14067 cradle-to-gate methodology, and produce a defensible product-level emissions figure with traceable evidence." },
+      { "question": "Does $500/month include all the supplier portals my buyers use?", "answer": "Yes. We answer through Coles Supplier Portal, Woolworths SAP Ariba, Sedex SMETA, EcoVadis, CDP and any custom portals your buyers use. No per-portal charges." },
+      { "question": "What happens if I get delisted because of a sustainability gap?", "answer": "Our first job is preventing that — most delistings happen because of non-response, not bad data. We respond to every questionnaire, every audit, every time. If a buyer flags a substantive gap, we work with you to close it." },
+      { "question": "Do I need to redo this every time a retailer changes their programme?", "answer": "No — that's our job. We track programme changes (e.g. Coles' move toward more granular Scope 3) and update your responses accordingly. You don't have to read retailer ESG strategy documents to stay compliant." }
+    ]
   },
   "packaging-supplier": {
     "slug": "packaging-supplier",
@@ -72,7 +86,13 @@
       "We monitor regulatory changes (e.g. plastic bans, CDS rollouts)"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "What's the difference between an APCO report and a customer-specific packaging report?", "answer": "APCO is your annual obligation as a packaging signatory — recycled content, recyclability, action plan progress. Customer-specific reports (Coles, Woolworths) want product-level packaging emissions and substitution roadmaps that ladder up to their own targets. We do both from the same data." },
+      { "question": "Can you handle PREP tool assessments for new product specs?", "answer": "Yes. We coordinate PREP assessments with the APCO PREP team for every new SKU spec, maintain the evidence and report the classification to your retail customers." },
+      { "question": "How do you verify my recycled content claims?", "answer": "We collect chain-of-custody evidence from your substrate suppliers (FSC, PEFC for paper; ISCC Plus for chemical recycling; mass-balance certificates for recycled plastics) and keep an audit-ready trail. Claims are only made when evidence supports them." },
+      { "question": "I'm exporting to the EU — do I need different data for CBAM?", "answer": "If you supply packaging that contains CBAM-listed materials (steel, aluminium, cement, fertiliser-derived) into the EU, then yes. We handle the EU CBAM declaration alongside your domestic obligations." }
+    ]
   },
   "logistics-provider": {
     "slug": "logistics-provider",
@@ -97,7 +117,13 @@
       "We help you tell a credible electrification story for tender responses"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "What's the GLEC Framework and do I have to use it?", "answer": "The GLEC Framework is the global standard for freight emissions accounting. Major shippers (retailers, manufacturers, miners) increasingly require GLEC- or ISO 14083-aligned data because that's what their own auditors accept. We produce it from your TMS or telematics." },
+      { "question": "Can you produce per-customer monthly emissions reports automatically?", "answer": "Yes — that's the core service. We connect to your TMS, telematics or fuel card system, calculate per-shipment emissions, and produce monthly per-customer reports (kg CO2e per shipment, per pallet, per tonne-km). Reports go directly to your customer's portal or as a PDF." },
+      { "question": "I'm a subcontractor to Toll/Linfox — do they need this too?", "answer": "Yes — increasingly. Large 3PLs cascade their own Scope 3 obligations to subcontracted carriers. If you can't provide per-shipment data, you risk being squeezed out of the load board." },
+      { "question": "Do I need this if my fleet is under the NGER threshold?", "answer": "Probably not for your own NGER obligations. But your customers' Scope 3 reporting needs the data regardless of whether you trigger NGER yourself. Most carriers we work with are well under the NGER threshold." }
+    ]
   },
   "cleaning-services": {
     "slug": "cleaning-services",
@@ -122,7 +148,13 @@
       "We keep an audit trail ready for property certification (NABERS, Green Star)"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Property managers ask for NABERS supplier data. What's that?", "answer": "NABERS (National Australian Built Environment Rating System) ratings for buildings need supplier evidence on utility consumption, chemical use, waste streams and water. We coordinate the data flow so your customer's NABERS rating is supported." },
+      { "question": "Do I need GECA-certified chemicals to win these contracts?", "answer": "Increasingly yes for healthcare, government and REIT contracts. We help you map your current chemicals to GECA, Good Environmental Choice and equivalent recognised schemes, and flag substitution paths for non-certified items." },
+      { "question": "Each property manager asks different questions. Do you handle all of them?", "answer": "Yes — Lendlease, Mirvac, Dexus, GPT, Stockland, Charter Hall, Goodman all have slightly different supplier sustainability requirements. We maintain templates for each and respond using the correct format every time." },
+      { "question": "What about Modern Slavery Act statements?", "answer": "If your turnover is above A$100m you're required to produce an annual statement. We prepare it for you using your supplier and workforce data, and submit through the federal register." }
+    ]
   },
   "it-services": {
     "slug": "it-services",
@@ -147,7 +179,13 @@
       "We answer customer-specific questionnaires (CDP, EcoVadis, NQC, supplier portals)"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Government tenders ask for emissions data. How do I get it?", "answer": "For federal tenders (AusTender) and state portals (VendorPanel, eTendering NSW, QTenders), the answer needs to be a structured Scope 1/2/3 inventory plus a Modern Slavery declaration. We produce both annually and maintain them for every tender response." },
+      { "question": "I sell cloud services. How do I report cloud emissions?", "answer": "AWS, Microsoft Azure and Google Cloud all publish customer-specific carbon footprint tools. We pull your account's data quarterly, allocate by customer where applicable, and roll it into your Scope 3 inventory." },
+      { "question": "Do my e-waste recycling certificates count toward my customers' Scope 3?", "answer": "Yes — your hardware disposal practices and e-waste recovery rates directly affect your customer's Scope 3 Category 5 (waste). We track this via your asset management system and report it to customers." },
+      { "question": "EcoVadis, CDP, NQC — do you handle all of them?", "answer": "Yes. We maintain a master sustainability data set and map it to the question structure of each of these platforms, so each annual cycle is hours of your time, not weeks." }
+    ]
   },
   "professional-services": {
     "slug": "professional-services",
@@ -197,7 +235,13 @@
       "We prepare Modern Slavery Act statements where you qualify"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Lendlease and John Holland both ask for EPDs. What's that?", "answer": "An Environmental Product Declaration (EPD) is a verified document showing a material's environmental impact, particularly embodied carbon. Tier 1 builders need EPDs to claim Green Star, NABERS or ISC credits on projects. We coordinate EPD acquisition from your suppliers." },
+      { "question": "Do I need ISC data on every project, or just the big ones?", "answer": "ISC (Infrastructure Sustainability Council) ratings apply to infrastructure projects above defined thresholds — most major road, rail and water programmes. If your project has an ISC rating goal, every subcontractor's contribution feeds into it. We supply the data." },
+      { "question": "What if my upstream material suppliers don't have EPDs?", "answer": "We use generic industry-average EPD data as a starting point and progressively work with your supply base to source product-specific EPDs. Most Tier 1 builders accept industry-average where product-specific isn't available, provided the data source is documented." },
+      { "question": "Each project has different sustainability portals. Do you handle them all?", "answer": "Yes. Procore, Aconex, Hammertech, Builder-specific portals — we maintain templates and respond per-project. You stay focused on delivery, we handle the sustainability paperwork." }
+    ]
   },
   "equipment-supplier": {
     "slug": "equipment-supplier",

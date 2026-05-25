@@ -31,6 +31,7 @@ const navGroups = [
     label: "For Suppliers",
     items: [
       { label: "Browse all supplier types", href: "/for-suppliers", desc: "Pick your situation" },
+      { label: "Browse by buyer", href: "/buyers", desc: "Coles, BHP, Lendlease, NSW Health…" },
       { label: "Farmers & Primary Producers", href: "/for-suppliers/farmer", desc: "Cattle, grain, dairy, horticulture" },
       { label: "Food & Beverage Producers", href: "/for-suppliers/food-producer", desc: "Retailer Scope 3 responses" },
       { label: "Logistics & Transport", href: "/for-suppliers/logistics-provider", desc: "Per-shipment emissions" },

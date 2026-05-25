@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import FAQSection, { type Faq } from "@/components/FAQSection";
 
 interface IndustryData {
   slug?: string;
@@ -12,10 +13,11 @@ interface IndustryData {
   highlight: string;
   largeBuyers?: string[];
   supplierPressure?: string;
+  faqs?: Faq[];
 }
 
 export default function IndustryPage({ data }: { data: IndustryData }) {
-  const { name, h1, sub, integrations, capabilities, frameworks, highlight, largeBuyers, supplierPressure } = data;
+  const { name, h1, sub, integrations, capabilities, frameworks, highlight, largeBuyers, supplierPressure, faqs } = data;
 
   return (
     <div>
@@ -121,6 +123,10 @@ export default function IndustryPage({ data }: { data: IndustryData }) {
             </div>
           </div>
         </section>
+      )}
+
+      {faqs && faqs.length > 0 && (
+        <FAQSection title={`${name} sustainability reporting — common questions`} faqs={faqs} />
       )}
     </div>
   );

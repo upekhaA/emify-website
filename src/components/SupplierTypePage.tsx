@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
+import FAQSection, { type Faq } from "@/components/FAQSection";
 
 interface SupplierTypeData {
   slug: string;
@@ -11,6 +12,7 @@ interface SupplierTypeData {
   emifyServices: string[];
   fixedPriceFrom: string;
   ctaLabel: string;
+  faqs?: Faq[];
 }
 
 interface RegionContext {
@@ -26,7 +28,7 @@ interface Props {
 }
 
 export default function SupplierTypePage({ data, region }: Props) {
-  const { name, h1, sub, typicalBuyers, dataAsked, emifyServices, fixedPriceFrom, ctaLabel } = data;
+  const { name, h1, sub, typicalBuyers, dataAsked, emifyServices, fixedPriceFrom, ctaLabel, faqs } = data;
   const regionalH1 = region ? `${h1} For ${name.toLowerCase()} in the ${region.regionName}, ${region.stateCode}.` : h1;
   const regionalSub = region
     ? `${sub} This page is for ${name.toLowerCase()} operating in the ${region.regionName} region of ${region.stateName}. ${region.industryNote}`
@@ -121,6 +123,13 @@ export default function SupplierTypePage({ data, region }: Props) {
           </div>
         </div>
       </section>
+
+      {faqs && faqs.length > 0 && (
+        <FAQSection
+          title={region ? `${name} in the ${region.regionName} — common questions` : `${name} — common questions`}
+          faqs={faqs}
+        />
+      )}
     </div>
   );
 }
