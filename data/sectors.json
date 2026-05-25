@@ -122,7 +122,13 @@
     "frameworks": ["NABERS", "GRESB", "AASB S2", "GHG Protocol", "TCFD", "GRI"],
     "highlight": "A diversified A-REIT used Emify to consolidate sustainability data across a 42-asset portfolio, producing their first GRESB submission and AASB S2 readiness assessment in one integrated workflow — saving an estimated A$180,000 in consultant fees.",
     "largeBuyers": ["Lendlease", "GPT Group", "Mirvac", "Dexus", "Stockland", "Charter Hall", "Goodman Group"],
-    "supplierPressure": "REITs and property managers ask cleaning contractors, facilities suppliers, fit-out subcontractors and waste services for emissions data to support NABERS and GRESB submissions."
+    "supplierPressure": "REITs and property managers ask cleaning contractors, facilities suppliers, fit-out subcontractors and waste services for emissions data to support NABERS and GRESB submissions.",
+    "faqs": [
+      { "question": "What is NABERS and who uses it?", "answer": "NABERS (National Australian Built Environment Rating System) rates the operational performance of buildings — energy, water, waste, indoor environment. REITs, government tenants and increasingly private occupiers use NABERS ratings as a procurement and tenant decision input." },
+      { "question": "What is GRESB and why do REITs care about it?", "answer": "GRESB (Global Real Estate Sustainability Benchmark) is the dominant global ESG benchmark for real estate funds. Australian REITs (Lendlease, Mirvac, Dexus, GPT, Stockland, Charter Hall) all participate, and their GRESB scores affect investor flows." },
+      { "question": "How is embodied carbon counted in real estate?", "answer": "Embodied carbon covers materials production, construction and end-of-life — separate from operational emissions. NABERS Embodied is the emerging Australian standard; Green Star already integrates it. REITs increasingly track and disclose embodied carbon at portfolio level." },
+      { "question": "Do tenants ask for sustainability data from landlords?", "answer": "Yes — particularly government tenants and large corporates with their own AASB S2 obligations. Tenants need landlord-provided utility data and NABERS ratings to populate their own Scope 1/2 reporting." }
+    ]
   },
   "retail": {
     "slug": "retail",
@@ -168,7 +174,13 @@
     "frameworks": ["AASB S2", "GHG Protocol", "GRI", "Sustainable Hospitality Alliance", "HCMI"],
     "highlight": "A 14-property Australian hotel group consolidated property utility and procurement data through Emify to produce its first GRI report — replacing what had been 30+ separate spreadsheets and an annual consultant engagement.",
     "largeBuyers": ["Accor Pacific", "Marriott International", "Hilton Australasia", "InterContinental Hotels Group", "Crown Resorts", "TFE Hotels"],
-    "supplierPressure": "Hotel groups and restaurant chains request emissions and waste data from food suppliers, linen services, cleaning contractors and beverage distributors to populate their own sustainability reports."
+    "supplierPressure": "Hotel groups and restaurant chains request emissions and waste data from food suppliers, linen services, cleaning contractors and beverage distributors to populate their own sustainability reports.",
+    "faqs": [
+      { "question": "What is the Sustainable Hospitality Alliance and does Australia participate?", "answer": "The Sustainable Hospitality Alliance (SHA) is the global industry body for hotel sustainability — covering Accor, Marriott, Hilton, IHG and others. SHA frameworks are increasingly adopted by Australian hotel groups for emissions, water and human rights reporting." },
+      { "question": "What is HCMI?", "answer": "The Hotel Carbon Measurement Initiative (HCMI) is the global standard for per-room-night and per-meeting-room carbon reporting. Corporate clients increasingly ask for HCMI-based event reporting from hotels." },
+      { "question": "How is food waste tracked in hospitality?", "answer": "Food waste is tracked via POS integration (showing menu items prepared vs sold) and procurement data (food bought vs served). Increasingly reported per cover or per occupied room — important for ESG-reporting hotels." },
+      { "question": "Do small restaurants need to report sustainability?", "answer": "Independent restaurants typically don't have their own reporting obligation but face supplier-side requirements from major group buyers (catering contracts, corporate accounts) and increasingly from food delivery platforms." }
+    ]
   },
   "manufacturing": {
     "slug": "manufacturing",
@@ -188,7 +200,13 @@
     "frameworks": ["NGER", "Safeguard", "AASB S2", "EU CBAM", "ISO 14067", "GHG Protocol", "GRI"],
     "highlight": "A Victorian food processor used Emify to produce product-level carbon footprints for 240 SKUs in 8 weeks — meeting the data request of a major European retail customer without hiring a sustainability consultant.",
     "largeBuyers": ["BlueScope", "Orica", "CSL", "Visy", "Amcor", "Brickworks", "Boral", "Asahi Beverages"],
-    "supplierPressure": "Manufacturers cascade Scope 3 requirements to raw material suppliers, component manufacturers, packaging providers and logistics — particularly where EU CBAM applies to downstream exports."
+    "supplierPressure": "Manufacturers cascade Scope 3 requirements to raw material suppliers, component manufacturers, packaging providers and logistics — particularly where EU CBAM applies to downstream exports.",
+    "faqs": [
+      { "question": "What is EU CBAM and which Australian manufacturers does it affect?", "answer": "The EU Carbon Border Adjustment Mechanism applies a carbon price at the EU border to imports of steel, aluminium, cement, fertilisers, hydrogen, electricity (and downstream products containing these). Australian manufacturers exporting these to the EU must provide embedded emissions data — from 2026, importers must pay the differential." },
+      { "question": "What is ISO 14067?", "answer": "ISO 14067:2018 is the international standard for quantifying the carbon footprint of products. It's the de facto reference for product-level emissions disclosure, including for customer reporting requirements and CBAM declarations." },
+      { "question": "Do small manufacturers need NGER reporting?", "answer": "NGER (National Greenhouse and Energy Reporting) is triggered by facility-level thresholds (25 kt CO2e or 100 TJ energy at one facility, or 50 kt corporate group). Most small and mid-size manufacturers fall below — but face Scope 3 requests from larger customers regardless." },
+      { "question": "How is product carbon footprint calculated?", "answer": "ISO 14067 methodology: collect bill of materials, supplier emissions data, energy and water use for manufacturing, transport. Apply emission factors, allocate by product. Result: kg CO2e per unit of product produced." }
+    ]
   },
   "transport-logistics": {
     "slug": "transport-logistics",
@@ -208,7 +226,13 @@
     "frameworks": ["GLEC Framework", "ISO 14083", "AASB S2", "NGER", "GHG Protocol", "GRI", "SmartWay"],
     "highlight": "A national LTL carrier deployed Emify across its 600-truck fleet to produce per-shipment emissions data for its top 50 customers — closing two major retail contracts that required Scope 3 reporting capability as a condition of award.",
     "largeBuyers": ["Toll Group", "Linfox", "Australia Post / StarTrack", "DHL Australia", "Aurizon", "Pacific National", "Patrick Terminals"],
-    "supplierPressure": "Large logistics providers are themselves required to report emissions by their customers (retailers, manufacturers, miners) — they cascade that requirement to subcontracted carriers, owner-drivers and equipment lessors."
+    "supplierPressure": "Large logistics providers are themselves required to report emissions by their customers (retailers, manufacturers, miners) — they cascade that requirement to subcontracted carriers, owner-drivers and equipment lessors.",
+    "faqs": [
+      { "question": "What is the GLEC Framework?", "answer": "The Global Logistics Emissions Council Framework (now ISO 14083) is the dominant standard for transport and freight emissions accounting. Major shippers and 3PLs use it for per-shipment carbon reporting. Adopted by AusPost, Toll, DHL and others." },
+      { "question": "How are per-shipment emissions calculated?", "answer": "Distance × weight × emission factor per mode (road, rail, sea, air). Factors come from fuel consumption (Scope 1) or grid intensity for electric. GLEC handles multi-modal allocation, empty running and load factor." },
+      { "question": "Does a freight operator need NGER reporting?", "answer": "Only if the operator triggers NGER thresholds — typically the largest fleet operators (Toll, Linfox, DHL). Most smaller carriers fall below NGER but face customer-side Scope 3 requests regardless." },
+      { "question": "What is SmartWay?", "answer": "SmartWay is a US EPA-originated freight emissions efficiency programme. Some Australian operators use SmartWay metrics for customer reporting, particularly for North American customers, though GLEC/ISO 14083 is dominant in AU." }
+    ]
   },
   "government": {
     "slug": "government",
@@ -254,7 +278,13 @@
     "frameworks": ["AASB S2", "ACTS HESAT", "Times Higher Education Impact", "QS Sustainability", "GRI", "NGER"],
     "highlight": "A Go8 university consolidated emissions data across 11 campus precincts via Emify, producing its first Scope 3 commuter inventory in under 6 weeks and replacing two separate consultant engagements with an in-house workflow.",
     "largeBuyers": ["University of Melbourne", "University of Sydney", "Monash University", "UNSW", "University of Queensland", "TAFE NSW", "TAFE Queensland", "Catholic Education", "Independent Schools Australia"],
-    "supplierPressure": "Universities, TAFEs and large school groups request emissions and ethical-sourcing data from catering, cleaning, IT, equipment and uniform suppliers as part of standard procurement."
+    "supplierPressure": "Universities, TAFEs and large school groups request emissions and ethical-sourcing data from catering, cleaning, IT, equipment and uniform suppliers as part of standard procurement.",
+    "faqs": [
+      { "question": "What is the Times Higher Education Impact Ranking?", "answer": "THE Impact Rankings score universities globally against the UN SDGs. Australian universities increasingly compete on this — and need supplier sustainability data (catering, cleaning, IT, energy) to support their submissions." },
+      { "question": "What is ACTS HESAT?", "answer": "Australasian Campuses Towards Sustainability Higher Education Sustainability Assessment Tool — the dominant Australian university sustainability self-assessment framework, covering emissions, waste, water, biodiversity, learning and procurement." },
+      { "question": "Do universities have AASB S2 obligations?", "answer": "Larger universities (Group of Eight, several Group of Eight-adjacent) meet AASB S2 thresholds based on revenue and assets. Most smaller universities and TAFEs fall below the threshold but still report extensively for international rankings." },
+      { "question": "What about international research grant carbon reporting?", "answer": "EU Horizon Europe and US NIH funding increasingly require grant-level carbon disclosure (Scope 3 for international travel, equipment etc.). Australian researchers receiving these grants need structured carbon accounting." }
+    ]
   },
   "healthcare": {
     "slug": "healthcare",

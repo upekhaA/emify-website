@@ -210,7 +210,13 @@
       "We provide partner-ready client response packs"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Law firms and accountants are being asked for emissions data — really?", "answer": "Yes — particularly by bank, insurer and government clients running formal panel sustainability reviews. The data set is small (your office Scope 1/2, business travel Scope 3, IT supply chain) but the questions are frequent and clients increasingly score on it." },
+      { "question": "What's the simplest emissions inventory for a professional services firm?", "answer": "Office energy (Scope 1/2 from utility bills), business travel (Scope 3 from Concur/Egencia/Travelport), IT supply chain (Scope 3 from your IT contracts and asset register). For most mid-sized firms, this can be quantified annually in 1-2 weeks of structured data work — which we do for you." },
+      { "question": "Do we need a Modern Slavery Act statement?", "answer": "If your annual revenue is above A$100m, yes — it's a mandatory annual statement published on the federal register. Below the threshold, clients may still request a Code of Conduct attestation." },
+      { "question": "Pro bono hours and ESG client commitments — do those count?", "answer": "Yes — clients increasingly ask about your firm's sustainability commitments, including client/matter-level commitments (pro bono on climate, refusal to act on certain matters, etc.). We help structure this disclosure for client responses." }
+    ]
   },
   "construction-subcontractor": {
     "slug": "construction-subcontractor",
@@ -266,7 +272,13 @@
       "We monitor any CBAM exposure if you export to the EU"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "BHP and Rio Tinto want lifecycle data on every piece of equipment. How?", "answer": "We produce ISO 14067-aligned product carbon footprints per equipment model using your BOM and your suppliers' material data. Use-phase emissions are modelled under the customer's operating profile (fuel type, duty cycle, runtime)." },
+      { "question": "What about spare parts and consumables — do those count?", "answer": "Yes — they're part of the customer's Scope 3 Category 1 (purchased goods) over the life of the equipment. We track spare parts and consumable flows so the lifecycle disclosure is complete." },
+      { "question": "We export equipment to the EU. Do we need CBAM data?", "answer": "If your equipment contains CBAM-listed embedded materials (steel, aluminium, cement, fertiliser-derived, hydrogen) above the de minimis threshold, yes. We handle the EU CBAM declaration alongside your domestic obligations." },
+      { "question": "Mining customers expect ongoing audits. How do you stay current?", "answer": "We update your data set quarterly and respond to audit-style data requests within 5 business days. Major customers' annual audit cycles are pre-scheduled." }
+    ]
   },
   "waste-services": {
     "slug": "waste-services",
@@ -291,7 +303,13 @@
       "We coordinate clinical and hazardous waste compliance documentation"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Property managers want diversion rates by building. Do you produce that?", "answer": "Yes — we integrate with your weighbridge and ticketing systems to produce per-site monthly diversion reports (recycled vs recovered vs landfill) by material stream. Output goes directly to your customer's portal or as a PDF." },
+      { "question": "How do customers use my data for NABERS Waste?", "answer": "NABERS Waste ratings need per-site diversion data, contamination rates and material recovery breakdowns. We produce all of this in the format NABERS auditors expect." },
+      { "question": "Clinical waste has different requirements. Do you handle it?", "answer": "Yes — clinical and hazardous waste needs chain-of-custody documentation from collection through to authorised disposal. We coordinate that documentation for healthcare customers and audit-ready evidence packs." },
+      { "question": "Do you reconcile Container Deposit Scheme returns?", "answer": "Yes — across NSW, VIC, QLD, WA, SA, NT, ACT and TAS schemes (each with slightly different rules). Important for customers tracking CDS-eligible material flows." }
+    ]
   },
   "catering-services": {
     "slug": "catering-services",
@@ -316,7 +334,13 @@
       "We prepare Modern Slavery Act statements where applicable"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Hospitals want food origin and waste data. How do you collect that?", "answer": "We coordinate menu management and POS integration to track ingredient sourcing, supplier provenance, food waste rates and packaging volumes per site. Reports tie back to procurement portal sustainability fields." },
+      { "question": "What sustainability questions do education tenders typically ask?", "answer": "Local sourcing percentages, animal welfare certifications, packaging volumes, food waste handling, Modern Slavery declaration. Increasingly: per-meal carbon footprint where the customer has its own carbon target." },
+      { "question": "Mining camp catering is different. Can you handle remote operations?", "answer": "Yes — remote camp catering has its own data set (camp utilities, waste back-haul, supplier logistics, fly-in food provisioning). We pull it from your existing camp management systems." },
+      { "question": "What about RSPCA, MSC and Fair Trade certifications?", "answer": "We track which menu items carry which certifications and report the proportion to your customer. Important for hospital, defence and education contracts with formal animal welfare or ethical sourcing requirements." }
+    ]
   },
   "linen-laundry-services": {
     "slug": "linen-laundry-services",
@@ -341,7 +365,13 @@
       "We prepare Modern Slavery Act statements where applicable"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Industrial laundries use a lot of water. How do you report that?", "answer": "We track water per kg processed, with breakdowns for primary use, recycling rates and effluent treatment. Per-customer reports show your water performance against any contract KPIs." },
+      { "question": "What chemicals data do hospitals ask for?", "answer": "Hospitals want chemical SDS, environmental ratings (Good Environmental Choice, GECA), and substitution programmes for any restricted-use chemicals. We track this per chemical SKU and report against your customer's chemical exclusion lists." },
+      { "question": "Do hotels and hospitals ask for different data?", "answer": "Same broad categories (water, chemicals, energy, modern slavery) but different granularity. Hospitals want per-bed-day reporting; hotels want per-room or per-occupied-room. We produce both formats." },
+      { "question": "What about microplastic effluent reporting?", "answer": "Emerging requirement — particularly for facilities discharging into sensitive water catchments or hospital networks with formal water stewardship plans. We coordinate this where required." }
+    ]
   },
   "security-services": {
     "slug": "security-services",
@@ -366,7 +396,13 @@
       "We respond on your behalf as new tenders come in"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "Government tenders ask for fleet emissions. How do you produce it?", "answer": "We integrate with your fuel card or telematics to produce per-vehicle and per-contract Scope 1 emissions, plus an EV transition plan if your customer asks. Tender responses get the data in the format they expect." },
+      { "question": "What modern slavery declarations do security firms face?", "answer": "Standard Modern Slavery Act statement above the A$100m threshold. Customers also ask about subcontractor oversight (chain-of-control), worker conditions for officers, and any mental health support programmes." },
+      { "question": "Do major events have different requirements?", "answer": "Yes — events like the AO, AFL Grand Final and NRL Grand Final increasingly want per-event sustainability reporting from security providers (emissions, waste, modern slavery). We produce per-event reports on top of your standard contract reporting." },
+      { "question": "Government Indigenous procurement asks about workforce diversity. What's needed?", "answer": "Indigenous workforce participation, training programmes, Indigenous-owned subcontracting. We track and report this for federal and state tenders aligned to IPP (Indigenous Procurement Policy)." }
+    ]
   },
   "maintenance-services": {
     "slug": "maintenance-services",
@@ -391,7 +427,13 @@
       "We coordinate Modern Slavery Act statements where applicable"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "HVAC contractors track refrigerant. Do you handle leak reporting?", "answer": "Yes — refrigerant inventory and leak rates per AS/NZS standards. Particularly important under the Synthetic Greenhouse Gas (SGG) levy regime and for any customer pursuing NABERS or Green Star credits." },
+      { "question": "Property managers want savings reports from maintenance work. How?", "answer": "We track energy and water savings delivered by maintenance work (LED retrofits, BMS tuning, leak fixes) and report it back to property managers monthly. Important for NABERS supplier credit." },
+      { "question": "What about embodied carbon for replacement parts?", "answer": "For major replacements (HVAC units, lift motors, switchgear), we provide embodied carbon estimates from manufacturer EPDs or industry-average data. Increasingly part of property manager sustainability scorecards." },
+      { "question": "Do you integrate with simPRO and ServiceM8?", "answer": "Yes — we pull job records from simPRO, ServiceM8, AroFlo and similar trade management systems to build per-customer reporting." }
+    ]
   },
   "printing-services": {
     "slug": "printing-services",
@@ -416,6 +458,12 @@
       "We support APCO compliance for packaging printing"
     ],
     "fixedPriceFrom": "from $500/month",
-    "ctaLabel": "Get started — fixed monthly fee"
+    "ctaLabel": "Get started — fixed monthly fee",
+    "faqs": [
+      { "question": "What FSC and PEFC certifications do customers ask for?", "answer": "FSC (Forest Stewardship Council) and PEFC (Programme for the Endorsement of Forest Certification) are the two major paper chain-of-custody standards. Government, retail and banking customers increasingly require evidence on paper sourcing for printed material." },
+      { "question": "Do you handle carbon-neutral printing claims?", "answer": "Yes — we verify any carbon-neutral claims against ACCU or Verra offset registries and report the offset retirement evidence. Important if your customers reference your sustainability marketing in their own claims." },
+      { "question": "What about packaging printing under APCO?", "answer": "Packaging printing is covered under APCO (Australian Packaging Covenant Organisation). We handle APCO Annual Reporting and Action Plan submissions for printers supplying packaging customers." },
+      { "question": "Do government tenders specify low-VOC inks?", "answer": "Yes — Commonwealth Procurement Rules and some state agencies specify low-VOC, vegetable-based or soy-based inks. We track ink composition by job and report compliance for tender responses." }
+    ]
   }
 }

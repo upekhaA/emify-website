@@ -71,7 +71,12 @@
     ],
     "supplierTypes": ["farmer", "food-producer", "packaging-supplier", "logistics-provider"],
     "fearPoint": "Metcash supplier reviews increasingly weight sustainability data — particularly for private-label suppliers to IGA and Foodland.",
-    "emifyResponse": "We respond to Metcash sustainability requests across IGA, Foodland and Mitre 10 supply relationships, keeping your category position safe."
+    "emifyResponse": "We respond to Metcash sustainability requests across IGA, Foodland and Mitre 10 supply relationships, keeping your category position safe.",
+    "faqs": [
+      { "question": "Are Metcash sustainability requirements the same as Coles and Woolworths?", "answer": "Broadly similar (Scope 3 emissions, packaging recycled content, modern slavery) but less prescriptive. Metcash uses its Supplier Code of Conduct as the framework rather than a formal sustainability programme like Coles' Together to Zero." },
+      { "question": "Does Metcash use Sedex?", "answer": "Metcash uses Sedex SMETA for ethical sourcing audits in higher-risk categories (private-label food, household goods). Most other suppliers respond through Metcash's own questionnaire system." },
+      { "question": "What does Metcash sell beyond IGA?", "answer": "Metcash owns Foodland (SA-focused supermarkets), Mitre 10 and Total Tools (hardware), Cellarbrations and IGA Liquor (liquor). Sustainability questions cover all of these supply chains." }
+    ]
   },
   "aldi": {
     "slug": "aldi",
@@ -91,7 +96,12 @@
     ],
     "supplierTypes": ["farmer", "food-producer", "packaging-supplier"],
     "fearPoint": "ALDI's supplier compliance is a binary gate — non-compliance suspends supply.",
-    "emifyResponse": "We manage the ALDI CR Supplier Programme submissions and follow-up audits so you stay continuously qualified."
+    "emifyResponse": "We manage the ALDI CR Supplier Programme submissions and follow-up audits so you stay continuously qualified.",
+    "faqs": [
+      { "question": "What is the ALDI Corporate Responsibility Supplier Programme?", "answer": "ALDI's CR Supplier Programme is one of the most structured retailer supplier compliance programmes in Australia — covering carbon, packaging, ethical sourcing, animal welfare and supply chain due diligence. Audits are scheduled and rigorous." },
+      { "question": "Does ALDI accept Sedex SMETA?", "answer": "Yes — Sedex SMETA audits are accepted for ethical sourcing components. ALDI also accepts BSCI (amfori Business Social Compliance Initiative) audits for some categories." },
+      { "question": "How strict is ALDI on animal welfare?", "answer": "Very. ALDI publishes detailed animal welfare standards for meat, dairy, eggs and seafood — and requires supplier evidence (RSPCA Approved, MSC, ASC, Cage Free certifications) as a condition of supply." }
+    ]
   },
   "bunnings": {
     "slug": "bunnings",
@@ -111,7 +121,12 @@
     ],
     "supplierTypes": ["food-producer", "packaging-supplier", "logistics-provider", "equipment-supplier"],
     "fearPoint": "Bunnings has actively delisted suppliers who fail Sedex audits or fall short of timber legality.",
-    "emifyResponse": "We respond to Bunnings supplier sustainability and ethical sourcing requirements so you maintain ranging without diverting your team."
+    "emifyResponse": "We respond to Bunnings supplier sustainability and ethical sourcing requirements so you maintain ranging without diverting your team.",
+    "faqs": [
+      { "question": "What is the Bunnings Responsible Sourcing Programme?", "answer": "Bunnings' Responsible Sourcing Programme covers ethical sourcing, modern slavery, timber legality and product safety. Sedex SMETA audits and SAQs are required for high-risk supplier categories." },
+      { "question": "How strict is Bunnings on timber legality?", "answer": "Strict — FSC and PEFC chain-of-custody evidence is required for timber and wood-product suppliers. Bunnings has actively delisted suppliers failing timber legality verification." },
+      { "question": "Does Bunnings require Sedex audits for every supplier?", "answer": "Sedex requirements depend on category risk. Building materials, garden, plumbing and hardware suppliers are typically required; lower-risk categories may use SAQ only. We coordinate per-category." }
+    ]
   },
   "bhp": {
     "slug": "bhp",
@@ -159,7 +174,12 @@
     ],
     "supplierTypes": ["equipment-supplier", "logistics-provider", "construction-subcontractor", "maintenance-services", "catering-services", "cleaning-services", "professional-services"],
     "fearPoint": "Rio Tinto's contractor oversight has tightened materially since 2020 — sustainability and ethics gaps drive de-panelling.",
-    "emifyResponse": "We respond to Rio Tinto supplier requirements across Pilbara iron ore, Gladstone alumina and Bell Bay aluminium operations."
+    "emifyResponse": "We respond to Rio Tinto supplier requirements across Pilbara iron ore, Gladstone alumina and Bell Bay aluminium operations.",
+    "faqs": [
+      { "question": "What does Rio Tinto ask suppliers for?", "answer": "Scope 1, 2 and 3 emissions inventory; Modern Slavery Act statement and Suppliers Code of Conduct attestation; Indigenous participation plans (particularly for Pilbara and Gladstone operations); safety performance; EV transition plan; water stewardship for water-intensive suppliers." },
+      { "question": "How has Rio Tinto's contractor oversight changed?", "answer": "Materially tightened since the Juukan Gorge events in 2020. Cultural heritage, Indigenous engagement and modern slavery oversight is now significantly more rigorous; supplier failures lead to de-panelling." },
+      { "question": "Where does Rio Tinto operate in Australia?", "answer": "Iron ore (Pilbara — Tom Price, Paraburdoo, Yandi, Mount Tom Price and others), aluminium (Bell Bay TAS, Boyne QLD, Tomago NSW), alumina (Yarwun QLD), and bauxite (Weipa QLD). Each site has supplier requirements tailored to its operating context." }
+    ]
   },
   "fortescue": {
     "slug": "fortescue",
@@ -180,7 +200,12 @@
     ],
     "supplierTypes": ["equipment-supplier", "logistics-provider", "construction-subcontractor", "maintenance-services", "catering-services", "professional-services"],
     "fearPoint": "Fortescue actively prioritises suppliers who can credibly support Real Zero — those who can't lose work to those who can.",
-    "emifyResponse": "We respond to Fortescue supplier requirements including Real Zero pathway data, so you stay credible and on-panel as the strategy ratchets."
+    "emifyResponse": "We respond to Fortescue supplier requirements including Real Zero pathway data, so you stay credible and on-panel as the strategy ratchets.",
+    "faqs": [
+      { "question": "What is Fortescue's Real Zero strategy?", "answer": "Real Zero is Fortescue's commitment to eliminate fossil fuel use from Scope 1 and 2 operations by 2030 — without offsets. It's the most aggressive net-zero commitment of any major Australian miner and has direct implications for fuel, equipment and services suppliers." },
+      { "question": "Does Fortescue prioritise suppliers who support Real Zero?", "answer": "Yes — Fortescue actively prefers suppliers who can credibly support Real Zero (electric equipment, hydrogen-ready services, decarbonising logistics). Suppliers who can't show a pathway lose work to those who can." },
+      { "question": "What about Fortescue Future Industries (FFI) suppliers?", "answer": "FFI (now operating under Fortescue Energy) is the green hydrogen, green ammonia and clean energy arm. Its suppliers face additional renewable-aligned procurement criteria." }
+    ]
   },
   "glencore": {
     "slug": "glencore",
@@ -200,7 +225,12 @@
     ],
     "supplierTypes": ["equipment-supplier", "logistics-provider", "construction-subcontractor", "maintenance-services", "catering-services"],
     "fearPoint": "Glencore's supplier oversight has increased materially with the just-transition focus for thermal coal.",
-    "emifyResponse": "We respond to Glencore supplier sustainability requirements across Hunter Valley, Mount Isa and Bowen Basin operations."
+    "emifyResponse": "We respond to Glencore supplier sustainability requirements across Hunter Valley, Mount Isa and Bowen Basin operations.",
+    "faqs": [
+      { "question": "Where does Glencore operate in Australia?", "answer": "Coal (Hunter Valley NSW, Bowen Basin QLD), copper-zinc (Mount Isa QLD), zinc-lead (McArthur River NT), nickel (Murrin Murrin WA). Each operation has supplier requirements tailored to its context — Hunter Valley contractors face different requirements to Mount Isa." },
+      { "question": "What is Glencore's position on thermal coal supply chain ethics?", "answer": "Glencore has committed to a managed decline of thermal coal production, with associated just-transition supplier engagement requirements. Sustainability oversight has tightened materially since 2021." },
+      { "question": "What's in Glencore's Code of Conduct for suppliers?", "answer": "Modern slavery, anti-bribery, anti-corruption, environment, safety, human rights and Indigenous engagement. Annual attestation is required from major suppliers." }
+    ]
   },
   "lendlease": {
     "slug": "lendlease",
@@ -249,7 +279,12 @@
     ],
     "supplierTypes": ["construction-subcontractor", "equipment-supplier", "packaging-supplier", "logistics-provider", "professional-services"],
     "fearPoint": "John Holland subcontractor reviews routinely weight sustainability scoring — generic tenders lose.",
-    "emifyResponse": "We respond to John Holland subcontractor sustainability requirements across major infrastructure and building programmes."
+    "emifyResponse": "We respond to John Holland subcontractor sustainability requirements across major infrastructure and building programmes.",
+    "faqs": [
+      { "question": "What does John Holland ask subcontractors for?", "answer": "EPDs for major materials, ISC rating tool inputs (Design and As-Built), embodied carbon per unit of work, Modern Slavery Act statement, Indigenous participation, per-project waste and water data. Requirements vary by project type (infrastructure vs building)." },
+      { "question": "Does John Holland do projects across multiple states?", "answer": "Yes — John Holland delivers major rail, road, building and water projects in NSW, VIC, QLD, WA and SA. Each state's compliance overlay (e.g. VIC Local Jobs First, NSW APIC) layers on top of John Holland's own requirements." },
+      { "question": "Is John Holland's sustainability scoring competitive?", "answer": "Yes — sustainability and Indigenous procurement scoring now routinely affects subcontract award decisions, particularly for infrastructure projects with ISC rating targets." }
+    ]
   },
   "multiplex": {
     "slug": "multiplex",
@@ -270,7 +305,12 @@
     ],
     "supplierTypes": ["construction-subcontractor", "equipment-supplier", "packaging-supplier", "logistics-provider", "professional-services"],
     "fearPoint": "Multiplex pre-qualification and tender selection actively reward sustainability data quality.",
-    "emifyResponse": "We respond to Multiplex subcontractor sustainability data requests project-by-project."
+    "emifyResponse": "We respond to Multiplex subcontractor sustainability data requests project-by-project.",
+    "faqs": [
+      { "question": "What sustainability data does Multiplex want from subbies?", "answer": "EPDs for materials, embodied carbon per work package, Modern Slavery Act statement, Indigenous participation, per-project waste data, Green Star rating inputs. Specific requirements scale with project ambition (e.g. 6-Star Green Star projects have higher data demands)." },
+      { "question": "Does Multiplex work on government infrastructure as well as commercial buildings?", "answer": "Yes — Multiplex delivers commercial, residential, sports stadia, education and government building projects. Sustainability requirements typically follow Green Star and NABERS frameworks rather than the ISC framework used in road and rail infrastructure." },
+      { "question": "How is sustainability scored at Multiplex tender?", "answer": "Multiplex pre-qualification and tender selection both weight sustainability data alongside price and capability. The bar is rising annually as Multiplex's net zero programme advances." }
+    ]
   },
   "cimic": {
     "slug": "cimic",
@@ -290,7 +330,12 @@
     ],
     "supplierTypes": ["construction-subcontractor", "equipment-supplier", "logistics-provider", "professional-services"],
     "fearPoint": "CIMIC subcontractor selection weights sustainability data alongside price and capability.",
-    "emifyResponse": "We respond to CIMIC, CPB and UGL subcontractor sustainability requirements across major infrastructure and building projects."
+    "emifyResponse": "We respond to CIMIC, CPB and UGL subcontractor sustainability requirements across major infrastructure and building projects.",
+    "faqs": [
+      { "question": "What's the difference between CIMIC, CPB, UGL and Leighton Asia?", "answer": "CIMIC Group is the holding entity; CPB Contractors is its Australian construction arm; UGL delivers engineering services and asset management; Leighton Asia delivers projects across Asia. Sustainability requirements broadly align across the group but with operating-company specifics." },
+      { "question": "Does CIMIC require Modern Slavery Act statements from all subcontractors?", "answer": "Above the A$100m turnover threshold, yes. Below the threshold, CIMIC requires Code of Conduct attestation and ethical sourcing self-assessment." },
+      { "question": "How does CIMIC integrate sustainability into project management?", "answer": "CIMIC operates Procore, Aconex and bespoke project management systems. Sustainability data requests flow through these systems on a per-project basis, with subcontractors uploading evidence at defined project gates." }
+    ]
   },
   "cba": {
     "slug": "cba",
@@ -336,7 +381,12 @@
     ],
     "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services", "printing-services"],
     "fearPoint": "Westpac panel reviews increasingly weight sustainability — structured data is now a tender baseline.",
-    "emifyResponse": "We respond to Westpac supplier sustainability requirements across professional services, IT and facilities supply."
+    "emifyResponse": "We respond to Westpac supplier sustainability requirements across professional services, IT and facilities supply.",
+    "faqs": [
+      { "question": "What data does Westpac ask suppliers for?", "answer": "Scope 1, 2 and 3 emissions inventory; Modern Slavery Act statement; diversity reporting; information security and data sovereignty for IT/data-handling suppliers; net-zero pathway. Specific asks vary by panel category." },
+      { "question": "Is Westpac's supplier portal the same as CBA's?", "answer": "No — each major bank operates its own portal. Westpac uses its own supplier portal and Coupa-style procurement systems. Each panel category has its own onboarding sustainability questionnaire." },
+      { "question": "How often does Westpac review supplier sustainability?", "answer": "Annual panel reviews are standard, with quarterly engagement for major suppliers and additional ad-hoc reviews where Westpac's own sustainability strategy ratchets." }
+    ]
   },
   "nab": {
     "slug": "nab",
@@ -357,7 +407,12 @@
     ],
     "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services"],
     "fearPoint": "NAB's annual supplier sustainability reviews actively rank panel suppliers — bottom-quartile suppliers are at risk.",
-    "emifyResponse": "We respond to NAB supplier sustainability questionnaires and annual reviews across IT, professional services and facilities."
+    "emifyResponse": "We respond to NAB supplier sustainability questionnaires and annual reviews across IT, professional services and facilities.",
+    "faqs": [
+      { "question": "Is NAB's supplier sustainability programme stricter than other banks?", "answer": "NAB has one of the most structured supplier sustainability programmes among Australian banks — formal annual reviews, comparative scoring across panel suppliers, and explicit reporting requirements. The bar is consistently high." },
+      { "question": "Does NAB ask about living wage commitments?", "answer": "Yes — NAB has explicit supplier engagement on living wage and labour rights as part of its responsible business strategy. Particularly relevant for outsourced services (cleaning, catering, security)." },
+      { "question": "What happens if I'm a bottom-quartile supplier in NAB's review?", "answer": "NAB's annual supplier sustainability reviews actively rank panel suppliers. Bottom-quartile suppliers receive remediation requirements; persistent underperformance affects panel reappointment." }
+    ]
   },
   "anz": {
     "slug": "anz",
@@ -377,7 +432,12 @@
     ],
     "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services"],
     "fearPoint": "ANZ panel reviews weight sustainability data alongside price and capability.",
-    "emifyResponse": "We respond to ANZ supplier sustainability and modern slavery data requests."
+    "emifyResponse": "We respond to ANZ supplier sustainability and modern slavery data requests.",
+    "faqs": [
+      { "question": "What's ANZ's Supplier Code of Practice?", "answer": "ANZ's Supplier Code of Practice covers labour rights, environment, business integrity, modern slavery and ANZ's Reconciliation Action Plan commitments. Annual attestation required from panel suppliers." },
+      { "question": "Does ANZ ask for diversity data from suppliers?", "answer": "Yes — gender pay gap, Indigenous workforce participation, disability employment and supplier diversity (e.g. Supply Nation registration for Indigenous-owned businesses) are increasingly part of supplier sustainability data requests." },
+      { "question": "How does ANZ handle information security for IT suppliers?", "answer": "Standard ANZ Supplier Risk Management framework — including ISO 27001, SOC 2 evidence, data residency requirements and ongoing third-party risk reviews. Sustainability data sharing flows through ANZ's secure portal." }
+    ]
   },
   "department-of-defence": {
     "slug": "department-of-defence",
@@ -424,7 +484,12 @@
     ],
     "supplierTypes": ["it-services", "professional-services", "cleaning-services", "maintenance-services", "security-services", "printing-services"],
     "fearPoint": "Services Australia panel reviews weight sustainability scoring — structured data is now table stakes.",
-    "emifyResponse": "We respond to Services Australia tender and panel sustainability requirements."
+    "emifyResponse": "We respond to Services Australia tender and panel sustainability requirements.",
+    "faqs": [
+      { "question": "What categories does Services Australia procure?", "answer": "Major categories: IT services and software (including Centrelink/Medicare core systems), contact centre operations, professional services, facilities and cleaning services across hundreds of service centres nationally." },
+      { "question": "What is the Information Security Manual (ISM) and why does it matter for suppliers?", "answer": "The ISM is the Australian Government's information security framework. IT suppliers to Services Australia must demonstrate ISM compliance — sustainability data sharing also needs to respect this framework." },
+      { "question": "Does Services Australia weight sustainability in panel reviews?", "answer": "Yes — sustainability and modern slavery scoring is embedded in Services Australia's panel evaluation criteria. Structured supplier data is table stakes for major panel reappointment." }
+    ]
   },
   "nsw-health": {
     "slug": "nsw-health",
@@ -471,7 +536,12 @@
     ],
     "supplierTypes": ["food-producer", "catering-services", "cleaning-services", "linen-laundry-services", "it-services", "maintenance-services", "professional-services"],
     "fearPoint": "Queensland Health tender prequalification rejects suppliers without basic sustainability and modern slavery responses.",
-    "emifyResponse": "We respond to Queensland Health and QTenders sustainability requirements."
+    "emifyResponse": "We respond to Queensland Health and QTenders sustainability requirements.",
+    "faqs": [
+      { "question": "What is the Queensland Health Sustainable Healthcare Programme?", "answer": "Queensland Health's Sustainable Healthcare Programme drives system-wide decarbonisation, waste reduction and ethical sourcing across Queensland's public hospital and health services system. Suppliers across all categories face structured sustainability data requirements." },
+      { "question": "What is QTenders?", "answer": "QTenders is the Queensland Government's central procurement portal. Sustainability and Modern Slavery requirements are embedded in standard tender documents. Suppliers respond to category-specific sustainability schedules." },
+      { "question": "Does Queensland Health work the same as NSW Health?", "answer": "Same broad framework (Scope 1/2/3, modern slavery, Indigenous participation, ethical sourcing) but different portals and slightly different prescriptive requirements. Suppliers operating in both states maintain parallel response packs." }
+    ]
   },
   "mirvac": {
     "slug": "mirvac",
@@ -492,7 +562,12 @@
     ],
     "supplierTypes": ["cleaning-services", "maintenance-services", "waste-services", "construction-subcontractor", "security-services", "linen-laundry-services", "catering-services"],
     "fearPoint": "Mirvac tender selection actively prioritises suppliers who support Planet Positive — generic providers lose work.",
-    "emifyResponse": "We respond to Mirvac supplier sustainability requirements across cleaning, maintenance, waste, security and construction supply."
+    "emifyResponse": "We respond to Mirvac supplier sustainability requirements across cleaning, maintenance, waste, security and construction supply.",
+    "faqs": [
+      { "question": "What is Mirvac Planet Positive?", "answer": "Planet Positive is Mirvac's commitment to net positive carbon — meaning the group will sequester more carbon than it emits — across operations by 2030. It's one of the most ambitious REIT carbon commitments globally and cascades through to every supplier." },
+      { "question": "Does Mirvac use NABERS?", "answer": "Yes — Mirvac runs one of Australia's most extensive NABERS-rated portfolios across office, residential, retail and industrial. Suppliers provide data inputs to support NABERS rating maintenance and improvement." },
+      { "question": "How does Mirvac decide which suppliers support Planet Positive?", "answer": "Mirvac actively prioritises suppliers who can demonstrate carbon credentials, circular economy practices and Indigenous procurement. Generic providers lose work to those who can document." }
+    ]
   },
   "dexus": {
     "slug": "dexus",
@@ -512,7 +587,12 @@
     ],
     "supplierTypes": ["cleaning-services", "maintenance-services", "waste-services", "construction-subcontractor", "security-services"],
     "fearPoint": "Dexus tender selection weights sustainability — suppliers without structured data are screened out.",
-    "emifyResponse": "We respond to Dexus supplier sustainability requirements across cleaning, maintenance, waste and construction supply."
+    "emifyResponse": "We respond to Dexus supplier sustainability requirements across cleaning, maintenance, waste and construction supply.",
+    "faqs": [
+      { "question": "What is Dexus's net-zero commitment?", "answer": "Dexus has committed to net zero across owned operations by 2030. Supplier data — particularly from cleaning, maintenance, waste and construction supply — feeds into Dexus's Scope 3 reporting and Net Zero pathway." },
+      { "question": "Does Dexus participate in GRESB?", "answer": "Yes — Dexus is a long-standing GRESB participant and consistently scores in the top tier among Australian REITs. GRESB submissions need extensive supplier evidence on operational performance." },
+      { "question": "What office buildings does Dexus operate?", "answer": "Major Australian CBD and metropolitan office portfolios across Sydney, Melbourne, Brisbane, Perth and Adelaide — plus industrial and healthcare property. Suppliers across all categories face sustainability requirements." }
+    ]
   },
   "transport-for-nsw": {
     "slug": "transport-for-nsw",
@@ -533,7 +613,12 @@
     ],
     "supplierTypes": ["construction-subcontractor", "equipment-supplier", "logistics-provider", "professional-services"],
     "fearPoint": "Transport for NSW infrastructure tenders are won and lost on sustainability scoring as much as price.",
-    "emifyResponse": "We respond to Transport for NSW supplier sustainability requirements and ISC submission inputs across major infrastructure programmes."
+    "emifyResponse": "We respond to Transport for NSW supplier sustainability requirements and ISC submission inputs across major infrastructure programmes.",
+    "faqs": [
+      { "question": "What is the Sustainable Procurement Framework at Transport for NSW?", "answer": "TfNSW's Sustainable Procurement Framework integrates sustainability outcomes (carbon, modern slavery, Indigenous procurement, Aboriginal Participation in Construction) into procurement evaluation across all major contracts." },
+      { "question": "What is APIC (Aboriginal Participation in Construction)?", "answer": "APIC is the NSW Government's framework requiring Aboriginal participation on major infrastructure projects — typically 1.5%+ of contract value via Aboriginal businesses and workforce. TfNSW projects routinely include APIC targets." },
+      { "question": "What ISC rating tools apply to TfNSW projects?", "answer": "ISC IS v2.1 (the current Infrastructure Sustainability rating tool) applies across Design, As Built and Operational phases. Most major TfNSW projects target an Excellent or Leading rating." }
+    ]
   },
   "major-road-projects-victoria": {
     "slug": "major-road-projects-victoria",
@@ -554,6 +639,11 @@
     ],
     "supplierTypes": ["construction-subcontractor", "equipment-supplier", "logistics-provider", "professional-services"],
     "fearPoint": "Victorian Big Build tenders are scored on sustainability and social procurement alongside price.",
-    "emifyResponse": "We respond to Major Road Projects Victoria and Big Build sustainability requirements."
+    "emifyResponse": "We respond to Major Road Projects Victoria and Big Build sustainability requirements.",
+    "faqs": [
+      { "question": "What is Victoria's Big Build?", "answer": "Big Build is the Victorian Government's umbrella for its major transport infrastructure programme — Metro Tunnel, Suburban Rail Loop, Level Crossing Removal, North East Link, Westgate Tunnel and more. Sustainability requirements apply across all projects." },
+      { "question": "What is Local Jobs First and how does it affect suppliers?", "answer": "Local Jobs First requires major Victorian Government contracts to commit to local content (locally-made materials, Victorian workers, local apprentices). Suppliers report against Local Jobs First targets as part of project sustainability reporting." },
+      { "question": "Does Victoria use ISC ratings?", "answer": "Yes — most major MRPV and Big Build projects target ISC ratings (typically Excellent). Subcontractors and material suppliers contribute to the ISC submission via per-project data inputs." }
+    ]
   }
 }
