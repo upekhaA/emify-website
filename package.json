@@ -34,6 +34,7 @@
   "devDependencies": {
     "@astrojs/cloudflare": "^13.2.1",
     "@cloudflare/workers-types": "^4.20260424.1",
+    "png-to-ico": "^3.0.1",
     "sharp": "^0.34.5",
     "wrangler": "^4.85.0"
   }

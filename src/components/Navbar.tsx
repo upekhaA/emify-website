@@ -102,9 +102,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">e</span>
-          </div>
+          <img src="/emify-mark.png" alt="Emify" className="h-9 w-9" width="36" height="36" />
           <span className="text-xl font-bold tracking-tight">emify</span>
         </a>
 

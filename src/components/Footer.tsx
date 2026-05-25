@@ -5,9 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <div className="h-7 w-7 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xs">e</span>
-              </div>
+              <img src="/emify-mark.png" alt="Emify" className="h-7 w-7" width="28" height="28" />
               <span className="text-lg font-bold">emify</span>
             </div>
             <p className="text-xs text-muted-foreground max-w-[180px] mb-3">
