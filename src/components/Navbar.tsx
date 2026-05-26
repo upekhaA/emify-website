@@ -52,6 +52,14 @@ const navGroups = [
       { label: "vs Workiva", href: "/vs/workiva", desc: "Purpose-built vs GRC add-on" },
     ],
   },
+  {
+    label: "Resources",
+    items: [
+      { label: "S2 Compass", href: "/resources/s2-compass", desc: "Analysis of 25 first-wave ASX AASB S2 reports" },
+      { label: "Directory", href: "/resources/directory", desc: "Sustainability professionals & services" },
+      { label: "All resources", href: "/resources", desc: "Guides, templates & regulatory intelligence" },
+    ],
+  },
 ];
 
 function Dropdown({ group }: { group: typeof navGroups[0] }) {
@@ -114,9 +122,6 @@ export default function Navbar() {
           {navGroups.map((g) => (
             <Dropdown key={g.label} group={g} />
           ))}
-          <a href="/resources" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Resources
-          </a>
           <a href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Pricing
           </a>
